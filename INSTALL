@@ -1,0 +1,10 @@
+Installation Instructions
+=========================
+
+Basic Installation
+------------------
+
+1. Ensure you have `avr-gcc`, `avr-libc`, `avrdude`, and `make` installed.
+2. Run `make` to compile the firmware.
+3. Connect your AVR microcontroller (e.g. ATmega328P via Arduino ISP).
+4. Run `make flash` to upload the firmware.

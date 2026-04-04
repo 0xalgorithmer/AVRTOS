@@ -1,0 +1,10 @@
+VRTOS News - History of changes visible to users.
+
+Version 0.5.0 (Experimental "Alpha" Release)
+=========================================
+Here comes the first public version of AVRTOS after its hidden development period, and I am happy to announce it! Despite its experimental nature, this early version of the software, named 0.5.0, already features many exciting things which allow using advanced functionality in AVR microcontrollers, namely:
+
+*Virtual Machine Like x86*: The whole virtual machine structure with four general-purpose registers, address registers, an execution stack, and all sorts of arithmetic and bitwise operations.
+*Page Caching for EEPROM Code*: A clean structure that enables you to run code directly from EEPROM blocks without wasting all of AVR's scarce SRAM.
+*Priority Scheduler*: A multitasking scheduler that can distinguish between "elites" and "lowly" processes and handle any kind of process starvation properly.
+*Smart GPIO Watching (or PCINT)*: The effective use of Pin Change Interrupts, with special states `pinsleep`, where processes can wait until the given hardware pin reaches the required logic level.
