@@ -3,4 +3,3 @@
 	* Makefile, README, AUTHORS, INSTALL: Added GNU project boilerplate metadata.
 	* src/*: Re-licensed codebase under standard GPLv3 terms naming AVRTOS project.
 	* Release 0.5.0: Initial public release of AVRTOS (Advanced AVR Real-Time Operating System).
-	

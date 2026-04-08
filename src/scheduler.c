@@ -33,7 +33,7 @@ volatile uint32_t wanted = 0;
 bool              elite_exists = 0;
 
 void
-sched_create_task (uint8_t set, bool social_class, uint16_t addr)
+sched_create_task (uint8_t set, uint8_t social_class, uint16_t addr)
 {
   if (set >= MAX_PROCESSES)
     return;
@@ -53,17 +53,7 @@ sched_create_task (uint8_t set, bool social_class, uint16_t addr)
   new_p->code_base_address  = addr;
   new_p->pinsleep           = NO_PIN_SLEEP;
   new_p->active             = 1;
-
-  if (social_class)
-    {
-      if (social_class ^ elite_exists)
-        {
-          new_p->social_class = 1;
-          elite_exists = 1;
-          return;
-        }
-    }
-  new_p->social_class = 0;
+  new_p->social_class       = social_class;
 }
 
 /* Select the process with maximum starvation, or wake a process
@@ -99,14 +89,8 @@ sched_pick_next (void)
             }
         }
 
-      if (processes[i].social_class)
-        {
-          cpu = &processes[i];
-          return;
-        }
-
       if (cpu != &processes[i])
-        processes[i].starvation += INC_STARVATION;
+        processes[i].starvation += (INC_STARVATION+processes[i].social_class);
 
       if (!next_cpu || processes[i].starvation >= max_val)
         {

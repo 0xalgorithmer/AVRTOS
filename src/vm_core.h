@@ -54,7 +54,7 @@ typedef struct __attribute__ ((packed))
   uint16_t cached_page_id;
   uint16_t code_base_address;
   bool     active;
-  bool     social_class;
+  uint8_t  social_class;
   uint8_t  pinsleep;
   uint8_t  starvation;
 } process_t;

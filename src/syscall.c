@@ -92,7 +92,7 @@ syscall_dispatch (void)
         uint16_t addr = vm_pop();
         uint8_t details = cpu->r[1];
         uint8_t set = vm_bit_range (details, 0, 2);
-        uint8_t social_class_val = (details >> 3) & 1;
+        uint8_t social_class_val = vm_bit_range(details,2,5);
         sched_create_task (set, social_class_val, addr);
       }
       break;

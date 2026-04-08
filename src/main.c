@@ -44,8 +44,7 @@ main (void)
       if (!slice)
         {
           slice = DEFAULT_TIME_SLICE;
-          if (!cpu->social_class)
-            sched_pick_next ();
+          sched_pick_next();
         }
     }
 
