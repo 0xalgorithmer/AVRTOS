@@ -87,5 +87,22 @@ syscall_dispatch (void)
           }
       }
       break;
+    case 0x04:
+      {
+        uint16_t addr = vm_pop();
+        uint8_t details = cpu->r[1];
+        uint8_t set = vm_bit_range (details, 0, 2);
+        uint8_t social_class_val = (details >> 3) & 1;
+        sched_create_task (set, social_class_val, addr);
+      }
+      break;
+      case 0x05:
+      {
+        uint16_t start_addr = vm_pop();
+        uint16_t length = vm_pop();
+        uint16_t EEPR_addr = vm_pop();
+        eeprom_update_block((const void*)start_addr,(void*)EEPR_addr, (size_t)length);
+      }
+      break;
     }
 }

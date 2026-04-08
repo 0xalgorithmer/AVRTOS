@@ -199,7 +199,7 @@ vm_execute (void)
         uint8_t val = vm_fetch_byte ();
         cpu->r[reg] = val;
         break;
-      }
+      }*
     case 0x05:
       {
         uint8_t reg_pos = vm_fetch_byte ();
@@ -242,11 +242,13 @@ vm_execute (void)
       }
     case 0x09:
       {
+        /*
         uint16_t addr = vm_fetch_word ();
         uint8_t details = vm_fetch_byte ();
         uint8_t set = vm_bit_range (details, 0, 2);
         uint8_t social_class_val = (details >> 3) & 1;
         sched_create_task (set, social_class_val, addr);
+        */
         break;
       }
     case 0x0a:
