@@ -42,10 +42,13 @@ vm_fetch_byte (void)
     {
       uint16_t eeprom_addr = needed_page * EPP_PAGE_SIZE;
       eeprom_busy_wait ();
+      uint8_t old_sreg = SREG;
+      cli ();
       eeprom_read_block ((void *) cpu->instruction_cache,
                          (const void *) eeprom_addr,
                          (size_t) EPP_PAGE_SIZE);
       cpu->cached_page_id = needed_page;
+      SREG = old_sreg;
     }
 
   cpu->ip = local_ip + 1;
@@ -161,6 +164,10 @@ __attribute__ ((flatten, hot))
 void
 vm_execute (void)
 {
+  uint8_t old_sreg = SREG;
+  cli ();
+  cpu->last_ip = cpu->ip;
+  SREG = old_sreg;
   uint8_t opcode = vm_fetch_byte ();
   switch (opcode)
     {
@@ -176,7 +183,11 @@ vm_execute (void)
         uint8_t dest = vm_fetch_byte ();
         uint8_t mode = vm_fetch_byte ();
         uint8_t val = vm_fetch_byte ();
+        uint8_t old_sreg = SREG;
+        cli ();
         vm_mem_arith (dest, mode, val);
+        cpu->last_ip = cpu->ip;
+        SREG = old_sreg;
         break;
       }
     case 0x02:
@@ -204,9 +215,13 @@ vm_execute (void)
       {
         uint8_t reg_pos = vm_fetch_byte ();
         int8_t val = (int8_t) vm_fetch_byte ();
+        uint8_t old_sreg = SREG;
+        cli ();
         uint8_t temp_reg = cpu->r[reg_pos];
         temp_reg += val;
         cpu->r[reg_pos] = temp_reg;
+        cpu->last_ip = cpu->ip;
+        SREG = old_sreg;
         break;
       }
     case 0x07:
@@ -259,13 +274,22 @@ vm_execute (void)
         break;
       }
     case 0x0b:
-      vm_push_byte (cpu->r[vm_fetch_byte ()]);
-      break;
+      {
+        uint8_t reg_idx = vm_fetch_byte ();
+        uint8_t old_sreg = SREG;
+        cli ();
+        vm_push_byte (cpu->r[reg_idx]);
+        cpu->last_ip = cpu->ip;
+        SREG = old_sreg;
+        break;
+      }
     case 0x0c:
       {
         uint8_t mode = vm_fetch_byte ();
         uint8_t dest = vm_fetch_byte ();
         uint8_t src = vm_fetch_byte ();
+        uint8_t old_sreg = SREG;
+        cli ();
         uint8_t temp_dest = cpu->r[dest];
         uint8_t temp_src = cpu->r[src];
 
@@ -277,6 +301,8 @@ vm_execute (void)
           temp_dest *= temp_src;
 
         cpu->r[dest] = temp_dest;
+        cpu->last_ip = cpu->ip;
+        SREG = old_sreg;
         break;
       }
     case 0x0d:
@@ -288,47 +314,73 @@ vm_execute (void)
     case 0x0e:
       {
         uint8_t reg = vm_fetch_byte ();
+        uint8_t old_sreg = SREG;
+        cli ();
         cpu->r[reg] = vm_pop_byte ();
+        cpu->last_ip = cpu->ip;
+        SREG = old_sreg;
         break;
       }
     case 0x0f:
       {
         uint16_t target = vm_fetch_byte ();
+        uint8_t old_sreg = SREG;
+        cli ();
         vm_call (target, 0);
+        cpu->last_ip = cpu->ip;
+        SREG = old_sreg;
         break;
       }
     case 0x10:
-      vm_ret ();
-      break;
+      {
+        uint8_t old_sreg = SREG;
+        cli ();
+        vm_ret ();
+        cpu->last_ip = cpu->ip;
+        SREG = old_sreg;
+        break;
+      }
     case 0x11:
       {
         uint8_t mode = vm_fetch_byte ();
         uint8_t dest = vm_fetch_byte ();
-        uint16_t temp_dest = cpu->addr_r[dest];
 
         if (mode == 0)
           {
             uint8_t src = vm_fetch_byte ();
-            temp_dest = cpu->addr_r[src];
+            cpu->addr_r[dest] = cpu->addr_r[src];
           }
         else if (mode == 1)
           {
             uint8_t src = vm_fetch_byte ();
-            temp_dest += cpu->addr_r[src];
+            uint8_t old_sreg = SREG;
+            cli ();
+            cpu->addr_r[dest] += cpu->addr_r[src];
+            cpu->last_ip = cpu->ip;
+            SREG = old_sreg;
           }
         else if (mode == 2)
           {
             int8_t val = (int8_t) vm_fetch_byte ();
-            temp_dest += val;
+            uint8_t old_sreg = SREG;
+            cli ();
+            cpu->addr_r[dest] += val;
+            cpu->last_ip = cpu->ip;
+            SREG = old_sreg;
           }
 
-        cpu->addr_r[dest] = temp_dest;
         break;
       }
     case 0x12:
       break;
     case 0x13:
       syscall_dispatch ();
+      {
+        uint8_t old_sreg = SREG;
+        cli ();
+        cpu->last_ip = cpu->ip;
+        SREG = old_sreg;
+      }
       break;
     case 0x14:
       {
@@ -450,14 +502,22 @@ vm_execute (void)
 
         if (mode == 0x0)
           {
+            uint8_t old_sreg = SREG;
+            cli ();
             uint16_t temp_addr = cpu->addr_r[op1];
             cpu->addr_r[op1] = ~temp_addr;
+            cpu->last_ip = cpu->ip;
+            SREG = old_sreg;
             break;
           }
         if (mode == 0x1)
           {
+            uint8_t old_sreg = SREG;
+            cli ();
             uint8_t temp_reg = cpu->r[op1];
             cpu->r[op1] = ~temp_reg;
+            cpu->last_ip = cpu->ip;
+            SREG = old_sreg;
             break;
           }
 
@@ -466,6 +526,9 @@ vm_execute (void)
         uint16_t src_val = 0;
         uint8_t alu_op = 0;
         uint8_t dest_is_16bit = 0;
+
+        uint8_t old_sreg = SREG;
+        cli ();
 
         if (mode >= 0x2 && mode <= 0x6)
           {
@@ -511,6 +574,7 @@ vm_execute (void)
           }
         else
           {
+            SREG = old_sreg;
             break;
           }
 
@@ -538,6 +602,8 @@ vm_execute (void)
         else
           cpu->r[op1] = (uint8_t) dest_val;
 
+        cpu->last_ip = cpu->ip;
+        SREG = old_sreg;
         break;
       }
     case 0x1f:
@@ -613,12 +679,23 @@ vm_execute (void)
         break;
       }
     case 0x27:
-      vm_push (cpu->addr_r[vm_fetch_byte ()]);
-      break;
+      {
+        uint8_t reg_idx = vm_fetch_byte ();
+        uint8_t old_sreg = SREG;
+        cli ();
+        vm_push (cpu->addr_r[reg_idx]);
+        cpu->last_ip = cpu->ip;
+        SREG = old_sreg;
+        break;
+      }
     case 0x28:
       {
         uint8_t reg = vm_fetch_byte ();
+        uint8_t old_sreg = SREG;
+        cli ();
         cpu->addr_r[reg] = vm_pop ();
+        cpu->last_ip = cpu->ip;
+        SREG = old_sreg;
         break;
       }
     case 0x29:
@@ -640,4 +717,8 @@ vm_execute (void)
       uart_println_u16 (cpu->ip - 1);
       break;
     }
+  uint8_t end_sreg = SREG;
+  cli ();
+  cpu->last_ip = cpu->ip;
+  SREG = end_sreg;
 }

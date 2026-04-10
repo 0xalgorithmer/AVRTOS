@@ -57,6 +57,7 @@ typedef struct __attribute__ ((packed))
   uint8_t  social_class;
   uint8_t  pinsleep;
   uint8_t  starvation;
+  uint16_t last_ip;
 } process_t;
 
 extern process_t  processes[MAX_PROCESSES];

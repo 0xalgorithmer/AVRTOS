@@ -52,8 +52,8 @@ sched_create_task (uint8_t set, uint8_t social_class, uint16_t addr)
   new_p->r[3]               = 0;
   new_p->code_base_address  = addr;
   new_p->pinsleep           = NO_PIN_SLEEP;
-  new_p->active             = 1;
   new_p->social_class       = social_class;
+  new_p->active             = 1;
 }
 
 /* Select the process with maximum starvation, or wake a process
@@ -101,5 +101,8 @@ sched_pick_next (void)
 
   cpu = next_cpu;
   if (cpu)
-    cpu->starvation = 0;
+    {
+      cpu->starvation = 0;
+      cpu->ip = cpu->last_ip;
+    }
 }

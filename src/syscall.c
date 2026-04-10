@@ -75,6 +75,8 @@ syscall_dispatch (void)
         uint8_t local_selct = cpu->r[0];
         uint8_t pin = cpu->r[1];
         bool val = cpu->r[2];
+        uint8_t old_sreg = SREG;
+        cli ();
         if (local_selct == 0x02)
           {
             gpio_pin_mode (pin, GPIO_DIR_IN);
@@ -85,6 +87,7 @@ syscall_dispatch (void)
             gpio_pin_mode (pin, GPIO_DIR_OUT);
             gpio_write (pin, val);
           }
+        SREG = old_sreg;
       }
       break;
     case 0x04:
