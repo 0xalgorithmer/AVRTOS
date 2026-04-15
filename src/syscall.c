@@ -54,8 +54,12 @@ syscall_dispatch (void)
             else
               {
                 cpu->pinsleep = pin;
-                slice = 0;
                 cpu->ip--;
+                /*
+            ok this is an ugly way to do what ~slice =0~ was doing,
+            but it works for now,TODO: add yield function
+            */
+                sched_pick_next();
               }
           }
         else
@@ -64,8 +68,12 @@ syscall_dispatch (void)
             SREG = old_sreg;
             //gpio_watch_attach (pin, GPIO_EDGE_BOTH);
             cpu->pinsleep = pin;
-            slice = 0;
+            /*
+            ok this is an ugly way to do what ~slice =0~ was doing,
+            but it works for now,TODO: add yield function
+            */
             cpu->ip--;
+            sched_pick_next();
           }
         break;
       }

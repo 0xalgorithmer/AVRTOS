@@ -40,8 +40,12 @@ do {                                                                  \
         uint32_t match = ((uint32_t) trig << (SHIFT)) & wanted;       \
         if (match)                                                    \
           {                                                           \
-            pin_flags |= match;                                       \
-            slice = 0;                                                \
+            pin_flags |= match;
+            /*
+            ok this is an ugly way to do what ~slice =0~ was doing,
+            but it works for now,TODO: add yield function
+            */
+            sched_pick_next();                                           \
           }                                                           \
       }                                                               \
 } while (0)

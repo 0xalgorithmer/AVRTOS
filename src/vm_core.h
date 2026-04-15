@@ -36,8 +36,8 @@
 #define ELITE_PR          1
 #define LOWLY_PR          0
 #define MAX_PROCESSES     5
-#define DEFAULT_TIME_SLICE 20
-#define INC_STARVATION    20
+//#define DEFAULT_TIME_SLICE 20
+#define INC_STARVATION    1
 #define INVALID_PAGE_ID   0xFFFF
 #define NO_PIN_SLEEP      255
 #define INITIAL_SP        127
@@ -53,7 +53,7 @@ typedef struct __attribute__ ((packed))
   uint8_t  instruction_cache[64];
   uint16_t cached_page_id;
   uint16_t code_base_address;
-  bool     active;
+  uint8_t  status;
   uint8_t  social_class;
   uint8_t  pinsleep;
   uint8_t  starvation;

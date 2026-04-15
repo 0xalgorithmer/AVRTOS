@@ -25,6 +25,19 @@
 
 #include <avr/interrupt.h>
 #include <stddef.h>
+#include "hal/avr_timer.h"
+#include <setjmp.h>
+
+jmp_buf jump_buffer;
+init_timer();
+
+ISR(TIMER0_COMPA_vect) {
+    sched_pick_next()
+    longjmp(jump_buffer, 1);
+  }
+
+
+
 
 int
 main (void)
@@ -32,21 +45,16 @@ main (void)
   uart_init (9600);
   init_pins();
   sei ();
-
-  for (;;)
+  uint8_t jmp_code = setjmp(jump_buffer);
+  if(!jmp_code)
     {
-      if (cpu == NULL)
-        sched_create_task (1, 0, 0);
-
-      vm_execute ();
-      slice--;
-
-      if (!slice)
-        {
-          slice = DEFAULT_TIME_SLICE;
-          sched_pick_next();
-        }
+      //first time jmp_code is 0
+      //after isr escape is 1
+      
+    }else{
+      //sreg restore do this but o be more safe
+      sei();
     }
-
+  for (;;) vm_execute ();
   return 0;
 }

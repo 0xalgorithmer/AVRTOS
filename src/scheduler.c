@@ -27,7 +27,6 @@
 process_t  processes[MAX_PROCESSES];
 process_t *cpu = 0;
 
-volatile uint8_t  slice = DEFAULT_TIME_SLICE;
 volatile uint32_t pin_flags = 0;
 volatile uint32_t wanted = 0;
 bool              elite_exists = 0;
@@ -53,7 +52,7 @@ sched_create_task (uint8_t set, uint8_t social_class, uint16_t addr)
   new_p->code_base_address  = addr;
   new_p->pinsleep           = NO_PIN_SLEEP;
   new_p->social_class       = social_class;
-  new_p->active             = 1;
+  new_p->status             = 1;
 }
 
 /* Select the process with maximum starvation, or wake a process
@@ -67,7 +66,7 @@ sched_pick_next (void)
 
   for (uint8_t i = 0; i < MAX_PROCESSES; i++)
     {
-      if (!processes[i].active)
+      if (!processes[i].status)
         continue;
 
       if (processes[i].pinsleep != NO_PIN_SLEEP)
@@ -85,6 +84,7 @@ sched_pick_next (void)
             {
               processes[i].pinsleep = NO_PIN_SLEEP;
               cpu = &processes[i];
+              cpu->ip = cpu->last_ip;
               return;
             }
         }

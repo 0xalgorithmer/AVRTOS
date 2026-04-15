@@ -18,19 +18,10 @@
  * You should have received a copy of the GNU General Public License
  * along with AVRTOS. If not, see <https://www.gnu.org/licenses/>.
  */
-#ifndef GPIO_WATCH_H
-#define GPIO_WATCH_H
 
-#include <stdint.h>
+#ifndef AVR_TIMER_H
+#define AVR_TIMER_H
 
-#define GPIO_EDGE_RISE 1
-#define GPIO_EDGE_FALL 2
-#define GPIO_EDGE_BOTH 3 //changed
+void init_timer (void);
 
-extern volatile uint32_t pin_flags;
-extern volatile uint32_t wanted;
-
-void gpio_watch_attach (uint8_t pin, uint8_t edge_mode);
-void gpio_watch_detach (uint8_t pin);
-
-#endif /* GPIO_WATCH_H */
+#endif /* AVR_TIMER_H */

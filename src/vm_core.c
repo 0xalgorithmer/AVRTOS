@@ -27,7 +27,6 @@
 
 #include <avr/eeprom.h>
 #include <avr/interrupt.h>
-
 __attribute__ ((hot))
 uint8_t
 vm_fetch_byte (void)
