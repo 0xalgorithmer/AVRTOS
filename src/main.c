@@ -27,11 +27,12 @@
 #include <stddef.h>
 #include "hal/avr_timer.h"
 #include <setjmp.h>
-
+volatile uint32_t tiks = 0;
 jmp_buf jump_buffer;
 init_timer();
 
 ISR(TIMER0_COMPA_vect) {
+    tiks++;
     sched_pick_next()
     longjmp(jump_buffer, 1);
   }

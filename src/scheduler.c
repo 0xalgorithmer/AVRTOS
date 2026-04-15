@@ -26,10 +26,10 @@
 
 process_t  processes[MAX_PROCESSES];
 process_t *cpu = 0;
-
+extern const volatile uint32_t tiks;
 volatile uint32_t pin_flags = 0;
 volatile uint32_t wanted = 0;
-bool              elite_exists = 0;
+
 
 void
 sched_create_task (uint8_t set, uint8_t social_class, uint16_t addr)
@@ -62,14 +62,13 @@ void
 sched_pick_next (void)
 {
   process_t *next_cpu = 0;
-  uint8_t max_val = 0;
-
+  uint16_t max_val = 0;
   for (uint8_t i = 0; i < MAX_PROCESSES; i++)
     {
       if (!processes[i].status)
         continue;
 
-      if (processes[i].pinsleep != NO_PIN_SLEEP)
+      if (processes[i].pinsleep != NO_PIN_SLEEP||processes[i].status==WAITING_FOR_PIN)
         {
           bool wake_up = false;
           uint8_t pin = processes[i].pinsleep;
@@ -83,16 +82,19 @@ sched_pick_next (void)
           if (wake_up)
             {
               processes[i].pinsleep = NO_PIN_SLEEP;
-              cpu = &processes[i];
-              cpu->ip = cpu->last_ip;
-              return;
+              processes[i].status = RUNNING;
             }
         }
-
-      if (cpu != &processes[i])
+      if(processes[i].status==SLEEPING) {
+        uint32_t elapsed = tiks - processes[i].sleep_start_time;
+        if(elapsed>=processes[i].sleep_duration) {
+          processes[i].status = RUNNING;
+        }
+      }
+      if (cpu != &processes[i]&&processes[i].status==RUNNING)
         processes[i].starvation += (INC_STARVATION+processes[i].social_class);
 
-      if (!next_cpu || processes[i].starvation >= max_val)
+      if((!next_cpu || processes[i].starvation >= max_val)&&processes[i].status==RUNNING)
         {
           max_val = processes[i].starvation;
           next_cpu = &processes[i];

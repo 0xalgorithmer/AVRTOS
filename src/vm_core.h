@@ -33,8 +33,7 @@
 #define EPP_PAGE_MASK  0x3F
 #define EPP_PAGE_SHIFT 6
 
-#define ELITE_PR          1
-#define LOWLY_PR          0
+
 #define MAX_PROCESSES     5
 //#define DEFAULT_TIME_SLICE 20
 #define INC_STARVATION    1
@@ -42,7 +41,10 @@
 #define NO_PIN_SLEEP      255
 #define INITIAL_SP        127
 #define SIGN_BIT          0x80
-
+#define DEAD              0
+#define RUNNING           1
+#define SLEEPING          2
+#define WAITING_FOR_PIN   3
 typedef struct __attribute__ ((packed))
 {
   uint8_t  r[4];
@@ -53,11 +55,13 @@ typedef struct __attribute__ ((packed))
   uint8_t  instruction_cache[64];
   uint16_t cached_page_id;
   uint16_t code_base_address;
-  uint8_t  status;
+  uint8_t  status; //0 :dead,1 :running,2 :sleeping,3 :waiting for pin
   uint8_t  social_class;
   uint8_t  pinsleep;
-  uint8_t  starvation;
+  uint16_t  starvation;
   uint16_t last_ip;
+  uint32_t sleep_start_time;
+  uint32_t sleep_duration;
 } process_t;
 
 extern process_t  processes[MAX_PROCESSES];
@@ -66,7 +70,7 @@ extern process_t *cpu;
 extern volatile uint8_t  slice;
 extern volatile uint32_t pin_flags;
 extern volatile uint32_t wanted;
-extern bool              elite_exists;
+
 
 /* Extract a specific bit field from an integer.
    Used to save bytecode space through bit packing.  */

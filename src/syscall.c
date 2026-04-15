@@ -115,5 +115,15 @@ syscall_dispatch (void)
         eeprom_update_block((const void*)start_addr,(void*)EEPR_addr, (size_t)length);
       }
       break;
+    case 0x06:
+      {
+        uint16_t sleep_duration_high = vm_pop();
+        uint16_t sleep_duration_low = vm_pop();
+        uint32_t sleep_duration = ((uint32_t)sleep_duration_high << 16) | (uint32_t)sleep_duration_low;
+        cpu->sleep_duration = sleep_duration;
+        cpu->sleep_start_time = tiks;
+        cpu->status = SLEEPING;
+      }
+      break;
     }
 }
