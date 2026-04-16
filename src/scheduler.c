@@ -26,7 +26,7 @@
 
 process_t  processes[MAX_PROCESSES];
 process_t *cpu = 0;
-extern const volatile uint32_t tiks;
+extern volatile uint32_t tiks;
 volatile uint32_t pin_flags = 0;
 volatile uint32_t wanted = 0;
 

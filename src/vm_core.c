@@ -209,7 +209,7 @@ vm_execute (void)
         uint8_t val = vm_fetch_byte ();
         cpu->r[reg] = val;
         break;
-      }*
+      }
     case 0x05:
       {
         uint8_t reg_pos = vm_fetch_byte ();
@@ -322,7 +322,7 @@ vm_execute (void)
       }
     case 0x0f:
       {
-        uint16_t target = vm_fetch_byte ();
+        uint16_t target = vm_fetch_word ();
         uint8_t old_sreg = SREG;
         cli ();
         vm_call (target, 0);

@@ -19,6 +19,8 @@
  * along with AVRTOS. If not, see <https://www.gnu.org/licenses/>.
  */
  #include "avr_timer.h"
+ #include <avr/io.h>
+ #include <avr/interrupt.h>
 //init timer on mode ctc for 1ms
 void 
 init_timer (void) 

@@ -27,13 +27,13 @@
 #include <stddef.h>
 #include "hal/avr_timer.h"
 #include <setjmp.h>
+#include "init.h" 
 volatile uint32_t tiks = 0;
 jmp_buf jump_buffer;
-init_timer();
 
 ISR(TIMER0_COMPA_vect) {
     tiks++;
-    sched_pick_next()
+    sched_pick_next();
     longjmp(jump_buffer, 1);
   }
 
@@ -45,6 +45,7 @@ main (void)
 {
   uart_init (9600);
   init_pins();
+  init_timer();
   sei ();
   uint8_t jmp_code = setjmp(jump_buffer);
   if(!jmp_code)

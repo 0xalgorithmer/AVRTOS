@@ -25,7 +25,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-void sched_create_task (uint8_t set, bool social_class, uint16_t addr);
+void sched_create_task (uint8_t set, uint8_t social_class, uint16_t addr);
 void sched_pick_next (void);
 
 #endif /* SCHEDULER_H */

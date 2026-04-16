@@ -35,7 +35,6 @@
 
 
 #define MAX_PROCESSES     5
-//#define DEFAULT_TIME_SLICE 20
 #define INC_STARVATION    1
 #define INVALID_PAGE_ID   0xFFFF
 #define NO_PIN_SLEEP      255
@@ -47,21 +46,26 @@
 #define WAITING_FOR_PIN   3
 typedef struct __attribute__ ((packed))
 {
-  uint8_t  r[4];
+  uint32_t sleep_start_time;
+  uint32_t sleep_duration;
   uint16_t ip;
-  uint8_t  flags;
-  uint8_t  stack[128];
-  uint16_t addr_r[2];
-  uint8_t  instruction_cache[64];
+  uint16_t starvation;
+  uint16_t last_ip;
   uint16_t cached_page_id;
   uint16_t code_base_address;
+  uint16_t addr_r[2];
+  uint16_t eeprom_i;
+  uint16_t eeprom_start_addr;
+  uint16_t eeprom_length;
+  uint16_t eeprom_addr;
+  uint8_t  r[4];
+  uint8_t  flags;
+  uint8_t  stack[128];
+  uint8_t  instruction_cache[64];
   uint8_t  status; //0 :dead,1 :running,2 :sleeping,3 :waiting for pin
   uint8_t  social_class;
   uint8_t  pinsleep;
-  uint16_t  starvation;
-  uint16_t last_ip;
-  uint32_t sleep_start_time;
-  uint32_t sleep_duration;
+  bool     epprom_first_time;
 } process_t;
 
 extern process_t  processes[MAX_PROCESSES];

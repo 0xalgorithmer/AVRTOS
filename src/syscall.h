@@ -20,7 +20,7 @@
  */
 #ifndef SYSCALL_H
 #define SYSCALL_H
-
+#include "vm_core.h"
 void syscall_dispatch (void);
 
 #endif /* SYSCALL_H */

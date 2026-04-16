@@ -20,6 +20,7 @@
  */
 #include "init.h"
 #include  "gpio_watch.h"
+#include "hal/avr_gpio.h"
 //set all pins to changed mode
 void init_pins (void) {
     for (uint8_t i = 2; i < NUM_PINS; i++) {

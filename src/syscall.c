@@ -25,8 +25,10 @@
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
-
+#include "scheduler.h"
+extern volatile uint32_t tiks;
 void
+
 syscall_dispatch (void)
 {
   switch (cpu->r[0])
@@ -73,6 +75,7 @@ syscall_dispatch (void)
             but it works for now,TODO: add yield function
             */
             cpu->ip--;
+            cpu->status = WAITING_FOR_PIN;
             sched_pick_next();
           }
         break;
@@ -100,29 +103,60 @@ syscall_dispatch (void)
       break;
     case 0x04:
       {
+        uint8_t old_sreg1 = SREG;
+        cli();
         uint16_t addr = vm_pop();
+        SREG = old_sreg1;
         uint8_t details = cpu->r[1];
         uint8_t set = vm_bit_range (details, 0, 2);
         uint8_t social_class_val = vm_bit_range(details,2,5);
         sched_create_task (set, social_class_val, addr);
       }
       break;
-      case 0x05:
+    case 0x05:
       {
-        uint16_t start_addr = vm_pop();
-        uint16_t length = vm_pop();
-        uint16_t EEPR_addr = vm_pop();
-        eeprom_update_block((const void*)start_addr,(void*)EEPR_addr, (size_t)length);
+        if(cpu->epprom_first_time) {
+          uint8_t old_sreg1 = SREG;
+          cli();
+          cpu->eeprom_start_addr = vm_pop();
+          cpu->eeprom_length = vm_pop();
+          cpu->eeprom_addr = vm_pop();
+          SREG = old_sreg1;
+          cpu->eeprom_i = 0;
+          cpu->epprom_first_time = false;
+        }
+        if(eeprom_is_ready())
+        {
+          if(cpu->eeprom_i<cpu->eeprom_length) {
+            uint8_t val = vm_read_mem(cpu->eeprom_start_addr+cpu->eeprom_i);
+            eeprom_update_byte((uint8_t*)(cpu->eeprom_addr+cpu->eeprom_i), val);
+            cpu->eeprom_i++;
+            cpu->ip--;
+            sched_pick_next();
+          }else{
+            cpu->epprom_first_time = true;
+          }
+        }else{
+          cpu->ip--;
+          sched_pick_next();
+        }
       }
       break;
     case 0x06:
       {
+        uint8_t old_sreg1 = SREG;
+        cli();
         uint16_t sleep_duration_high = vm_pop();
         uint16_t sleep_duration_low = vm_pop();
         uint32_t sleep_duration = ((uint32_t)sleep_duration_high << 16) | (uint32_t)sleep_duration_low;
+        SREG = old_sreg1;
         cpu->sleep_duration = sleep_duration;
+        uint8_t old_sreg2 = SREG;
+        cli();
         cpu->sleep_start_time = tiks;
+        SREG = old_sreg2;
         cpu->status = SLEEPING;
+        sched_pick_next();
       }
       break;
     }
