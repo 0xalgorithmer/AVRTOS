@@ -26,6 +26,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include "scheduler.h"
+#include <avr/eeprom.h>
 extern volatile uint32_t tiks;
 void
 
@@ -90,12 +91,12 @@ syscall_dispatch (void)
         cli ();
         if (local_selct == 0x02)
           {
-            gpio_pin_mode (pin, GPIO_DIR_IN);
+            gpio_pin_mode (pin, GPIO_INPUT);
             cpu->r[2] = gpio_read (pin);
           }
         else
           {
-            gpio_pin_mode (pin, GPIO_DIR_OUT);
+            gpio_pin_mode (pin, GPIO_OUTPUT);
             gpio_write (pin, val);
           }
         SREG = old_sreg;
@@ -121,14 +122,14 @@ syscall_dispatch (void)
           cpu->eeprom_start_addr = vm_pop();
           cpu->eeprom_length = vm_pop();
           cpu->eeprom_addr = vm_pop();
-          SREG = old_sreg1;
           cpu->eeprom_i = 0;
           cpu->epprom_first_time = false;
+          SREG = old_sreg1;
         }
         if(eeprom_is_ready())
         {
           if(cpu->eeprom_i<cpu->eeprom_length) {
-            uint8_t val = vm_read_mem(cpu->eeprom_start_addr+cpu->eeprom_i);
+            uint8_t val = vm_mem_read(cpu->eeprom_start_addr+cpu->eeprom_i);
             eeprom_update_byte((uint8_t*)(cpu->eeprom_addr+cpu->eeprom_i), val);
             cpu->eeprom_i++;
             cpu->ip--;
@@ -156,6 +157,7 @@ syscall_dispatch (void)
         cpu->sleep_start_time = tiks;
         SREG = old_sreg2;
         cpu->status = SLEEPING;
+        cpu->last_ip++;
         sched_pick_next();
       }
       break;

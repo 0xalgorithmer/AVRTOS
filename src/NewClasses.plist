@@ -1,0 +1,6339 @@
+{
+    NSAffineTransform = {
+	classmethods = (
+	    new,
+	    transform
+	);
+	instancemethods = (
+	    "appendTransform:",
+	    "copyWithZone:",
+	    description,
+	    "encodeWithCoder:",
+	    init,
+	    "initWithCoder:",
+	    "initWithTransform:",
+	    invert,
+	    "isEqual:",
+	    "prependTransform:",
+	    "rotateByDegrees:",
+	    "rotateByRadians:",
+	    "scaleBy:",
+	    "scaleXBy:yBy:",
+	    "setTransformStruct:",
+	    "transformPoint:",
+	    "transformSize:",
+	    transformStruct,
+	    "translateXBy:yBy:"
+	);
+	superclass = NSObject;
+    };
+    NSAppleEventDescriptor = {
+	superclass = NSObject;
+    };
+    NSAppleEventManager = {
+	superclass = NSObject;
+    };
+    NSAppleScript = {
+	superclass = NSObject;
+    };
+    NSArchiver = {
+	classmethods = (
+	    "archiveRootObject:toFile:",
+	    "archivedDataWithRootObject:",
+	    initialize
+	);
+	instancemethods = (
+	    archiverData,
+	    "classNameEncodedForTrueClassName:",
+	    dealloc,
+	    directDataAccess,
+	    "encodeArrayOfObjCType:count:at:",
+	    "encodeClassName:intoClassName:",
+	    "encodeConditionalObject:",
+	    "encodeDataObject:",
+	    "encodeObject:",
+	    "encodeRootObject:",
+	    "encodeValueOfObjCType:at:",
+	    init,
+	    "initForWritingWithMutableData:",
+	    "replaceObject:withObject:",
+	    resetArchiver,
+	    "serializeHeaderAt:version:classes:objects:pointers:"
+	);
+	superclass = NSCoder;
+    };
+    NSArray = {
+	classmethods = (
+	    "allocWithZone:",
+	    array,
+	    "arrayWithArray:",
+	    "arrayWithContentsOfFile:",
+	    "arrayWithContentsOfURL:",
+	    "arrayWithObject:",
+	    "arrayWithObjects:",
+	    "arrayWithObjects:count:",
+	    atExit,
+	    initialize
+	);
+	instancemethods = (
+	    "addObserver:forKeyPath:options:context:",
+	    "addObserver:toObjectsAtIndexes:forKeyPath:options:context:",
+	    "appendToXMLRPC:indent:for:",
+	    "arrayByAddingObject:",
+	    "arrayByAddingObjectsFromArray:",
+	    classForCoder,
+	    "componentsJoinedByString:",
+	    "containsObject:",
+	    "copyWithZone:",
+	    count,
+	    "countByEnumeratingWithState:objects:count:",
+	    description,
+	    "descriptionWithLocale:",
+	    "descriptionWithLocale:indent:",
+	    "encodeWithCoder:",
+	    "enumerateObjectsAtIndexes:options:usingBlock:",
+	    "enumerateObjectsUsingBlock:",
+	    "enumerateObjectsWithOptions:usingBlock:",
+	    "filteredArrayUsingPredicate:",
+	    firstObject,
+	    "firstObjectCommonWithArray:",
+	    "getObjects:",
+	    "getObjects:range:",
+	    hash,
+	    "indexOfObject:",
+	    "indexOfObject:inRange:",
+	    "indexOfObject:inSortedRange:options:usingComparator:",
+	    "indexOfObjectAtIndexes:options:passingTest:",
+	    "indexOfObjectIdenticalTo:",
+	    "indexOfObjectIdenticalTo:inRange:",
+	    "indexOfObjectPassingTest:",
+	    "indexOfObjectWithOptions:passingTest:",
+	    "indexesOfObjectsAtIndexes:options:passingTest:",
+	    "indexesOfObjectsPassingTest:",
+	    "indexesOfObjectsWithOptions:passingTest:",
+	    init,
+	    "initWithArray:",
+	    "initWithArray:copyItems:",
+	    "initWithCoder:",
+	    "initWithContentsOfFile:",
+	    "initWithContentsOfURL:",
+	    "initWithObjects:",
+	    "initWithObjects:count:",
+	    "insertionPosition:usingFunction:context:",
+	    "insertionPosition:usingSelector:",
+	    "isEqual:",
+	    "isEqualToArray:",
+	    lastObject,
+	    "makeObjectsPerform:",
+	    "makeObjectsPerform:withObject:",
+	    "makeObjectsPerformSelector:",
+	    "makeObjectsPerformSelector:withObject:",
+	    "mutableCopyWithZone:",
+	    "objectAtIndex:",
+	    "objectAtIndexedSubscript:",
+	    objectEnumerator,
+	    "objectsAtIndexes:",
+	    "pathsMatchingExtensions:",
+	    "removeObserver:forKeyPath:",
+	    "removeObserver:fromObjectsAtIndexes:forKeyPath:",
+	    "removeObserver:fromObjectsAtIndexes:forKeyPath:context:",
+	    reverseObjectEnumerator,
+	    "setValue:forKey:",
+	    sortedArrayHint,
+	    "sortedArrayUsingComparator:",
+	    "sortedArrayUsingDescriptors:",
+	    "sortedArrayUsingFunction:context:",
+	    "sortedArrayUsingFunction:context:hint:",
+	    "sortedArrayUsingSelector:",
+	    "sortedArrayWithOptions:usingComparator:",
+	    "subarrayWithRange:",
+	    "valueForKey:",
+	    "valueForKeyPath:",
+	    "writeToFile:atomically:",
+	    "writeToURL:atomically:"
+	);
+	superclass = NSObject;
+    };
+    NSAssertionHandler = {
+	classmethods = (
+	    currentHandler
+	);
+	instancemethods = (
+	    "handleFailureInFunction:file:lineNumber:description:",
+	    "handleFailureInMethod:object:file:lineNumber:description:"
+	);
+	superclass = NSObject;
+    };
+    NSAttributedString = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize
+	);
+	instancemethods = (
+	    "attribute:atIndex:effectiveRange:",
+	    "attribute:atIndex:longestEffectiveRange:inRange:",
+	    "attributedSubstringFromRange:",
+	    "attributedSubstringWithRange:",
+	    "attributesAtIndex:effectiveRange:",
+	    "attributesAtIndex:longestEffectiveRange:inRange:",
+	    classForCoder,
+	    "copyWithZone:",
+	    description,
+	    "encodeWithCoder:",
+	    init,
+	    "initWithAttributedString:",
+	    "initWithCoder:",
+	    "initWithString:",
+	    "initWithString:attributes:",
+	    "isEqual:",
+	    "isEqualToAttributedString:",
+	    length,
+	    "mutableCopyWithZone:",
+	    "replacementObjectForPortCoder:",
+	    string
+	);
+	superclass = NSObject;
+    };
+    NSAutoreleasePool = {
+	classmethods = (
+	    "addObject:",
+	    "allocWithZone:",
+	    "autoreleaseCountForObject:",
+	    currentPool,
+	    "enableRelease:",
+	    freeCache,
+	    initialize,
+	    new,
+	    "setPoolCountThreshold:",
+	    "setPoolNumberThreshold:"
+	);
+	instancemethods = (
+	    "addObject:",
+	    autorelease,
+	    autoreleaseCount,
+	    "autoreleaseCountForObject:",
+	    dealloc,
+	    drain,
+	    emptyPool,
+	    init,
+	    release,
+	    retain
+	);
+	superclass = NSObject;
+    };
+    NSBackgroundActivityScheduler = {
+	instancemethods = (
+	    dealloc,
+	    identifier,
+	    "initWithIdentifier:",
+	    interval,
+	    invalidate,
+	    qualityOfService,
+	    repeats,
+	    "scheduleWithBlock:",
+	    "setIdentifier:",
+	    "setInterval:",
+	    "setQualityOfService:",
+	    "setRepeats:",
+	    "setShouldDefer:",
+	    "setTolerance:",
+	    shouldDefer,
+	    tolerance
+	);
+	superclass = NSObject;
+    };
+    NSBlockOperation = {
+	classmethods = (
+	    "blockOperationWithBlock:"
+	);
+	instancemethods = (
+	    "addExecutionBlock:",
+	    dealloc,
+	    executionBlocks,
+	    init,
+	    main
+	);
+	superclass = NSOperation;
+    };
+    NSBundle = {
+	classmethods = (
+	    "URLForResource:withExtension:subdirectory:inBundleWithURL:",
+	    allBundles,
+	    allFrameworks,
+	    atExit,
+	    "bundleForClass:",
+	    "bundleForLibrary:",
+	    "bundleForLibrary:version:",
+	    "bundleWithIdentifier:",
+	    "bundleWithPath:",
+	    "bundleWithURL:",
+	    initialize,
+	    mainBundle,
+	    "pathForLibraryResource:ofType:inDirectory:",
+	    "pathForResource:ofType:inDirectory:",
+	    "pathForResource:ofType:inDirectory:withVersion:",
+	    "pathsForResourcesOfType:inDirectory:",
+	    "preferredLocalizationsFromArray:",
+	    "preferredLocalizationsFromArray:forPreferences:",
+	    "stripAfterLoading:"
+	);
+	instancemethods = (
+	    "URLForAuxiliaryExecutable:",
+	    "URLForResource:withExtension:",
+	    "URLForResource:withExtension:subdirectory:",
+	    "URLForResource:withExtension:subdirectory:localization:",
+	    builtInPlugInsPath,
+	    builtInPlugInsURL,
+	    bundleIdentifier,
+	    bundlePath,
+	    bundleURL,
+	    bundleVersion,
+	    "classNamed:",
+	    cleanPathCache,
+	    dealloc,
+	    description,
+	    developmentLocalization,
+	    executableArchitectures,
+	    executablePath,
+	    executableURL,
+	    infoDictionary,
+	    "initWithPath:",
+	    "initWithURL:",
+	    isLoaded,
+	    load,
+	    "loadAndReturnError:",
+	    localizations,
+	    localizedInfoDictionary,
+	    "localizedStringForKey:value:table:",
+	    "objectForInfoDictionaryKey:",
+	    "pathForAuxiliaryExecutable:",
+	    "pathForResource:ofType:",
+	    "pathForResource:ofType:inDirectory:",
+	    "pathForResource:ofType:inDirectory:forLocalization:",
+	    "pathsForResourcesOfType:inDirectory:",
+	    "pathsForResourcesOfType:inDirectory:forLocalization:",
+	    preferredLocalizations,
+	    "preflightAndReturnError:",
+	    principalClass,
+	    privateFrameworksPath,
+	    privateFrameworksURL,
+	    release,
+	    resourcePath,
+	    resourceURL,
+	    "setBundleVersion:",
+	    unload
+	);
+	superclass = NSObject;
+    };
+    NSByteCountFormatter = {
+	classmethods = (
+	    "stringFromByteCount:countStyle:"
+	);
+	instancemethods = (
+	    allowedUnits,
+	    allowsNonnumericFormatting,
+	    countStyle,
+	    formattingContext,
+	    includesActualByteCount,
+	    includesCount,
+	    includesUnit,
+	    init,
+	    isAdaptive,
+	    "setAdaptive:",
+	    "setAllowedUnits:",
+	    "setAllowsNonnumericFormatting:",
+	    "setCountStyle:",
+	    "setFormattingContext:",
+	    "setIncludesActualByteCount:",
+	    "setIncludesCount:",
+	    "setIncludesUnit:",
+	    "setZeroPadsFractionDigits:",
+	    "stringForObjectValue:",
+	    "stringFromByteCount:",
+	    zeroPadsFractionDigits
+	);
+	superclass = NSFormatter;
+    };
+    NSCache = {
+	instancemethods = (
+	    countLimit,
+	    dealloc,
+	    delegate,
+	    evictsObjectsWithDiscardedContent,
+	    init,
+	    name,
+	    "objectForKey:",
+	    removeAllObjects,
+	    "removeObjectForKey:",
+	    "setCountLimit:",
+	    "setDelegate:",
+	    "setEvictsObjectsWithDiscardedContent:",
+	    "setName:",
+	    "setObject:forKey:",
+	    "setObject:forKey:cost:",
+	    "setTotalCostLimit:",
+	    totalCostLimit
+	);
+	superclass = NSObject;
+    };
+    NSCachedURLResponse = {
+	classmethods = (
+	    "allocWithZone:"
+	);
+	instancemethods = (
+	    "copyWithZone:",
+	    data,
+	    dealloc,
+	    "encodeWithCoder:",
+	    "initWithCoder:",
+	    "initWithResponse:data:",
+	    "initWithResponse:data:userInfo:storagePolicy:",
+	    response,
+	    storagePolicy,
+	    userInfo
+	);
+	superclass = NSObject;
+    };
+    NSCalendar = {
+	classmethods = (
+	    autoupdatingCurrentCalendar,
+	    "calendarWithIdentifier:",
+	    currentCalendar,
+	    initialize
+	);
+	instancemethods = (
+	    calendarIdentifier,
+	    "component:fromDate:",
+	    "components:fromDate:",
+	    "components:fromDate:toDate:options:",
+	    "copyWithZone:",
+	    "dateByAddingComponents:toDate:options:",
+	    "dateFromComponents:",
+	    dealloc,
+	    "encodeWithCoder:",
+	    firstWeekday,
+	    "getEra:year:month:day:fromDate:",
+	    "getEra:yearForWeekOfYear:weekOfYear:weekday:fromDate:",
+	    "getHour:minute:second:nanosecond:fromDate:",
+	    init,
+	    "initWithCalendarIdentifier:",
+	    "initWithCoder:",
+	    "isEqual:",
+	    locale,
+	    "maximumRangeOfUnit:",
+	    minimumDaysInFirstWeek,
+	    "minimumRangeofUnit:",
+	    "ordinalityOfUnit:inUnit:forDate:",
+	    "rangeOfUnit:inUnit:forDate:",
+	    "rangeOfUnit:startDate:interval:forDate:",
+	    "setFirstWeekday:",
+	    "setLocale:",
+	    "setMinimumDaysInFirstWeek:",
+	    "setTimeZone:",
+	    timeZone
+	);
+	superclass = NSObject;
+    };
+    NSCalendarDate = {
+	classmethods = (
+	    calendarDate,
+	    "dateWithString:calendarFormat:",
+	    "dateWithString:calendarFormat:locale:",
+	    "dateWithYear:month:day:hour:minute:second:timeZone:",
+	    initialize
+	);
+	instancemethods = (
+	    "absoluteGregorianDay:month:year:",
+	    "addTimeInterval:",
+	    "addYear:month:day:hour:minute:second:",
+	    calendarFormat,
+	    classForCoder,
+	    "copyWithZone:",
+	    "dateByAddingTimeInterval:",
+	    "dateByAddingYears:months:days:hours:minutes:seconds:",
+	    dayOfCommonEra,
+	    dayOfMonth,
+	    dayOfWeek,
+	    dayOfYear,
+	    dealloc,
+	    description,
+	    "descriptionWithCalendarFormat:",
+	    "descriptionWithCalendarFormat:locale:",
+	    "descriptionWithLocale:",
+	    "encodeWithCoder:",
+	    "gregorianDateFromAbsolute:day:month:year:",
+	    hourOfDay,
+	    "initWithCoder:",
+	    "initWithString:",
+	    "initWithString:calendarFormat:",
+	    "initWithString:calendarFormat:locale:",
+	    "initWithTimeIntervalSinceReferenceDate:",
+	    "initWithYear:month:day:hour:minute:second:timeZone:",
+	    isoYear,
+	    "lastDayOfGregorianMonth:year:",
+	    minuteOfHour,
+	    monthOfYear,
+	    "replacementObjectForPortCoder:",
+	    secondOfMinute,
+	    "setCalendarFormat:",
+	    "setTimeZone:",
+	    timeIntervalSinceReferenceDate,
+	    timeZone,
+	    timeZoneDetail,
+	    weekOfYear,
+	    yearOfCommonEra,
+	    "years:months:days:hours:minutes:seconds:sinceDate:"
+	);
+	superclass = NSDate;
+    };
+    NSCharacterSet = {
+	classmethods = (
+	    URLFragmentAllowedCharacterSet,
+	    URLHostAllowedCharacterSet,
+	    URLPasswordAllowedCharacterSet,
+	    URLPathAllowedCharacterSet,
+	    URLQueryAllowedCharacterSet,
+	    URLUserAllowedCharacterSet,
+	    alphanumericCharacterSet,
+	    atExit,
+	    capitalizedLetterCharacterSet,
+	    "characterSetWithBitmapRepresentation:",
+	    "characterSetWithCharactersInString:",
+	    "characterSetWithContentsOfFile:",
+	    "characterSetWithRange:",
+	    controlCharacterSet,
+	    decimalDigitCharacterSet,
+	    decomposableCharacterSet,
+	    illegalCharacterSet,
+	    initialize,
+	    letterCharacterSet,
+	    lowercaseLetterCharacterSet,
+	    newlineCharacterSet,
+	    nonBaseCharacterSet,
+	    punctuationCharacterSet,
+	    symbolAndOperatorCharacterSet,
+	    symbolCharacterSet,
+	    uppercaseLetterCharacterSet,
+	    whitespaceAndNewlineCharacterSet,
+	    whitespaceCharacterSet
+	);
+	instancemethods = (
+	    bitmapRepresentation,
+	    "characterIsMember:",
+	    "copyWithZone:",
+	    "encodeWithCoder:",
+	    "hasMemberInPlane:",
+	    init,
+	    "initWithCoder:",
+	    invertedSet,
+	    "isEqual:",
+	    "isSupersetOfSet:",
+	    "longCharacterIsMember:",
+	    "mutableCopyWithZone:"
+	);
+	superclass = NSObject;
+    };
+    NSClassDescription = {
+	classmethods = (
+	    "classDescriptionForClass:",
+	    initialize,
+	    invalidateClassDescriptionCache,
+	    "registerClassDescription:forClass:"
+	);
+	instancemethods = (
+	    attributeKeys,
+	    "inverseForRelationshipKey:",
+	    toManyRelationshipKeys,
+	    toOneRelationshipKeys
+	);
+	superclass = NSObject;
+    };
+    NSCoder = {
+	classmethods = (
+	    initialize
+	);
+	instancemethods = (
+	    allowsKeyedCoding,
+	    "containsValueForKey:",
+	    "decodeArrayOfObjCType:count:at:",
+	    "decodeBoolForKey:",
+	    "decodeBytesForKey:returnedLength:",
+	    "decodeBytesWithReturnedLength:",
+	    decodeDataObject,
+	    "decodeDoubleForKey:",
+	    "decodeFloatForKey:",
+	    "decodeInt32ForKey:",
+	    "decodeInt64ForKey:",
+	    "decodeIntForKey:",
+	    "decodeIntegerForKey:",
+	    decodeObject,
+	    "decodeObjectForKey:",
+	    "decodeObjectOfClass:forKey:",
+	    "decodeObjectOfClasses:forKey:",
+	    decodePoint,
+	    "decodePointForKey:",
+	    decodePropertyList,
+	    decodeRect,
+	    "decodeRectForKey:",
+	    decodeSize,
+	    "decodeSizeForKey:",
+	    "decodeValueOfObjCType:at:",
+	    "decodeValuesOfObjCTypes:",
+	    "encodeArrayOfObjCType:count:at:",
+	    "encodeBool:forKey:",
+	    "encodeBycopyObject:",
+	    "encodeByrefObject:",
+	    "encodeBytes:length:",
+	    "encodeBytes:length:forKey:",
+	    "encodeConditionalObject:",
+	    "encodeConditionalObject:forKey:",
+	    "encodeDataObject:",
+	    "encodeDouble:forKey:",
+	    "encodeFloat:forKey:",
+	    "encodeInt32:forKey:",
+	    "encodeInt64:forKey:",
+	    "encodeInt:forKey:",
+	    "encodeInteger:forKey:",
+	    "encodeObject:",
+	    "encodeObject:forKey:",
+	    "encodePoint:",
+	    "encodePoint:forKey:",
+	    "encodePropertyList:",
+	    "encodeRect:",
+	    "encodeRect:forKey:",
+	    "encodeRootObject:",
+	    "encodeSize:",
+	    "encodeSize:forKey:",
+	    "encodeValueOfObjCType:at:",
+	    "encodeValuesOfObjCTypes:",
+	    objectZone,
+	    requiresSecureCoding,
+	    "setObjectZone:",
+	    "setRequiresSecureCoding:",
+	    systemVersion,
+	    "versionForClassName:"
+	);
+	superclass = NSObject;
+    };
+    NSComparisonPredicate = {
+	classmethods = (
+	    "predicateWithLeftExpression:rightExpression:customSelector:",
+	    "predicateWithLeftExpression:rightExpression:modifier:type:options:"
+	);
+	instancemethods = (
+	    classForCoder,
+	    comparisonPredicateModifier,
+	    "copyWithZone:",
+	    customSelector,
+	    dealloc,
+	    "encodeWithCoder:",
+	    "evaluateWithObject:",
+	    "initWithCoder:",
+	    "initWithLeftExpression:rightExpression:customSelector:",
+	    "initWithLeftExpression:rightExpression:modifier:type:options:",
+	    leftExpression,
+	    options,
+	    predicateFormat,
+	    predicateOperatorType,
+	    "predicateWithSubstitutionVariables:",
+	    rightExpression
+	);
+	superclass = NSPredicate;
+    };
+    NSCompoundPredicate = {
+	classmethods = (
+	    "andPredicateWithSubpredicates:",
+	    "notPredicateWithSubpredicate:",
+	    "orPredicateWithSubpredicates:"
+	);
+	instancemethods = (
+	    classForCoder,
+	    compoundPredicateType,
+	    "copyWithZone:",
+	    dealloc,
+	    "encodeWithCoder:",
+	    "initWithCoder:",
+	    "initWithType:subpredicates:",
+	    "predicateWithSubstitutionVariables:",
+	    subpredicates
+	);
+	superclass = NSPredicate;
+    };
+    NSCondition = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize
+	);
+	instancemethods = (
+	    broadcast,
+	    dealloc,
+	    description,
+	    finalize,
+	    init,
+	    isLockedByCurrentThread,
+	    lock,
+	    "lockBeforeDate:",
+	    name,
+	    "setName:",
+	    signal,
+	    stack,
+	    tryLock,
+	    unlock,
+	    wait,
+	    "waitUntilDate:"
+	);
+	superclass = NSObject;
+    };
+    NSConditionLock = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize
+	);
+	instancemethods = (
+	    condition,
+	    dealloc,
+	    init,
+	    "initWithCondition:",
+	    isLockedByCurrentThread,
+	    lock,
+	    "lockBeforeDate:",
+	    "lockWhenCondition:",
+	    "lockWhenCondition:beforeDate:",
+	    name,
+	    "setName:",
+	    stack,
+	    tryLock,
+	    "tryLockWhenCondition:",
+	    unlock,
+	    "unlockWithCondition:"
+	);
+	superclass = NSObject;
+    };
+    NSConnection = {
+	classmethods = (
+	    allConnections,
+	    "connectionWithReceivePort:sendPort:",
+	    "connectionWithRegisteredName:host:",
+	    "connectionWithRegisteredName:host:usingNameServer:",
+	    connectionsCount,
+	    "connectionsCountWithInPort:",
+	    currentConversation,
+	    defaultConnection,
+	    initialize,
+	    new,
+	    "newRegisteringAtName:withRootObject:",
+	    "rootProxyForConnectionWithRegisteredName:host:",
+	    "rootProxyForConnectionWithRegisteredName:host:usingNameServer:",
+	    "serviceConnectionWithName:rootObject:",
+	    "serviceConnectionWithName:rootObject:usingNameServer:",
+	    "setDebug:"
+	);
+	instancemethods = (
+	    "acquireProxyForTarget:",
+	    "addLocalObject:",
+	    "addRequestMode:",
+	    "addRunLoop:",
+	    dealloc,
+	    delegate,
+	    description,
+	    enableMultipleThreads,
+	    "encodeWithCoder:",
+	    finalize,
+	    "forwardInvocation:forProxy:",
+	    "handlePortMessage:",
+	    "includesLocalObject:",
+	    "includesLocalTarget:",
+	    independentConversationQueueing,
+	    init,
+	    "initWithCoder:",
+	    "initWithReceivePort:sendPort:",
+	    invalidate,
+	    isValid,
+	    localObjects,
+	    "locateLocalTarget:",
+	    multipleThreadsEnabled,
+	    receivePort,
+	    "registerName:",
+	    "registerName:withNameServer:",
+	    release,
+	    remoteObjects,
+	    "removeLocalObject:",
+	    "removeProxy:",
+	    "removeRequestMode:",
+	    "removeRunLoop:",
+	    replyTimeout,
+	    requestModes,
+	    requestTimeout,
+	    retain,
+	    "retainOrAddLocal:forObject:",
+	    "retainOrAddProxy:forTarget:",
+	    rootObject,
+	    rootProxy,
+	    runInNewThread,
+	    sendPort,
+	    "setDelegate:",
+	    "setIndependentConversationQueueing:",
+	    "setReplyTimeout:",
+	    "setRequestMode:",
+	    "setRequestTimeout:",
+	    "setRootObject:",
+	    statistics,
+	    "typeForSelector:remoteTarget:",
+	    "vendLocal:"
+	);
+	superclass = NSObject;
+    };
+    NSCountedSet = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize
+	);
+	instancemethods = (
+	    classForCoder,
+	    "copyWithZone:",
+	    "countForObject:",
+	    "encodeWithCoder:",
+	    "initWithCoder:",
+	    "initWithSet:copyItems:",
+	    "mutableCopyWithZone:",
+	    "purge:",
+	    "unique:"
+	);
+	superclass = NSMutableSet;
+    };
+    NSData = {
+	classmethods = (
+	    "allocWithZone:",
+	    data,
+	    "dataWithBytes:length:",
+	    "dataWithBytesNoCopy:length:",
+	    "dataWithBytesNoCopy:length:freeWhenDone:",
+	    "dataWithContentsOfFile:",
+	    "dataWithContentsOfMappedFile:",
+	    "dataWithContentsOfURL:",
+	    "dataWithData:",
+	    "dataWithRandomBytesOfLength:",
+	    "dataWithSharedBytes:length:",
+	    "dataWithShmID:length:",
+	    "dataWithStaticBytes:length:",
+	    initialize,
+	    new
+	);
+	instancemethods = (
+	    "appendToXMLRPC:indent:for:",
+	    "base64EncodedDataWithOptions:",
+	    "base64EncodedStringWithOptions:",
+	    bytes,
+	    "copyWithZone:",
+	    description,
+	    "deserializeAlignedBytesLengthAtCursor:",
+	    "deserializeBytes:length:atCursor:",
+	    "deserializeDataAt:ofObjCType:atCursor:context:",
+	    "deserializeIntAtCursor:",
+	    "deserializeIntAtIndex:",
+	    "deserializeInts:count:atCursor:",
+	    "deserializeInts:count:atIndex:",
+	    "deserializeTypeTag:andCrossRef:atCursor:",
+	    digestHex,
+	    "encodeWithCoder:",
+	    escapedRepresentation,
+	    "escapedRepresentation:",
+	    "getBytes:",
+	    "getBytes:length:",
+	    "getBytes:range:",
+	    gunzipped,
+	    "gzipped:",
+	    hash,
+	    hexadecimalRepresentation,
+	    "hexadecimalRepresentation:",
+	    init,
+	    "initWithBase64EncodedData:options:",
+	    "initWithBase64EncodedString:options:",
+	    "initWithBytes:length:",
+	    "initWithBytesNoCopy:length:",
+	    "initWithBytesNoCopy:length:deallocator:",
+	    "initWithBytesNoCopy:length:freeWhenDone:",
+	    "initWithCoder:",
+	    "initWithContentsOfFile:",
+	    "initWithContentsOfMappedFile:",
+	    "initWithContentsOfURL:",
+	    "initWithData:",
+	    "initWithHexadecimalRepresentation:",
+	    "isEqual:",
+	    "isEqualToData:",
+	    isGzipped,
+	    length,
+	    md5Digest,
+	    "mutableCopyWithZone:",
+	    "rangeOfData:options:range:",
+	    "replacementObjectForPortCoder:",
+	    "sizeOfContentExcluding:",
+	    "subdataWithRange:",
+	    "uudecodeInto:name:mode:",
+	    "uuencodeInto:name:mode:",
+	    "writeToFile:atomically:",
+	    "writeToFile:options:error:",
+	    "writeToURL:atomically:",
+	    "writeToURL:options:error:"
+	);
+	superclass = NSObject;
+    };
+    NSDate = {
+	classmethods = (
+	    alloc,
+	    "allocWithZone:",
+	    date,
+	    "dateWithNaturalLanguageString:",
+	    "dateWithNaturalLanguageString:locale:",
+	    "dateWithString:",
+	    "dateWithTimeInterval:sinceDate:",
+	    "dateWithTimeIntervalSince1970:",
+	    "dateWithTimeIntervalSinceNow:",
+	    "dateWithTimeIntervalSinceReferenceDate:",
+	    distantFuture,
+	    distantPast,
+	    initialize,
+	    now,
+	    timeIntervalSinceReferenceDate
+	);
+	instancemethods = (
+	    "addTimeInterval:",
+	    "appendToXMLRPC:indent:for:",
+	    classForCoder,
+	    "compare:",
+	    "copyWithZone:",
+	    "dateByAddingTimeInterval:",
+	    "dateWithCalendarFormat:timeZone:",
+	    description,
+	    "descriptionWithCalendarFormat:timeZone:locale:",
+	    "descriptionWithLocale:",
+	    "earlierDate:",
+	    "encodeWithCoder:",
+	    hash,
+	    init,
+	    "initWithCoder:",
+	    "initWithString:",
+	    "initWithTimeInterval:sinceDate:",
+	    "initWithTimeIntervalSince1970:",
+	    "initWithTimeIntervalSinceNow:",
+	    "initWithTimeIntervalSinceReferenceDate:",
+	    "isEqual:",
+	    "isEqualToDate:",
+	    "laterDate:",
+	    "replacementObjectForPortCoder:",
+	    timeIntervalSince1970,
+	    "timeIntervalSinceDate:",
+	    timeIntervalSinceNow,
+	    timeIntervalSinceReferenceDate
+	);
+	superclass = NSObject;
+    };
+    NSDateComponents = {
+	instancemethods = (
+	    calendar,
+	    "copyWithZone:",
+	    date,
+	    day,
+	    dealloc,
+	    era,
+	    hour,
+	    init,
+	    isValidDate,
+	    "isValidDateInCalendar:",
+	    leapMonth,
+	    minute,
+	    month,
+	    nanosecond,
+	    quarter,
+	    second,
+	    "setCalendar:",
+	    "setDay:",
+	    "setEra:",
+	    "setHour:",
+	    "setLeapMonth:",
+	    "setMinute:",
+	    "setMonth:",
+	    "setNanosecond:",
+	    "setQuarter:",
+	    "setSecond:",
+	    "setTimeZone:",
+	    "setValue:forComponent:",
+	    "setWeek:",
+	    "setWeekOfMonth:",
+	    "setWeekOfYear:",
+	    "setWeekday:",
+	    "setWeekdayOrdinal:",
+	    "setYear:",
+	    "setYearForWeekOfYear:",
+	    timeZone,
+	    "valueForComponent:",
+	    week,
+	    weekOfMonth,
+	    weekOfYear,
+	    weekday,
+	    weekdayOrdinal,
+	    year,
+	    yearForWeekOfYear
+	);
+	superclass = NSObject;
+    };
+    NSDateComponentsFormatter = {
+	classmethods = (
+	    "localizedStringFromDateComponents:unitsStyle:"
+	);
+	instancemethods = (
+	    allowedUnits,
+	    allowsFractionalUnits,
+	    calendar,
+	    collapsesLargestUnit,
+	    dealloc,
+	    "encodeWithCoder:",
+	    formattingContext,
+	    "getObjectValue:forString:errorDescription:",
+	    includesApproximationPhrase,
+	    init,
+	    "initWithCoder:",
+	    maximumUnitCount,
+	    referenceDate,
+	    "setAllowedUnits:",
+	    "setAllowsFractionalUnits:",
+	    "setCalender:",
+	    "setCollapsesLargestUnit:",
+	    "setFormattingContext:",
+	    "setIncludesApproximationPhrase:",
+	    "setMaximumUnitCount:",
+	    "setReferenceDate:",
+	    "setUnitsStyle:",
+	    "setZeroFormattingBehavior:",
+	    "stringForObjectValue:",
+	    "stringFromDate:toDate:",
+	    "stringFromDateComponents:",
+	    "stringFromTimeInterval:",
+	    unitsStyle,
+	    zeroFormattingBehavior
+	);
+	superclass = NSFormatter;
+    };
+    NSDateFormatter = {
+	classmethods = (
+	    "dateFormatFromTemplate:options:locale:",
+	    defaultFormatterBehavior,
+	    "localizedStringFromDate:dateStyle:timeStyle:",
+	    "setDefaultFormatterBehavior:"
+	);
+	instancemethods = (
+	    AMSymbol,
+	    PMSymbol,
+	    allowsNaturalLanguage,
+	    "attributedStringForObjectValue:withDefaultAttributes:",
+	    calendar,
+	    "copyWithZone:",
+	    dateFormat,
+	    "dateFromString:",
+	    dateStyle,
+	    dealloc,
+	    defaultDate,
+	    doesRelativeDateFormatting,
+	    "editingStringForObjectValue:",
+	    "encodeWithCoder:",
+	    eraSymbols,
+	    formatterBehavior,
+	    generatesCalendarDates,
+	    "getObjectValue:forString:errorDescription:",
+	    "getObjectValue:forString:range:error:",
+	    gregorianStartDate,
+	    init,
+	    "initWithCoder:",
+	    "initWithDateFormat:allowNaturalLanguage:",
+	    isLenient,
+	    "isPartialStringValid:newEditingString:errorDescription:",
+	    locale,
+	    longEraSymbols,
+	    monthSymbols,
+	    quarterSymbols,
+	    "setAMSymbol:",
+	    "setCalendar:",
+	    "setDateFormat:",
+	    "setDateStyle:",
+	    "setDefaultDate:",
+	    "setDoesRelativeDateFormatting:",
+	    "setEraSymbols:",
+	    "setFormatterBehavior:",
+	    "setGeneratesCalendarDates:",
+	    "setGregorianStartDate:",
+	    "setLenient:",
+	    "setLocale:",
+	    "setLongEraSymbols:",
+	    "setMonthSymbols:",
+	    "setPMSymbol:",
+	    "setQuarterSymbols:",
+	    "setShortMonthSymbols:",
+	    "setShortQuarterSymbols:",
+	    "setShortStandaloneMonthSymbols:",
+	    "setShortStandaloneQuarterSymbols:",
+	    "setShortStandaloneWeekdaySymbols:",
+	    "setShortWeekdaySymbols:",
+	    "setStandaloneMonthSymbols:",
+	    "setStandaloneQuarterSymbols:",
+	    "setStandaloneWeekdaySymbols:",
+	    "setTimeStyle:",
+	    "setTimeZone:",
+	    "setTwoDigitStartDate:",
+	    "setVeryShortMonthSymbols:",
+	    "setVeryShortStandaloneMonthSymbols:",
+	    "setVeryShortStandaloneWeekdaySymbols:",
+	    "setVeryShortWeekdaySymbols:",
+	    "setWeekdaySymbols:",
+	    shortMonthSymbols,
+	    shortQuarterSymbols,
+	    shortStandaloneMonthSymbols,
+	    shortStandaloneQuarterSymbols,
+	    shortStandaloneWeekdaySymbols,
+	    shortWeekdaySymbols,
+	    standaloneMonthSymbols,
+	    standaloneQuarterSymbols,
+	    standaloneWeekdaySymbols,
+	    "stringForObjectValue:",
+	    "stringFromDate:",
+	    timeStyle,
+	    timeZone,
+	    twoDigitStartDate,
+	    veryShortMonthSymbols,
+	    veryShortStandaloneMonthSymbols,
+	    veryShortStandaloneWeekdaySymbols,
+	    veryShortWeekdaySymbols,
+	    weekdaySymbols
+	);
+	superclass = NSFormatter;
+    };
+    NSDateInterval = {
+	instancemethods = (
+	    "compare:",
+	    "containsDate:",
+	    "copyWithZone:",
+	    dealloc,
+	    duration,
+	    "encodeWithCoder:",
+	    endDate,
+	    init,
+	    "initWithCoder:",
+	    "initWithStartDate:duration:",
+	    "initWithStartDate:endDate:",
+	    "intersectionWithDateInterval:",
+	    "intersectsDateInterval:",
+	    "isEqualToDateInterval:",
+	    "setDuration:",
+	    "setEndDate:",
+	    "setStartDate:",
+	    startDate
+	);
+	superclass = NSObject;
+    };
+    NSDateIntervalFormatter = {
+	instancemethods = (
+	    calendar,
+	    dateStyle,
+	    dateTemplate,
+	    locale,
+	    "setCalendar:",
+	    "setDateStyle:",
+	    "setDateTemplate:",
+	    "setLocale:",
+	    "setTimeStyle:",
+	    "setTimeZone:",
+	    "stringFromDate:toDate:",
+	    "stringFromDateInterval:",
+	    timeStyle,
+	    timeZone
+	);
+	superclass = NSFormatter;
+    };
+    NSDecimalNumber = {
+	classmethods = (
+	    "decimalNumberWithDecimal:",
+	    "decimalNumberWithMantissa:exponent:isNegative:",
+	    "decimalNumberWithString:",
+	    "decimalNumberWithString:locale:",
+	    defaultBehavior,
+	    initialize,
+	    maximumDecimalNumber,
+	    minimumDecimalNumber,
+	    notANumber,
+	    one,
+	    "setDefaultBehavior:",
+	    zero
+	);
+	instancemethods = (
+	    boolValue,
+	    charValue,
+	    classForCoder,
+	    "compare:",
+	    "decimalNumberByAdding:",
+	    "decimalNumberByAdding:withBehavior:",
+	    "decimalNumberByDividingBy:",
+	    "decimalNumberByDividingBy:withBehavior:",
+	    "decimalNumberByMultiplyingBy:",
+	    "decimalNumberByMultiplyingBy:withBehavior:",
+	    "decimalNumberByMultiplyingByPowerOf10:",
+	    "decimalNumberByMultiplyingByPowerOf10:withBehavior:",
+	    "decimalNumberByRaisingToPower:",
+	    "decimalNumberByRaisingToPower:withBehavior:",
+	    "decimalNumberByRoundingAccordingToBehavior:",
+	    "decimalNumberBySubtracting:",
+	    "decimalNumberBySubtracting:withBehavior:",
+	    decimalValue,
+	    "descriptionWithLocale:",
+	    doubleValue,
+	    "encodeWithCoder:",
+	    "exceptionDuringOperation:error:leftOperand:rightOperand:",
+	    floatValue,
+	    "getValue:",
+	    "initWithBool:",
+	    "initWithBytes:objCType:",
+	    "initWithChar:",
+	    "initWithCoder:",
+	    "initWithDecimal:",
+	    "initWithDouble:",
+	    "initWithFloat:",
+	    "initWithInt:",
+	    "initWithInteger:",
+	    "initWithLong:",
+	    "initWithLongLong:",
+	    "initWithMantissa:exponent:isNegative:",
+	    "initWithShort:",
+	    "initWithString:",
+	    "initWithString:locale:",
+	    "initWithUnsignedChar:",
+	    "initWithUnsignedInt:",
+	    "initWithUnsignedInteger:",
+	    "initWithUnsignedLong:",
+	    "initWithUnsignedLongLong:",
+	    "initWithUnsignedShort:",
+	    intValue,
+	    integerValue,
+	    longLongValue,
+	    longValue,
+	    objCType,
+	    "replacementObjectForPortCoder:",
+	    roundingMode,
+	    scale,
+	    shortValue,
+	    unsignedCharValue,
+	    unsignedIntValue,
+	    unsignedIntegerValue,
+	    unsignedLongLongValue,
+	    unsignedLongValue,
+	    unsignedShortValue
+	);
+	superclass = NSNumber;
+    };
+    NSDecimalNumberHandler = {
+	classmethods = (
+	    "decimalNumberHandlerWithRoundingMode:scale:raiseOnExactness:raiseOnOverflow:raiseOnUnderflow:raiseOnDivideByZero:",
+	    defaultDecimalNumberHandler
+	);
+	instancemethods = (
+	    "exceptionDuringOperation:error:leftOperand:rightOperand:",
+	    "initWithRoundingMode:scale:raiseOnExactness:raiseOnOverflow:raiseOnUnderflow:raiseOnDivideByZero:",
+	    roundingMode,
+	    scale
+	);
+	superclass = NSObject;
+    };
+    NSDeserializer = {
+	classmethods = (
+	    "deserializePropertyListFromData:atCursor:mutableContainers:",
+	    "deserializePropertyListFromData:mutableContainers:",
+	    "deserializePropertyListLazilyFromData:atCursor:length:mutableContainers:",
+	    initialize,
+	    "uniquing:"
+	);
+	superclass = NSObject;
+    };
+    NSDictionary = {
+	classmethods = (
+	    "allocWithZone:",
+	    dictionary,
+	    "dictionaryWithContentsOfFile:",
+	    "dictionaryWithContentsOfURL:",
+	    "dictionaryWithDictionary:",
+	    "dictionaryWithObject:forKey:",
+	    "dictionaryWithObjects:forKeys:",
+	    "dictionaryWithObjects:forKeys:count:",
+	    "dictionaryWithObjectsAndKeys:",
+	    initialize
+	);
+	instancemethods = (
+	    allKeys,
+	    "allKeysForObject:",
+	    allValues,
+	    "appendToXMLRPC:indent:for:",
+	    classForCoder,
+	    "copyWithZone:",
+	    count,
+	    "countByEnumeratingWithState:objects:count:",
+	    description,
+	    descriptionInStringsFileFormat,
+	    "descriptionWithLocale:",
+	    "descriptionWithLocale:indent:",
+	    "encodeWithCoder:",
+	    "enumerateKeysAndObjectsUsingBlock:",
+	    "enumerateKeysAndObjectsWithOptions:usingBlock:",
+	    fileCreationDate,
+	    fileExtensionHidden,
+	    fileGroupOwnerAccountID,
+	    fileGroupOwnerAccountName,
+	    fileHFSCreatorCode,
+	    fileHFSTypeCode,
+	    fileIsAppendOnly,
+	    fileIsImmutable,
+	    fileModificationDate,
+	    fileOwnerAccountID,
+	    fileOwnerAccountName,
+	    filePosixPermissions,
+	    fileSize,
+	    fileSystemFileNumber,
+	    fileSystemNumber,
+	    fileType,
+	    "getObjects:andKeys:",
+	    hash,
+	    init,
+	    "initWithCoder:",
+	    "initWithContentsOfFile:",
+	    "initWithContentsOfURL:",
+	    "initWithDictionary:",
+	    "initWithDictionary:copyItems:",
+	    "initWithObjects:forKeys:",
+	    "initWithObjects:forKeys:count:",
+	    "initWithObjectsAndKeys:",
+	    "isEqual:",
+	    "isEqualToDictionary:",
+	    keyEnumerator,
+	    "keysOfEntriesPassingTest:",
+	    "keysOfEntriesWithOptions:passingTest:",
+	    "keysSortedByValueUsingComparator:",
+	    "keysSortedByValueUsingSelector:",
+	    "keysSortedByValueWithOptions:usingComparator:",
+	    "mutableCopyWithZone:",
+	    objectEnumerator,
+	    "objectForKey:",
+	    "objectForKeyedSubscript:",
+	    "objectsForKeys:notFoundMarker:",
+	    "valueForKey:",
+	    "writeToFile:atomically:",
+	    "writeToURL:atomically:"
+	);
+	superclass = NSObject;
+    };
+    NSDimension = {
+	classmethods = (
+	    baseUnit
+	);
+	instancemethods = (
+	    converter,
+	    "encodeWithCoder:",
+	    "initWithCoder:",
+	    "initWithSymbol:coefficient:constant:",
+	    "initWithSymbol:converter:"
+	);
+	superclass = NSUnit;
+    };
+    NSDirectoryEnumerator = {
+	classmethods = (
+	    initialize
+	);
+	instancemethods = (
+	    dealloc,
+	    directoryAttributes,
+	    fileAttributes,
+	    "initWithDirectoryPath:recurseIntoSubdirectories:followSymlinks:justContents:for:",
+	    "initWithDirectoryPath:recurseIntoSubdirectories:followSymlinks:justContents:skipHidden:errorHandler:for:",
+	    nextObject,
+	    skipDescendents
+	);
+	superclass = NSEnumerator;
+    };
+    NSDistantObject = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize,
+	    "proxyWithLocal:connection:",
+	    "proxyWithTarget:connection:",
+	    "setDebug:"
+	);
+	instancemethods = (
+	    classForCoder,
+	    classForPortCoder,
+	    "conformsToProtocol:",
+	    connectionForProxy,
+	    dealloc,
+	    "encodeWithCoder:",
+	    finalize,
+	    "forwardInvocation:",
+	    init,
+	    "initWithCoder:",
+	    "initWithLocal:connection:",
+	    "initWithTarget:connection:",
+	    "methodSignatureForSelector:",
+	    "replacementObjectForCoder:",
+	    "replacementObjectForPortCoder:",
+	    "respondsToSelector:",
+	    "setProtocolForProxy:",
+	    "sizeInBytesExcluding:",
+	    "sizeOfContentExcluding:"
+	);
+	superclass = NSProxy;
+    };
+    NSDistributedLock = {
+	classmethods = (
+	    initialize,
+	    "lockWithPath:"
+	);
+	instancemethods = (
+	    breakLock,
+	    dealloc,
+	    description,
+	    "initWithPath:",
+	    lockDate,
+	    tryLock,
+	    unlock
+	);
+	superclass = NSObject;
+    };
+    NSDistributedNotificationCenter = {
+	classmethods = (
+	    "allocWithZone:",
+	    atExit,
+	    defaultCenter,
+	    initialize,
+	    "notificationCenterForType:"
+	);
+	instancemethods = (
+	    "addObserver:selector:name:object:",
+	    "addObserver:selector:name:object:suspensionBehavior:",
+	    dealloc,
+	    init,
+	    "postNotification:",
+	    "postNotificationName:object:",
+	    "postNotificationName:object:userInfo:",
+	    "postNotificationName:object:userInfo:deliverImmediately:",
+	    "postNotificationName:object:userInfo:selector:to:",
+	    "removeObserver:name:object:",
+	    "setSuspended:",
+	    suspended
+	);
+	superclass = NSNotificationCenter;
+    };
+    NSEnergyFormatter = {
+	instancemethods = (
+	    "getObjectValue:forString:errorDescription:",
+	    init,
+	    isForFoodEnergyUse,
+	    numberFormatter,
+	    "setForFoodEnergyUse:",
+	    "setNumberFormatter:",
+	    "setUnitStyle:",
+	    "stringFromJoules:",
+	    "stringFromValue:unit:",
+	    "unitStringFromJoules:usedUnit:",
+	    "unitStringFromValue:unit:",
+	    unitStyle
+	);
+	superclass = NSFormatter;
+    };
+    NSEnumerator = {
+	instancemethods = (
+	    allObjects,
+	    "countByEnumeratingWithState:objects:count:",
+	    nextObject
+	);
+	superclass = NSObject;
+    };
+    NSError = {
+	classmethods = (
+	    "errorWithDomain:code:userInfo:"
+	);
+	instancemethods = (
+	    code,
+	    "copyWithZone:",
+	    dealloc,
+	    description,
+	    domain,
+	    "encodeWithCoder:",
+	    init,
+	    "initWithCoder:",
+	    "initWithDomain:code:userInfo:",
+	    localizedDescription,
+	    localizedFailureReason,
+	    localizedRecoveryOptions,
+	    localizedRecoverySuggestion,
+	    recoveryAttempter,
+	    userInfo
+	);
+	superclass = NSObject;
+    };
+    NSException = {
+	classmethods = (
+	    "exceptionWithName:reason:userInfo:",
+	    initialize,
+	    "raise:format:",
+	    "raise:format:arguments:"
+	);
+	instancemethods = (
+	    callStackReturnAddresses,
+	    callStackSymbols,
+	    classForPortCoder,
+	    "copyWithZone:",
+	    dealloc,
+	    description,
+	    "encodeWithCoder:",
+	    init,
+	    "initWithCoder:",
+	    "initWithName:reason:userInfo:",
+	    name,
+	    raise,
+	    reason,
+	    "replacementObjectForPortCoder:",
+	    userInfo
+	);
+	superclass = NSObject;
+    };
+    NSExpression = {
+	classmethods = (
+	    "expressionForAggregate:",
+	    "expressionForConstantValue:",
+	    expressionForEvaluatedObject,
+	    "expressionForFunction:arguments:",
+	    "expressionForIntersectSet:with:",
+	    "expressionForKeyPath:",
+	    "expressionForKeyPathCompositionWithLeft:right:",
+	    "expressionForMinusSet:with:",
+	    "expressionForUnionSet:with:",
+	    "expressionForVariable:",
+	    "expressionWithFormat:",
+	    "expressionWithFormat:argumentArray:",
+	    "expressionWithFormat:arguments:",
+	    initialize
+	);
+	instancemethods = (
+	    arguments,
+	    classForCoder,
+	    collection,
+	    constantValue,
+	    "copyWithZone:",
+	    description,
+	    "encodeWithCoder:",
+	    expressionType,
+	    "expressionValueWithObject:context:",
+	    function,
+	    "initWithCoder:",
+	    "initWithExpressionType:",
+	    keyPath,
+	    leftExpression,
+	    operand,
+	    rightExpression,
+	    variable
+	);
+	superclass = NSObject;
+    };
+    NSExtensionContext = {
+	instancemethods = (
+	    "cancelRequestWithError:",
+	    "completeRequestReturningItems:completionHandler:",
+	    inputItems,
+	    "openURL:completionHandler:",
+	    "setInputItems:"
+	);
+	superclass = NSObject;
+    };
+    NSExtensionItem = {
+	instancemethods = (
+	    attachments,
+	    attributedContentText,
+	    attributedTitle,
+	    "setAttachments:",
+	    "setAttributedContentText:",
+	    "setAttributedTitle:",
+	    "setUserInfo:",
+	    userInfo
+	);
+	superclass = NSObject;
+    };
+    NSFileAccessIntent = {
+	classmethods = (
+	    "readingIntentWithURL:options:",
+	    "writingIntentWithURL:options:"
+	);
+	instancemethods = (
+	    URL,
+	    init
+	);
+	superclass = NSObject;
+    };
+    NSFileCoordinator = {
+	classmethods = (
+	    "addFilePresenter:",
+	    filePresenters,
+	    initialize,
+	    "removeFilePresenter:"
+	);
+	instancemethods = (
+	    cancel,
+	    "coordinateAccessWithIntents:queue:byAccessor:",
+	    "coordinateReadingItemAtURL:options:error:byAccessor:",
+	    "coordinateReadingItemAtURL:options:writingItemAtURL:options:error:byAccessor:",
+	    "coordinateWritingItemAtURL:options:error:byAccessor:",
+	    "coordinateWritingItemAtURL:options:writingItemAtURL:options:error:byAccessor:",
+	    init,
+	    "itemAtURL:didChangeUbiquityAttributes:",
+	    "itemAtURL:didMoveToURL:",
+	    "itemAtURL:willMoveToURL:",
+	    "prepareForReadingItemsAtURLs:options:writingItemsAtURLs:options:error:byAccessor:",
+	    purposeIdentifier,
+	    "setPurposeIdentifier:"
+	);
+	superclass = NSObject;
+    };
+    NSFileHandle = {
+	classmethods = (
+	    "allocWithZone:",
+	    "fileHandleAsClientAtAddress:service:protocol:",
+	    "fileHandleAsClientInBackgroundAtAddress:service:protocol:",
+	    "fileHandleAsClientInBackgroundAtAddress:service:protocol:forModes:",
+	    "fileHandleAsServerAtAddress:service:protocol:",
+	    "fileHandleForReadingAtPath:",
+	    "fileHandleForReadingFromURL:error:",
+	    "fileHandleForUpdatingAtPath:",
+	    "fileHandleForUpdatingURL:error:",
+	    "fileHandleForWritingAtPath:",
+	    "fileHandleForWritingToURL:error:",
+	    fileHandleWithNullDevice,
+	    fileHandleWithStandardError,
+	    fileHandleWithStandardInput,
+	    fileHandleWithStandardOutput,
+	    initialize,
+	    "setData:forTLSFile:",
+	    sslClass
+	);
+	instancemethods = (
+	    acceptConnectionInBackgroundAndNotify,
+	    "acceptConnectionInBackgroundAndNotifyForModes:",
+	    availableData,
+	    closeFile,
+	    fileDescriptor,
+	    "getOffset:error:",
+	    "initWithFileDescriptor:",
+	    "initWithFileDescriptor:closeOnDealloc:",
+	    "initWithNativeHandle:",
+	    "initWithNativeHandle:closeOnDealloc:",
+	    nativeHandle,
+	    offsetInFile,
+	    "readDataInBackgroundAndNotifyLength:",
+	    "readDataInBackgroundAndNotifyLength:forModes:",
+	    "readDataOfLength:",
+	    readDataToEndOfFile,
+	    readInBackgroundAndNotify,
+	    "readInBackgroundAndNotifyForModes:",
+	    readInProgress,
+	    readToEndOfFileInBackgroundAndNotify,
+	    "readToEndOfFileInBackgroundAndNotifyForModes:",
+	    seekToEndOfFile,
+	    "seekToEndReturningOffset:error:",
+	    "seekToFileOffset:",
+	    "seekToOffset:error:",
+	    socketAddress,
+	    socketLocalAddress,
+	    socketLocalService,
+	    socketProtocol,
+	    socketService,
+	    sslAccept,
+	    sslConnect,
+	    sslDisconnect,
+	    "sslHandshakeEstablished:outgoing:",
+	    sslIssuer,
+	    sslOptions,
+	    sslOwner,
+	    "sslSetCertificate:privateKey:PEMpasswd:",
+	    "sslSetOptions:",
+	    synchronizeFile,
+	    "truncateAtOffset:error:",
+	    "truncateFileAtOffset:",
+	    useCompression,
+	    waitForDataInBackgroundAndNotify,
+	    "waitForDataInBackgroundAndNotifyForModes:",
+	    "writeData:",
+	    "writeInBackgroundAndNotify:",
+	    "writeInBackgroundAndNotify:forModes:",
+	    writeInProgress
+	);
+	superclass = NSObject;
+    };
+    NSFileManager = {
+	classmethods = (
+	    defaultManager,
+	    initialize
+	);
+	instancemethods = (
+	    "URLForDirectory:inDomain:appropriateForURL:create:error:",
+	    "URLsForDirectory:inDomains:",
+	    "attributesOfFileSystemForPath:error:",
+	    "attributesOfItemAtPath:error:",
+	    "changeCurrentDirectoryPath:",
+	    "changeFileAttributes:atPath:",
+	    "componentsToDisplayForPath:",
+	    "contentsAtPath:",
+	    "contentsEqualAtPath:andPath:",
+	    "contentsOfDirectoryAtPath:error:",
+	    "contentsOfDirectoryAtURL:includingPropertiesForKeys:options:error:",
+	    "copyItemAtPath:toPath:error:",
+	    "copyItemAtURL:toURL:error:",
+	    "copyPath:toPath:handler:",
+	    "createDirectoryAtPath:attributes:",
+	    "createDirectoryAtPath:withIntermediateDirectories:attributes:error:",
+	    "createDirectoryAtURL:withIntermediateDirectories:attributes:error:",
+	    "createFileAtPath:contents:attributes:",
+	    "createSymbolicLinkAtPath:pathContent:",
+	    "createSymbolicLinkAtPath:withDestinationPath:error:",
+	    currentDirectoryPath,
+	    dealloc,
+	    delegate,
+	    "directoryContentsAtPath:",
+	    "displayNameAtPath:",
+	    "enumeratorAtPath:",
+	    "enumeratorAtURL:includingPropertiesForKeys:options:errorHandler:",
+	    "fileAttributesAtPath:traverseLink:",
+	    "fileExistsAtPath:",
+	    "fileExistsAtPath:isDirectory:",
+	    "fileSystemAttributesAtPath:",
+	    "fileSystemRepresentationWithPath:",
+	    "isDeletableFileAtPath:",
+	    "isExecutableFileAtPath:",
+	    "isReadableFileAtPath:",
+	    "isWritableFileAtPath:",
+	    "linkPath:toPath:handler:",
+	    "moveItemAtPath:toPath:error:",
+	    "moveItemAtURL:toURL:error:",
+	    "movePath:toPath:handler:",
+	    "pathContentOfSymbolicLinkAtPath:",
+	    "removeFileAtPath:handler:",
+	    "removeItemAtPath:error:",
+	    "removeItemAtURL:error:",
+	    "setAttributes:ofItemAtPath:error:",
+	    "setDelegate:",
+	    "stringWithFileSystemRepresentation:length:",
+	    "subpathsAtPath:"
+	);
+	superclass = NSObject;
+    };
+    NSFileVersion = {
+	classmethods = (
+	    "addVersionOfItemAtURL:withContentsOfURL:options:error:",
+	    "currentVersionOfItemAtURL:",
+	    "otherVersionsOfItemAtURL:",
+	    "removeOtherVersionsOfItemAtURL:error:",
+	    "temporaryDirectoryURLForNewVersionOfItemAtURL:",
+	    "unresolvedConflictVersionsOfItemAtURL:",
+	    "versionOfItemAtURL:forPersistentIdentifier:"
+	);
+	instancemethods = (
+	    URL,
+	    conflict,
+	    hasLocalContents,
+	    hasThumbnail,
+	    init,
+	    isDiscardable,
+	    isResolved,
+	    localizedName,
+	    localizedNameOfSavingComputer,
+	    modificationDate,
+	    originatorNameComponents,
+	    persistentIdentifier,
+	    "removeAndReturnError:",
+	    "replaceItemAtURL:options:error:",
+	    "setDiscardable:",
+	    "setResolved:"
+	);
+	superclass = NSObject;
+    };
+    NSFileWrapper = {
+	instancemethods = (
+	    "addFileWithPath:",
+	    "addFileWrapper:",
+	    "addRegularFileWithContents:preferredFilename:",
+	    "addSymbolicLinkWithDestination:preferredFilename:",
+	    dealloc,
+	    "encodeWithCoder:",
+	    fileAttributes,
+	    fileWrappers,
+	    filename,
+	    "initDirectoryWithFileWrappers:",
+	    "initRegularFileWithContents:",
+	    "initSymbolicLinkWithDestination:",
+	    "initSymbolicLinkWithDestinationURL:",
+	    "initWithCoder:",
+	    "initWithPath:",
+	    "initWithSerializedRepresentation:",
+	    "initWithURL:options:error:",
+	    isDirectory,
+	    isRegularFile,
+	    isSymbolicLink,
+	    "keyForFileWrapper:",
+	    "matchesContentsOfURL:",
+	    "needsToBeUpdatedFromPath:",
+	    preferredFilename,
+	    "readFromURL:options:error:",
+	    regularFileContents,
+	    "removeFileWrapper:",
+	    serializedRepresentation,
+	    "setFileAttributes:",
+	    "setFilename:",
+	    "setIcon:",
+	    "setPreferredFilename:",
+	    symbolicLinkDestination,
+	    symbolicLinkDestinationURL,
+	    "updateFromPath:",
+	    "writeToFile:atomically:updateFilenames:",
+	    "writeToURL:options:originalContentsURL:error:"
+	);
+	superclass = NSObject;
+    };
+    NSFormatter = {
+	instancemethods = (
+	    "attributedStringForObjectValue:withDefaultAttributes:",
+	    "copyWithZone:",
+	    "editingStringForObjectValue:",
+	    "encodeWithCoder:",
+	    "getObjectValue:forString:errorDescription:",
+	    "initWithCoder:",
+	    "isPartialStringValid:newEditingString:errorDescription:",
+	    "isPartialStringValid:proposedSelectedRange:originalString:originalSelectedRange:errorDescription:",
+	    "stringForObjectValue:"
+	);
+	superclass = NSObject;
+    };
+    NSGarbageCollector = {
+	classmethods = (
+	    defaultCollector
+	);
+	instancemethods = (
+	    collectExhaustively,
+	    collectIfNeeded,
+	    disable,
+	    "disableCollectorForPointer:",
+	    enable,
+	    "enableCollectorForPointer:",
+	    init,
+	    isCollecting,
+	    isEnabled,
+	    zone
+	);
+	superclass = NSObject;
+    };
+    NSHTTPCookie = {
+	classmethods = (
+	    "allocWithZone:",
+	    "cookieWithProperties:",
+	    "cookiesWithResponseHeaderFields:forURL:",
+	    "requestHeaderFieldsWithCookies:"
+	);
+	instancemethods = (
+	    comment,
+	    commentURL,
+	    dealloc,
+	    description,
+	    domain,
+	    expiresDate,
+	    hash,
+	    "initWithProperties:",
+	    "isEqual:",
+	    isHTTPOnly,
+	    isSecure,
+	    isSessionOnly,
+	    name,
+	    path,
+	    portList,
+	    properties,
+	    value,
+	    version
+	);
+	superclass = NSObject;
+    };
+    NSHTTPCookieStorage = {
+	classmethods = (
+	    "allocWithZone:",
+	    sharedHTTPCookieStorage
+	);
+	instancemethods = (
+	    "acceptPolicyChangeNotification:",
+	    cookieAcceptPolicy,
+	    cookies,
+	    "cookiesChangedNotification:",
+	    "cookiesForURL:",
+	    dealloc,
+	    "deleteCookie:",
+	    init,
+	    "setCookie:",
+	    "setCookieAcceptPolicy:",
+	    "setCookies:forURL:mainDocumentURL:"
+	);
+	superclass = NSObject;
+    };
+    NSHTTPURLResponse = {
+	classmethods = (
+	    "localizedStringForStatusCode:"
+	);
+	instancemethods = (
+	    allHeaderFields,
+	    statusCode
+	);
+	superclass = NSURLResponse;
+    };
+    NSHashTable = {
+	classmethods = (
+	    "allocWithZone:",
+	    "hashTableWithOptions:",
+	    hashTableWithWeakObjects,
+	    initialize,
+	    weakObjectsHashTable
+	);
+	instancemethods = (
+	    "addObject:",
+	    "addObjectsFromArray:",
+	    allObjects,
+	    anyObject,
+	    "containsObject:",
+	    "copyWithZone:",
+	    count,
+	    "countByEnumeratingWithState:objects:count:",
+	    "encodeWithCoder:",
+	    hash,
+	    "initWithCoder:",
+	    "initWithOptions:capacity:",
+	    "initWithPointerFunctions:capacity:",
+	    "intersectHashTable:",
+	    "intersectsHashTable:",
+	    "isEqual:",
+	    "isEqualToHashTable:",
+	    "isSubsetOfHashTable:",
+	    "member:",
+	    "minusHashTable:",
+	    objectEnumerator,
+	    pointerFunctions,
+	    removeAllObjects,
+	    "removeObject:",
+	    setRepresentation,
+	    "unionHashTable:"
+	);
+	superclass = NSObject;
+    };
+    NSHost = {
+	classmethods = (
+	    currentHost,
+	    flushHostCache,
+	    "hostWithAddress:",
+	    "hostWithName:",
+	    initialize,
+	    isHostCacheEnabled,
+	    localHost,
+	    "setHostCacheEnabled:"
+	);
+	instancemethods = (
+	    address,
+	    addresses,
+	    dealloc,
+	    description,
+	    "encodeWithCoder:",
+	    hash,
+	    init,
+	    "initWithCoder:",
+	    "isEqual:",
+	    "isEqualToHost:",
+	    localizedName,
+	    name,
+	    names,
+	    "replacementObjectForPortCoder:"
+	);
+	superclass = NSObject;
+    };
+    NSISO8601DateFormatter = {
+	classmethods = (
+	    "stringFromDate:timeZone:formatOptions:"
+	);
+	instancemethods = (
+	    "dateFromString:",
+	    dealloc,
+	    "encodeWithCoder:",
+	    formatOptions,
+	    init,
+	    "initWithCoder:",
+	    "setFormatOptions:",
+	    "setTimeZone:",
+	    "stringFromDate:",
+	    timeZone
+	);
+	superclass = NSFormatter;
+    };
+    NSIndexPath = {
+	classmethods = (
+	    "allocWithZone:",
+	    "indexPathForItem:inSection:",
+	    "indexPathForRow:inSection:",
+	    "indexPathWithIndex:",
+	    "indexPathWithIndexes:length:",
+	    initialize
+	);
+	instancemethods = (
+	    "compare:",
+	    "copyWithZone:",
+	    dealloc,
+	    description,
+	    "encodeWithCoder:",
+	    "getIndexes:",
+	    hash,
+	    "indexAtPosition:",
+	    "indexPathByAddingIndex:",
+	    indexPathByRemovingLastIndex,
+	    "initWithCoder:",
+	    "initWithIndex:",
+	    "initWithIndexes:length:",
+	    "isEqual:",
+	    item,
+	    length,
+	    release,
+	    row,
+	    section
+	);
+	superclass = NSObject;
+    };
+    NSIndexSet = {
+	classmethods = (
+	    indexSet,
+	    "indexSetWithIndex:",
+	    "indexSetWithIndexesInRange:"
+	);
+	instancemethods = (
+	    "containsIndex:",
+	    "containsIndexes:",
+	    "containsIndexesInRange:",
+	    "copyWithZone:",
+	    count,
+	    "countOfIndexesInRange:",
+	    dealloc,
+	    description,
+	    "encodeWithCoder:",
+	    "enumerateIndexesInRange:options:usingBlock:",
+	    "enumerateIndexesUsingBlock:",
+	    "enumerateIndexesWithOptions:usingBlock:",
+	    "enumerateRangesInRange:options:usingBlock:",
+	    "enumerateRangesUsingBlock:",
+	    "enumerateRangesWithOptions:usingBlock:",
+	    firstIndex,
+	    "getIndexes:maxCount:inIndexRange:",
+	    hash,
+	    "indexGreaterThanIndex:",
+	    "indexGreaterThanOrEqualToIndex:",
+	    "indexLessThanIndex:",
+	    "indexLessThanOrEqualToIndex:",
+	    init,
+	    "initWithCoder:",
+	    "initWithIndex:",
+	    "initWithIndexSet:",
+	    "initWithIndexesInRange:",
+	    "intersectsIndexesInRange:",
+	    "isEqual:",
+	    "isEqualToIndexSet:",
+	    lastIndex,
+	    "mutableCopyWithZone:"
+	);
+	superclass = NSObject;
+    };
+    NSInputStream = {
+	classmethods = (
+	    "inputStreamWithData:",
+	    "inputStreamWithFileAtPath:",
+	    "inputStreamWithURL:"
+	);
+	instancemethods = (
+	    "getBuffer:length:",
+	    hasBytesAvailable,
+	    "initWithData:",
+	    "initWithFileAtPath:",
+	    "initWithURL:",
+	    "read:maxLength:"
+	);
+	superclass = NSStream;
+    };
+    NSInvocation = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize,
+	    "invocationWithMethodSignature:"
+	);
+	instancemethods = (
+	    argumentsRetained,
+	    dealloc,
+	    description,
+	    "encodeWithCoder:",
+	    "encodeWithDistantCoder:passPointers:",
+	    "getArgument:atIndex:",
+	    "getReturnValue:",
+	    "initWithCoder:",
+	    "initWithMethodSignature:",
+	    invoke,
+	    "invokeWithObject:",
+	    "invokeWithTarget:",
+	    methodSignature,
+	    retainArguments,
+	    "retainArgumentsIncludingTarget:",
+	    selector,
+	    sendsToSuper,
+	    "setArgument:atIndex:",
+	    "setReturnValue:",
+	    "setSelector:",
+	    "setSendsToSuper:",
+	    "setTarget:",
+	    target,
+	    targetRetained
+	);
+	superclass = NSObject;
+    };
+    NSInvocationOperation = {
+	instancemethods = (
+	    dealloc,
+	    "initWithInvocation:",
+	    "initWithTarget:selector:object:",
+	    invocation,
+	    main,
+	    result
+	);
+	superclass = NSOperation;
+    };
+    NSItemProvider = {
+	instancemethods = (
+	    "canLoadObjectOfClass:",
+	    "copyWithZone:",
+	    "hasItemConformingToTypeIdentifier:",
+	    "hasRepresentationConformingToTypeIdentifier:fileOptions:",
+	    init,
+	    "initWithContentsOfURL:",
+	    "initWithItem:typeIdentifier:",
+	    "initWithObject:",
+	    "loadDataRepresentationForTypeIdentifier:completionHandler:",
+	    "loadFileRepresentationForTypeIdentifier:completionHandler:",
+	    "loadInPlaceFileRepresentationForTypeIdentifier:completionHandler:",
+	    "loadItemForTypeIdentifier:options:completionHandler:",
+	    "loadObjectOfClass:completionHandler:",
+	    "loadPreviewImageWithOptions:completionHandler:",
+	    previewImageHandler,
+	    "registerDataRepresentationForTypeIdentifier:visibility:loadHandler:",
+	    "registerFileRepresentationForTypeIdentifier:fileOptions:visibility:loadHandler:",
+	    "registerItemForTypeIdentifier:loadHandler:",
+	    "registerObject:visibility:",
+	    "registerObjectOfClass:visibility:loadHandler:",
+	    registeredTypeIdentifiers,
+	    "registeredTypeIdentifiersWithFileOptions:",
+	    "setPreviewImageHandler:",
+	    "setSuggestedName:",
+	    suggestedName
+	);
+	superclass = NSObject;
+    };
+    NSItemProviderReadingWriting = {
+	superclass = NSObject;
+    };
+    NSJSONSerialization = {
+	classmethods = (
+	    "JSONObjectWithData:options:error:",
+	    "JSONObjectWithStream:options:error:",
+	    "dataWithJSONObject:options:error:",
+	    initialize,
+	    "isValidJSONObject:",
+	    "writeJSONObject:toStream:options:error:"
+	);
+	superclass = NSObject;
+    };
+    NSKeyedArchiver = {
+	classmethods = (
+	    "archiveRootObject:toFile:",
+	    "archivedDataWithRootObject:",
+	    "archivedDataWithRootObject:requiringSecureCoding:error:",
+	    "classNameForClass:",
+	    initialize,
+	    "setClassName:forClass:"
+	);
+	instancemethods = (
+	    allowsKeyedCoding,
+	    "classNameForClass:",
+	    dealloc,
+	    delegate,
+	    description,
+	    "encodeArrayOfObjCType:count:at:",
+	    "encodeBool:forKey:",
+	    "encodeBytes:length:forKey:",
+	    "encodeConditionalObject:",
+	    "encodeConditionalObject:forKey:",
+	    "encodeDouble:forKey:",
+	    "encodeFloat:forKey:",
+	    "encodeInt32:forKey:",
+	    "encodeInt64:forKey:",
+	    "encodeInt:forKey:",
+	    "encodeInteger:forKey:",
+	    "encodeObject:",
+	    "encodeObject:forKey:",
+	    "encodePoint:",
+	    "encodeRect:",
+	    "encodeSize:",
+	    "encodeValueOfObjCType:at:",
+	    finishEncoding,
+	    init,
+	    "initForWritingWithMutableData:",
+	    outputFormat,
+	    requiresSecureCoding,
+	    "setClassName:forClass:",
+	    "setDelegate:",
+	    "setOutputFormat:",
+	    "setRequiresSecureCoding:"
+	);
+	superclass = NSCoder;
+    };
+    NSKeyedUnarchiver = {
+	classmethods = (
+	    "classForClassName:",
+	    initialize,
+	    "setClass:forClassName:",
+	    "unarchiveObjectWithData:",
+	    "unarchiveObjectWithFile:",
+	    "unarchivedArrayOfObjectsOfClass:fromData:error:",
+	    "unarchivedArrayOfObjectsOfClasses:fromData:error:",
+	    "unarchivedDictionaryWithKeysOfClass:objectsOfClass:fromData:error:",
+	    "unarchivedDictionaryWithKeysOfClasses:objectsOfClasses:fromData:error:",
+	    "unarchivedObjectOfClass:fromData:error:",
+	    "unarchivedObjectOfClasses:fromData:error:"
+	);
+	instancemethods = (
+	    allowsKeyedCoding,
+	    "classForClassName:",
+	    "containsValueForKey:",
+	    dealloc,
+	    "decodeArrayOfObjCType:count:at:",
+	    "decodeBoolForKey:",
+	    "decodeBytesForKey:returnedLength:",
+	    "decodeDoubleForKey:",
+	    "decodeFloatForKey:",
+	    "decodeInt32ForKey:",
+	    "decodeInt64ForKey:",
+	    "decodeIntForKey:",
+	    "decodeIntegerForKey:",
+	    decodeObject,
+	    "decodeObjectForKey:",
+	    "decodeObjectOfClasses:forKey:",
+	    decodePoint,
+	    decodeRect,
+	    decodeSize,
+	    "decodeValueOfObjCType:at:",
+	    delegate,
+	    description,
+	    finishDecoding,
+	    init,
+	    "initForReadingWithData:",
+	    "replaceObject:withObject:",
+	    requiresSecureCoding,
+	    "setClass:forClassName:",
+	    "setDelegate:",
+	    "setRequiresSecureCoding:",
+	    "versionForClassName:"
+	);
+	superclass = NSCoder;
+    };
+    NSLengthFormatter = {
+	instancemethods = (
+	    dealloc,
+	    "getObjectValue:forString:errorDescription:",
+	    init,
+	    isForPersonHeightUse,
+	    numberFormatter,
+	    "setForPersonHeightUse:",
+	    "setNumberFormatter:",
+	    "setUnitStyle:",
+	    "stringFromMeters:",
+	    "stringFromValue:unit:",
+	    "unitStringFromMeters:usedUnit:",
+	    "unitStringFromValue:unit:",
+	    unitStyle
+	);
+	superclass = NSFormatter;
+    };
+    NSLinguisticTagger = {
+	classmethods = (
+	    "availableTagSchemesForLanguage:",
+	    "availableTagSchemesForUnit:language:",
+	    "dominantLanguageForString:",
+	    "enumerateTagsForString:range:unit:scheme:options:orthography:usingBlock:",
+	    "tagForString:atIndex:unit:scheme:orthography:tokenRange:",
+	    "tagsForString:range:unit:scheme:options:orthography:tokenRanges:"
+	);
+	instancemethods = (
+	    dealloc,
+	    dominantLanguage,
+	    "enumerateTagsInRange:scheme:options:usingBlock:",
+	    "enumerateTagsInRange:unit:scheme:options:usingBlock:",
+	    "initWithTagSchemes:options:",
+	    "orthographyAtIndex:effectiveRange:",
+	    "possibleTagsAtIndex:scheme:tokenRange:sentenceRange:scores:",
+	    "sentenceRangeForRange:",
+	    "setOrthography:range:",
+	    "setString:",
+	    string,
+	    "stringEditedInRange:changeInLength:",
+	    "tagAtIndex:scheme:tokenRange:sentenceRange:",
+	    "tagAtIndex:unit:scheme:tokenRange:",
+	    tagSchemes,
+	    "tagsInRange:scheme:options:tokenRanges:",
+	    "tagsInRange:unit:scheme:options:tokenRanges:",
+	    "tokenRangeAtIndex:unit:"
+	);
+	superclass = NSObject;
+    };
+    NSLocale = {
+	classmethods = (
+	    ISOCountryCodes,
+	    ISOCurrencyCodes,
+	    ISOLanguageCodes,
+	    autoupdatingCurrentLocale,
+	    availableLocaleIdentifiers,
+	    "canonicalLanguageIdentifierFromString:",
+	    "canonicalLocaleIdentifierFromString:",
+	    "characterDirectionForLanguage:",
+	    commonISOCurrencyCodes,
+	    "componentsFromLocaleIdentifier:",
+	    currentLocale,
+	    "defaultsDidChange:",
+	    initialize,
+	    "lineDirectionForLanguage:",
+	    "localeIdentifierFromComponents:",
+	    "localeIdentifierFromWindowsLocaleCode:",
+	    "localeWithLocaleIdentifier:",
+	    preferredLanguages,
+	    systemLocale,
+	    "windowsLocaleCodeFromLocaleIdentifier:"
+	);
+	instancemethods = (
+	    collationIdentifier,
+	    collatorIdentifier,
+	    "copyWithZone:",
+	    countryCode,
+	    dealloc,
+	    description,
+	    "displayNameForKey:value:",
+	    "encodeWithCoder:",
+	    exemplarCharacterSet,
+	    "initWithCoder:",
+	    "initWithLocaleIdentifier:",
+	    "isEqual:",
+	    languageCode,
+	    localeIdentifier,
+	    "objectForKey:",
+	    scriptCode,
+	    variantCode
+	);
+	superclass = NSObject;
+    };
+    NSLock = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize
+	);
+	instancemethods = (
+	    dealloc,
+	    description,
+	    finalize,
+	    init,
+	    isLockedByCurrentThread,
+	    lock,
+	    "lockBeforeDate:",
+	    name,
+	    "setName:",
+	    stack,
+	    tryLock,
+	    unlock
+	);
+	superclass = NSObject;
+    };
+    NSMapTable = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize,
+	    "mapTableWithKeyOptions:valueOptions:",
+	    mapTableWithStrongToStrongObjects,
+	    mapTableWithStrongToWeakObjects,
+	    mapTableWithWeakToStrongObjects,
+	    mapTableWithWeakToWeakObjects,
+	    strongToStrongObjectsMapTable,
+	    strongToWeakObjectsMapTable,
+	    weakToStrongObjectsMapTable,
+	    weakToWeakObjectsMapTable
+	);
+	instancemethods = (
+	    "copyWithZone:",
+	    count,
+	    "countByEnumeratingWithState:objects:count:",
+	    dictionaryRepresentation,
+	    "encodeWithCoder:",
+	    hash,
+	    "initWithCoder:",
+	    "initWithKeyOptions:valueOptions:capacity:",
+	    "initWithKeyPointerFunctions:valuePointerFunctions:capacity:",
+	    "isEqual:",
+	    keyEnumerator,
+	    keyPointerFunctions,
+	    objectEnumerator,
+	    "objectForKey:",
+	    removeAllObjects,
+	    "removeObjectForKey:",
+	    "setObject:forKey:",
+	    valuePointerFunctions
+	);
+	superclass = NSObject;
+    };
+    NSMassFormatter = {
+	instancemethods = (
+	    "getObjectValue:forString:errorDescription:",
+	    init,
+	    isForPersonMassUse,
+	    numberFormatter,
+	    "setForPersonMassUse:",
+	    "setNumberFormatter:",
+	    "setUnitStyle:",
+	    "stringFromKilograms:",
+	    "stringFromValue:unit:",
+	    "unitStringFromKilograms:usedUnit:",
+	    "unitStringFromValue:unit:",
+	    unitStyle
+	);
+	superclass = NSObject;
+    };
+    NSMeasurement = {
+	instancemethods = (
+	    "canBeConvertedToUnit:",
+	    "copyWithZone:",
+	    dealloc,
+	    doubleValue,
+	    "encodeWithCoder:",
+	    "initWithCoder:",
+	    "initWithDoubleValue:unit:",
+	    "measurementByAddingMeasurement:",
+	    "measurementByConvertingToUnit:",
+	    "measurementBySubtractingMeasurement:",
+	    unit
+	);
+	superclass = NSObject;
+    };
+    NSMeasurementFormatter = {
+	instancemethods = (
+	    dealloc,
+	    "encodeWithCoder:",
+	    init,
+	    "initWithCoder:",
+	    locale,
+	    numberFormatter,
+	    "setLocale:",
+	    "setNumberFormatter:",
+	    "setUnitOptions:",
+	    "setUnitStyle:",
+	    "stringForObjectValue:",
+	    "stringFromMeasurement:",
+	    "stringFromUnit:",
+	    unitOptions,
+	    unitStyle
+	);
+	superclass = NSFormatter;
+    };
+    NSMessagePort = {
+	classmethods = (
+	    atExit,
+	    initialize,
+	    new
+	);
+	instancemethods = (
+	    "addHandle:forSend:",
+	    "conversation:",
+	    "copyWithZone:",
+	    dealloc,
+	    description,
+	    finalize,
+	    "getFds:count:",
+	    "handleForPort:beforeDate:",
+	    "handlePortMessage:",
+	    hash,
+	    init,
+	    invalidate,
+	    "isEqual:",
+	    "receivedEvent:type:extra:forMode:",
+	    release,
+	    "removeHandle:",
+	    reservedSpaceLength,
+	    "sendBeforeDate:msgid:components:from:reserved:"
+	);
+	superclass = NSPort;
+    };
+    NSMessagePortNameServer = {
+	classmethods = (
+	    atExit,
+	    initialize,
+	    sharedInstance
+	);
+	instancemethods = (
+	    "namesForPort:",
+	    "portForName:",
+	    "portForName:onHost:",
+	    "registerPort:forName:",
+	    "removePort:",
+	    "removePort:forName:",
+	    "removePortForName:"
+	);
+	superclass = NSPortNameServer;
+    };
+    NSMetadataItem = {
+	instancemethods = (
+	    attributes,
+	    dealloc,
+	    init,
+	    "valueForAttribute:",
+	    "valuesForAttributes:"
+	);
+	superclass = NSObject;
+    };
+    NSMetadataQuery = {
+	instancemethods = (
+	    dealloc,
+	    delegate,
+	    disableUpdates,
+	    enableUpdates,
+	    groupedResults,
+	    groupingAttributes,
+	    "indexOfResult:",
+	    init,
+	    isGathering,
+	    isStarted,
+	    isStopped,
+	    notificationBatchingInterval,
+	    predicate,
+	    "resultAtIndex:",
+	    resultCount,
+	    results,
+	    searchItemURLs,
+	    searchScopes,
+	    "setDelegate:",
+	    "setGroupingAttributes:",
+	    "setNotificationBatchingInterval:",
+	    "setPredicate:",
+	    "setSearchItemURLs:",
+	    "setSearchScopes:",
+	    "setSortDescriptors:",
+	    "setValueListAttributes:",
+	    sortDescriptors,
+	    startQuery,
+	    stopQuery,
+	    valueListAttributes,
+	    valueLists,
+	    "valueOfAttribute:forResultAtIndex:"
+	);
+	superclass = NSObject;
+    };
+    NSMetadataQueryAttributeValueTuple = {
+	instancemethods = (
+	    attribute,
+	    count,
+	    dealloc,
+	    init,
+	    value
+	);
+	superclass = NSObject;
+    };
+    NSMetadataQueryResultGroup = {
+	instancemethods = (
+	    attribute,
+	    dealloc,
+	    init,
+	    "resultAtIndex:",
+	    resultCount,
+	    results,
+	    subgroups,
+	    value
+	);
+	superclass = NSObject;
+    };
+    NSMethodSignature = {
+	classmethods = (
+	    "signatureWithObjCTypes:"
+	);
+	instancemethods = (
+	    "argumentInfoAtIndex:",
+	    dealloc,
+	    frameLength,
+	    "getArgumentTypeAtIndex:",
+	    "isEqual:",
+	    isOneway,
+	    methodInfo,
+	    methodReturnLength,
+	    methodReturnType,
+	    methodType,
+	    numberOfArguments
+	);
+	superclass = NSObject;
+    };
+    NSMutableArray = {
+	classmethods = (
+	    "allocWithZone:",
+	    "arrayWithCapacity:",
+	    "arrayWithObject:",
+	    initialize
+	);
+	instancemethods = (
+	    "addObject:",
+	    "addObjectsFromArray:",
+	    classForCoder,
+	    "exchangeObjectAtIndex:withObjectAtIndex:",
+	    "filterUsingPredicate:",
+	    "initWithCapacity:",
+	    "initWithObjects:count:",
+	    "insertObject:atIndex:",
+	    "insertObjects:atIndexes:",
+	    removeAllObjects,
+	    removeLastObject,
+	    "removeObject:",
+	    "removeObject:inRange:",
+	    "removeObjectAtIndex:",
+	    "removeObjectIdenticalTo:",
+	    "removeObjectIdenticalTo:inRange:",
+	    "removeObjectsAtIndexes:",
+	    "removeObjectsFromIndices:numIndices:",
+	    "removeObjectsInArray:",
+	    "removeObjectsInRange:",
+	    "replaceObjectAtIndex:withObject:",
+	    "replaceObjectsAtIndexes:withObjects:",
+	    "replaceObjectsInRange:withObjectsFromArray:",
+	    "replaceObjectsInRange:withObjectsFromArray:range:",
+	    "setArray:",
+	    "setObject:atIndexedSubscript:",
+	    "sortUsingComparator:",
+	    "sortUsingDescriptors:",
+	    "sortUsingFunction:context:",
+	    "sortUsingSelector:",
+	    "sortWithOptions:usingComparator:"
+	);
+	superclass = NSArray;
+    };
+    NSMutableAttributedString = {
+	classmethods = (
+	    "allocWithZone:"
+	);
+	instancemethods = (
+	    "addAttribute:value:range:",
+	    "addAttributes:range:",
+	    "appendAttributedString:",
+	    beginEditing,
+	    classForCoder,
+	    "deleteCharactersInRange:",
+	    endEditing,
+	    "initWithCoder:",
+	    "insertAttributedString:atIndex:",
+	    mutableString,
+	    "removeAttribute:range:",
+	    "replaceCharactersInRange:withAttributedString:",
+	    "replaceCharactersInRange:withString:",
+	    "setAttributedString:",
+	    "setAttributes:range:"
+	);
+	superclass = NSAttributedString;
+    };
+    NSMutableCharacterSet = {
+	classmethods = (
+	    URLFragmentAllowedCharacterSet,
+	    URLHostAllowedCharacterSet,
+	    URLPasswordAllowedCharacterSet,
+	    URLPathAllowedCharacterSet,
+	    URLQueryAllowedCharacterSet,
+	    URLUserAllowedCharacterSet,
+	    alphanumericCharacterSet,
+	    capitalizedLetterCharacterSet,
+	    "characterSetWithBitmapRepresentation:",
+	    "characterSetWithCharactersInString:",
+	    "characterSetWithRange:",
+	    controlCharacterSet,
+	    decimalDigitCharacterSet,
+	    decomposableCharacterSet,
+	    illegalCharacterSet,
+	    letterCharacterSet,
+	    lowercaseLetterCharacterSet,
+	    newlineCharacterSet,
+	    nonBaseCharacterSet,
+	    punctuationCharacterSet,
+	    symbolAndOperatorCharacterSet,
+	    symbolCharacterSet,
+	    uppercaseLetterCharacterSet,
+	    whitespaceAndNewlineCharacterSet,
+	    whitespaceCharacterSet
+	);
+	instancemethods = (
+	    "addCharactersInRange:",
+	    "addCharactersInString:",
+	    "copyWithZone:",
+	    "formIntersectionWithCharacterSet:",
+	    "formUnionWithCharacterSet:",
+	    init,
+	    "initWithBitmap:",
+	    invert,
+	    "removeCharactersInRange:",
+	    "removeCharactersInString:"
+	);
+	superclass = NSCharacterSet;
+    };
+    NSMutableData = {
+	classmethods = (
+	    "allocWithZone:",
+	    data,
+	    "dataWithBytes:length:",
+	    "dataWithBytesNoCopy:length:",
+	    "dataWithBytesNoCopy:length:freeWhenDone:",
+	    "dataWithCapacity:",
+	    "dataWithContentsOfFile:",
+	    "dataWithContentsOfMappedFile:",
+	    "dataWithContentsOfURL:",
+	    "dataWithData:",
+	    "dataWithLength:",
+	    "dataWithSharedBytes:length:",
+	    "dataWithShmID:length:",
+	    new
+	);
+	instancemethods = (
+	    "appendBytes:length:",
+	    "appendData:",
+	    bytes,
+	    capacity,
+	    "encodeWithCoder:",
+	    "increaseLengthBy:",
+	    "initWithCapacity:",
+	    "initWithCoder:",
+	    "initWithLength:",
+	    mutableBytes,
+	    "replaceBytesInRange:withBytes:",
+	    "replaceBytesInRange:withBytes:length:",
+	    "resetBytesInRange:",
+	    "serializeAlignedBytesLength:",
+	    "serializeDataAt:ofObjCType:context:",
+	    "serializeInt:",
+	    "serializeInt:atIndex:",
+	    "serializeInts:count:",
+	    "serializeInts:count:atIndex:",
+	    "serializeTypeTag:",
+	    "serializeTypeTag:andCrossRef:",
+	    "setCapacity:",
+	    "setData:",
+	    "setLength:",
+	    shmID,
+	    "sizeOfContentExcluding:"
+	);
+	superclass = NSData;
+    };
+    NSMutableDictionary = {
+	classmethods = (
+	    "allocWithZone:",
+	    "dictionaryWithCapacity:",
+	    initialize
+	);
+	instancemethods = (
+	    "addEntriesFromDictionary:",
+	    classForCoder,
+	    "copyWithZone:",
+	    "initWithCapacity:",
+	    "initWithObjects:forKeys:count:",
+	    removeAllObjects,
+	    "removeObjectForKey:",
+	    "removeObjectsForKeys:",
+	    "setDictionary:",
+	    "setObject:forKey:",
+	    "setObject:forKeyedSubscript:",
+	    "setValue:forKey:",
+	    "takeStoredValue:forKey:",
+	    "takeValue:forKey:"
+	);
+	superclass = NSDictionary;
+    };
+    NSMutableIndexSet = {
+	instancemethods = (
+	    "addIndex:",
+	    "addIndexes:",
+	    "addIndexesInRange:",
+	    "copyWithZone:",
+	    removeAllIndexes,
+	    "removeIndex:",
+	    "removeIndexes:",
+	    "removeIndexesInRange:",
+	    "shiftIndexesStartingAtIndex:by:"
+	);
+	superclass = NSIndexSet;
+    };
+    NSMutableOrderedSet = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize,
+	    "orderedSetWithCapacity:"
+	);
+	instancemethods = (
+	    "addObject:",
+	    "addObjects:count:",
+	    "addObjectsFromArray:",
+	    classForCoder,
+	    "exchangeObjectAtIndex:withObjectAtIndex:",
+	    "filterUsingPredicate:",
+	    init,
+	    "initWithCapacity:",
+	    "initWithCoder:",
+	    "insertObject:atIndex:",
+	    "insertObjects:atIndexes:",
+	    "intersectOrderedSet:",
+	    "intersectSet:",
+	    "minusOrderedSet:",
+	    "minusSet:",
+	    "moveObjectsAtIndexes:toIndex:",
+	    removeAllObjects,
+	    "removeObject:",
+	    "removeObjectAtIndex:",
+	    "removeObjectsAtIndexes:",
+	    "removeObjectsInArray:",
+	    "removeObjectsInRange:",
+	    "replaceObjectAtIndex:withObject:",
+	    "replaceObjectsAtIndexes:withObjects:",
+	    "replaceObjectsInRange:withObjects:count:",
+	    "setObject:atIndex:",
+	    "setObject:atIndexedSubscript:",
+	    "sortRange:options:usingComparator:",
+	    "sortUsingComparator:",
+	    "sortUsingDescriptors:",
+	    "sortWithOptions:usingComparator:",
+	    "unionOrderedSet:",
+	    "unionSet:"
+	);
+	superclass = NSOrderedSet;
+    };
+    NSMutableSet = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize,
+	    "setWithCapacity:"
+	);
+	instancemethods = (
+	    "addObject:",
+	    "addObjectsFromArray:",
+	    classForCoder,
+	    "filterUsingPredicate:",
+	    "initWithCapacity:",
+	    "initWithObjects:count:",
+	    "intersectSet:",
+	    "minusSet:",
+	    removeAllObjects,
+	    "removeObject:",
+	    "setSet:",
+	    "unionSet:"
+	);
+	superclass = NSSet;
+    };
+    NSMutableString = {
+	classmethods = (
+	    "allocWithZone:",
+	    string,
+	    "stringWithCString:",
+	    "stringWithCString:length:",
+	    "stringWithCapacity:",
+	    "stringWithCharacters:length:",
+	    "stringWithContentsOfFile:",
+	    "stringWithFormat:"
+	);
+	instancemethods = (
+	    "appendFormat:",
+	    "appendString:",
+	    classForCoder,
+	    "deleteCharactersInRange:",
+	    "deletePrefix:",
+	    "deleteSuffix:",
+	    immutableProxy,
+	    "initWithCStringNoCopy:length:freeWhenDone:",
+	    "initWithCapacity:",
+	    "initWithCharactersNoCopy:length:freeWhenDone:",
+	    "insertString:atIndex:",
+	    "replaceCharactersInRange:withString:",
+	    "replaceOccurrencesOfString:withString:options:range:",
+	    "replaceString:withString:",
+	    "setString:",
+	    trimLeadSpaces,
+	    trimSpaces,
+	    trimTailSpaces
+	);
+	superclass = NSString;
+    };
+    NSMutableURLRequest = {
+	instancemethods = (
+	    "addValue:forHTTPHeaderField:",
+	    "setAllHTTPHeaderFields:",
+	    "setAssumesHTTP3Capable:",
+	    "setCachePolicy:",
+	    "setHTTPBody:",
+	    "setHTTPBodyStream:",
+	    "setHTTPMethod:",
+	    "setHTTPShouldHandleCookies:",
+	    "setMainDocumentURL:",
+	    "setTimeoutInterval:",
+	    "setURL:",
+	    "setValue:forHTTPHeaderField:"
+	);
+	superclass = NSURLRequest;
+    };
+    NSNetService = {
+	classmethods = (
+	    "allocWithZone:",
+	    "dataFromTXTRecordDictionary:",
+	    "dictionaryFromTXTRecordData:",
+	    initialize
+	);
+	instancemethods = (
+	    TXTRecordData,
+	    "addRecordData:",
+	    addServiceRecord,
+	    addresses,
+	    delegate,
+	    domain,
+	    fullServiceName,
+	    "getInputStream:outputStream:",
+	    hostName,
+	    "initWithDomain:type:name:",
+	    "initWithDomain:type:name:port:",
+	    name,
+	    "netService:didNotPublish:",
+	    "netService:didNotResolve:",
+	    "netServiceDidPublish:",
+	    "netServiceDidResolveAddress:",
+	    "netServiceDidStop:",
+	    "netServiceWillPublish:",
+	    "netServiceWillResolve:",
+	    port,
+	    protocolSpecificInformation,
+	    publish,
+	    "publishWithOptions:",
+	    "recordDataForRecordType:",
+	    "removeFromRunLoop:forMode:",
+	    resolve,
+	    "resolveWithTimeout:",
+	    "scheduleInRunLoop:forMode:",
+	    "setDelegate:",
+	    "setProtocolSpecificInformation:",
+	    "setTXTRecordData:",
+	    startMonitoring,
+	    "startMonitoringForRecordType:",
+	    stop,
+	    stopMonitoring,
+	    "stopMonitoringForRecordType:",
+	    type
+	);
+	superclass = NSObject;
+    };
+    NSNetServiceBrowser = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize
+	);
+	instancemethods = (
+	    delegate,
+	    init,
+	    "netServiceBrowser:didFindDomain:moreComing:",
+	    "netServiceBrowser:didFindService:moreComing:",
+	    "netServiceBrowser:didNotSearch:",
+	    "netServiceBrowser:didRemoveDomain:moreComing:",
+	    "netServiceBrowser:didRemoveService:moreComing:",
+	    "netServiceBrowserDidStopSearch:",
+	    "netServiceBrowserWillSearch:",
+	    "removeFromRunLoop:forMode:",
+	    "scheduleInRunLoop:forMode:",
+	    searchForAllDomains,
+	    searchForBrowsableDomains,
+	    searchForRegistrationDomains,
+	    "searchForServicesOfType:inDomain:",
+	    "setDelegate:",
+	    stop
+	);
+	superclass = NSObject;
+    };
+    NSNotification = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize,
+	    "notificationWithName:object:",
+	    "notificationWithName:object:userInfo:"
+	);
+	instancemethods = (
+	    "copyWithZone:",
+	    description,
+	    "encodeWithCoder:",
+	    hash,
+	    init,
+	    "initWithCoder:",
+	    "isEqual:",
+	    name,
+	    object,
+	    userInfo
+	);
+	superclass = NSObject;
+    };
+    NSNotificationCenter = {
+	classmethods = (
+	    defaultCenter,
+	    initialize
+	);
+	instancemethods = (
+	    "addObserver:selector:name:object:",
+	    "addObserverForName:object:queue:usingBlock:",
+	    dealloc,
+	    finalize,
+	    init,
+	    "postNotification:",
+	    "postNotificationName:object:",
+	    "postNotificationName:object:userInfo:",
+	    "removeObserver:",
+	    "removeObserver:name:object:"
+	);
+	superclass = NSObject;
+    };
+    NSNotificationQueue = {
+	classmethods = (
+	    defaultQueue,
+	    initialize
+	);
+	instancemethods = (
+	    dealloc,
+	    "dequeueNotificationsMatching:coalesceMask:",
+	    "enqueueNotification:postingStyle:",
+	    "enqueueNotification:postingStyle:coalesceMask:forModes:",
+	    init,
+	    "initWithNotificationCenter:"
+	);
+	superclass = NSObject;
+    };
+    NSNull = {
+	classmethods = (
+	    alloc,
+	    "allocWithZone:",
+	    initialize,
+	    null
+	);
+	instancemethods = (
+	    autorelease,
+	    copy,
+	    "copyWithZone:",
+	    dealloc,
+	    description,
+	    "encodeWithCoder:",
+	    "initWithCoder:",
+	    "isEqual:",
+	    release,
+	    retain,
+	    "valueForUndefinedKey:"
+	);
+	superclass = NSObject;
+    };
+    NSNumber = {
+	classmethods = (
+	    initialize,
+	    "numberWithBool:",
+	    "numberWithChar:",
+	    "numberWithDouble:",
+	    "numberWithFloat:",
+	    "numberWithInt:",
+	    "numberWithInteger:",
+	    "numberWithLong:",
+	    "numberWithLongLong:",
+	    "numberWithShort:",
+	    "numberWithUnsignedChar:",
+	    "numberWithUnsignedInt:",
+	    "numberWithUnsignedInteger:",
+	    "numberWithUnsignedLong:",
+	    "numberWithUnsignedLongLong:",
+	    "numberWithUnsignedShort:",
+	    "valueFromString:"
+	);
+	instancemethods = (
+	    "appendToXMLRPC:indent:for:",
+	    boolValue,
+	    charValue,
+	    classForCoder,
+	    "compare:",
+	    "copyWithZone:",
+	    decimalValue,
+	    description,
+	    "descriptionWithLocale:",
+	    doubleValue,
+	    "encodeWithCoder:",
+	    floatValue,
+	    hash,
+	    init,
+	    "initWithBool:",
+	    "initWithBytes:objCType:",
+	    "initWithChar:",
+	    "initWithCoder:",
+	    "initWithDouble:",
+	    "initWithFloat:",
+	    "initWithInt:",
+	    "initWithInteger:",
+	    "initWithLong:",
+	    "initWithLongLong:",
+	    "initWithShort:",
+	    "initWithUnsignedChar:",
+	    "initWithUnsignedInt:",
+	    "initWithUnsignedInteger:",
+	    "initWithUnsignedLong:",
+	    "initWithUnsignedLongLong:",
+	    "initWithUnsignedShort:",
+	    intValue,
+	    integerValue,
+	    "isEqual:",
+	    "isEqualToNumber:",
+	    "isEqualToValue:",
+	    longLongValue,
+	    longValue,
+	    objCType,
+	    pointerValue,
+	    "replacementObjectForPortCoder:",
+	    shortValue,
+	    stringValue,
+	    unsignedCharValue,
+	    unsignedIntValue,
+	    unsignedIntegerValue,
+	    unsignedLongLongValue,
+	    unsignedLongValue,
+	    unsignedShortValue
+	);
+	superclass = NSValue;
+    };
+    NSNumberFormatter = {
+	classmethods = (
+	    defaultFormatterBehavior,
+	    "localizedStringFromNumber:numberStyle:",
+	    "setDefaultFormatterBehavior:"
+	);
+	instancemethods = (
+	    allowsFloats,
+	    alwaysShowsDecimalSeparator,
+	    attributedStringForNil,
+	    attributedStringForNotANumber,
+	    "attributedStringForObjectValue:withDefaultAttributes:",
+	    attributedStringForZero,
+	    "copyWithZone:",
+	    currencyCode,
+	    currencyDecimalSeparator,
+	    currencyGroupingSeparator,
+	    currencySymbol,
+	    dealloc,
+	    decimalSeparator,
+	    "editingStringForObjectValue:",
+	    "encodeWithCoder:",
+	    exponentSymbol,
+	    format,
+	    formatWidth,
+	    formatterBehavior,
+	    generatesDecimalNumbers,
+	    "getObjectValue:forString:errorDescription:",
+	    "getObjectValue:forString:range:error:",
+	    groupingSeparator,
+	    groupingSize,
+	    hasThousandSeparators,
+	    init,
+	    "initWithCoder:",
+	    internationalCurrencySymbol,
+	    isLenient,
+	    "isPartialStringValid:newEditingString:errorDescription:",
+	    isPartialStringValidationEnabled,
+	    locale,
+	    localizesFormat,
+	    maximum,
+	    maximumFractionDigits,
+	    maximumIntegerDigits,
+	    maximumSignificantDigits,
+	    minimum,
+	    minimumFractionDigits,
+	    minimumIntegerDigits,
+	    minimumSignificantDigits,
+	    minusSign,
+	    multiplier,
+	    negativeFormat,
+	    negativeInfinitySymbol,
+	    negativePrefix,
+	    negativeSuffix,
+	    nilSymbol,
+	    notANumberSymbol,
+	    "numberFromString:",
+	    numberStyle,
+	    paddingCharacter,
+	    paddingPosition,
+	    perMillSymbol,
+	    percentSymbol,
+	    plusSign,
+	    positiveFormat,
+	    positiveInfinitySymbol,
+	    positivePrefix,
+	    positiveSuffix,
+	    roundingBehavior,
+	    roundingIncrement,
+	    roundingMode,
+	    secondaryGroupingSize,
+	    "setAllowsFloats:",
+	    "setAlwaysShowsDecimalSeparator:",
+	    "setAttributedStringForNil:",
+	    "setAttributedStringForNotANumber:",
+	    "setAttributedStringForZero:",
+	    "setCurrencyCode:",
+	    "setCurrencyDecimalSeparator:",
+	    "setCurrencyGroupingSeparator:",
+	    "setCurrencySymbol:",
+	    "setDecimalSeparator:",
+	    "setExponentSymbol:",
+	    "setFormat:",
+	    "setFormatWidth:",
+	    "setFormatterBehavior:",
+	    "setGeneratesDecimalNumbers:",
+	    "setGroupingSeparator:",
+	    "setGroupingSize:",
+	    "setHasThousandSeparators:",
+	    "setInternationalCurrencySymbol:",
+	    "setLenient:",
+	    "setLocale:",
+	    "setLocalizesFormat:",
+	    "setMaximum:",
+	    "setMaximumFractionDigits:",
+	    "setMaximumIntegerDigits:",
+	    "setMaximumSignificantDigits:",
+	    "setMinimum:",
+	    "setMinimumFractionDigits:",
+	    "setMinimumIntegerDigits:",
+	    "setMinimumSignificantDigits:",
+	    "setMinusSign:",
+	    "setMultiplier:",
+	    "setNegativeFormat:",
+	    "setNegativeInfinitySymbol:",
+	    "setNegativePrefix:",
+	    "setNegativeSuffix:",
+	    "setNilSymbol:",
+	    "setNotANumberSymbol:",
+	    "setNumberStyle:",
+	    "setPaddingCharacter:",
+	    "setPaddingPosition:",
+	    "setPartialStringValidationEnabled:",
+	    "setPerMillSymbol:",
+	    "setPercentSymbol:",
+	    "setPlusSign:",
+	    "setPositiveFormat:",
+	    "setPositiveInfinitySymbol:",
+	    "setPositivePrefix:",
+	    "setPositiveSuffix:",
+	    "setRoundingBehavior:",
+	    "setRoundingIncrement:",
+	    "setRoundingMode:",
+	    "setSecondaryGroupingSize:",
+	    "setTextAttributesForNegativeInfinity:",
+	    "setTextAttributesForNegativeValues:",
+	    "setTextAttributesForNil:",
+	    "setTextAttributesForNotANumber:",
+	    "setTextAttributesForPositiveInfinity:",
+	    "setTextAttributesForPositiveValues:",
+	    "setTextAttributesForZero:",
+	    "setThousandSeparator:",
+	    "setUsesGroupingSeparator:",
+	    "setUsesSignificantDigits:",
+	    "setZeroSymbol:",
+	    "stringForObjectValue:",
+	    "stringFromNumber:",
+	    textAttributesForNegativeInfinity,
+	    textAttributesForNegativeValues,
+	    textAttributesForNil,
+	    textAttributesForNotANumber,
+	    textAttributesForPositiveInfinity,
+	    textAttributesForPositiveValues,
+	    textAttributesForZero,
+	    thousandSeparator,
+	    usesGroupingSeparator,
+	    usesSignificantDigits,
+	    zeroSymbol
+	);
+	superclass = NSFormatter;
+    };
+    NSObject = {
+	classmethods = (
+	    "URL:resourceDataDidBecomeAvailable:",
+	    "URL:resourceDidFailLoadingWithReason:",
+	    "URLResourceDidCancelLoading:",
+	    "URLResourceDidFinishLoading:",
+	    accessInstanceVariablesDirectly,
+	    "addObserver:forKeyPath:options:context:",
+	    alloc,
+	    "allocWithZone:",
+	    "appendToXMLRPC:indent:for:",
+	    "archiver:didEncodeObject:",
+	    "archiver:willEncodeObject:",
+	    "archiver:willReplaceObject:withObject:",
+	    "archiverDidFinish:",
+	    "archiverWillFinish:",
+	    attributeKeys,
+	    autoContentAccessingProxy,
+	    "automaticallyNotifiesObserversForKey:",
+	    autorelease,
+	    awake,
+	    "awakeAfterUsingCoder:",
+	    "cancelPreviousPerformRequestsWithTarget:",
+	    "cancelPreviousPerformRequestsWithTarget:selector:object:",
+	    class,
+	    classDescription,
+	    classForArchiver,
+	    classForCoder,
+	    classForKeyedArchiver,
+	    classForKeyedUnarchiver,
+	    classForPortCoder,
+	    className,
+	    "compare:",
+	    "conformsTo:",
+	    "conformsToProtocol:",
+	    "connection:didCancelAuthenticationChallenge:",
+	    "connection:didFailWithError:",
+	    "connection:didReceiveAuthenticationChallenge:",
+	    "connection:didReceiveData:",
+	    "connection:didReceiveResponse:",
+	    "connection:willCacheResponse:",
+	    "connection:willSendRequest:redirectResponse:",
+	    "connectionDidFinishLoading:",
+	    "contentSizeOf:excluding:",
+	    copy,
+	    "copyWithZone:",
+	    dealloc,
+	    description,
+	    "descriptionForInstanceMethod:",
+	    "descriptionForMethod:",
+	    "descriptionWithLocale:",
+	    "descriptionWithLocale:indent:",
+	    "dictionaryWithValuesForKeys:",
+	    "didChange:valuesAtIndexes:forKey:",
+	    "didChangeValueForDependentsOfKey:",
+	    "didChangeValueForKey:",
+	    "didChangeValueForKey:withSetMutation:usingObjects:",
+	    "doesContain:",
+	    "doesNotRecognize:",
+	    "doesNotRecognizeSelector:",
+	    "download:decideDestinationWithSuggestedFilename:",
+	    "download:didCancelAuthenticationChallenge:",
+	    "download:didCreateDestination:",
+	    "download:didFailWithError:",
+	    "download:didReceiveAuthenticationChallenge:",
+	    "download:didReceiveDataOfLength:",
+	    "download:didReceiveResponse:",
+	    "download:shouldDecodeSourceDataOfMIMEType:",
+	    "download:willResumeWithResponse:fromByte:",
+	    "download:willSendRequest:redirectResponse:",
+	    "downloadDidBegin:",
+	    "downloadDidFinish:",
+	    "enableDoubleReleaseCheck:",
+	    "error:",
+	    finalize,
+	    "forwardInvocation:",
+	    "forwardingTargetForSelector:",
+	    free,
+	    "handlePortMessage:",
+	    "handleQueryWithUnboundKey:",
+	    "handleTakeValue:forUnboundKey:",
+	    hash,
+	    init,
+	    initialize,
+	    "instanceMethodFor:",
+	    "instanceMethodForSelector:",
+	    "instanceMethodSignatureForSelector:",
+	    "instancesRespondTo:",
+	    "instancesRespondToSelector:",
+	    "inverseForRelationshipKey:",
+	    "isCaseInsensitiveLike:",
+	    isClass,
+	    "isEqual:",
+	    "isEqualTo:",
+	    isExiting,
+	    "isGreaterThan:",
+	    "isGreaterThanOrEqualTo:",
+	    isInstance,
+	    "isKindOf:",
+	    "isKindOfClass:",
+	    "isLessThan:",
+	    "isLessThanOrEqualTo:",
+	    "isLike:",
+	    "isMemberOf:",
+	    "isMemberOfClass:",
+	    "isMemberOfClassNamed:",
+	    isMetaClass,
+	    "isNotEqualTo:",
+	    isProxy,
+	    "isSubclassOfClass:",
+	    "keep:at:",
+	    "keyPathsForValuesAffectingValueForKey:",
+	    "leak:",
+	    "leakAt:",
+	    load,
+	    makeImmutable,
+	    "makeImmutableCopyOnFail:",
+	    "methodFor:",
+	    "methodForSelector:",
+	    "methodSignatureForSelector:",
+	    "mutableArrayValueForKey:",
+	    "mutableArrayValueForKeyPath:",
+	    mutableCopy,
+	    "mutableSetValueForKey:",
+	    "mutableSetValueForKeyPath:",
+	    new,
+	    "notImplemented:",
+	    observationInfo,
+	    "observeValueForKeyPath:ofObject:change:context:",
+	    "parser:didEndElement:namespaceURI:qualifiedName:",
+	    "parser:didEndMappingPrefix:",
+	    "parser:didStartElement:namespaceURI:qualifiedName:attributes:",
+	    "parser:didStartMappingPrefix:toURI:",
+	    "parser:foundAttributeDeclarationWithName:forElement:type:defaultValue:",
+	    "parser:foundCDATA:",
+	    "parser:foundCharacters:",
+	    "parser:foundComment:",
+	    "parser:foundElementDeclarationWithName:model:",
+	    "parser:foundExternalEntityDeclarationWithName:publicID:systemID:",
+	    "parser:foundIgnorableWhitespace:",
+	    "parser:foundInternalEntityDeclarationWithName:value:",
+	    "parser:foundNotationDeclarationWithName:publicID:systemID:",
+	    "parser:foundProcessingInstructionWithTarget:data:",
+	    "parser:foundUnparsedEntityDeclarationWithName:publicID:systemID:notationName:",
+	    "parser:parseErrorOccurred:",
+	    "parser:resolveExternalEntityName:systemID:",
+	    "parser:validationErrorOccurred:",
+	    "parserDidEndDocument:",
+	    "parserDidStartDocument:",
+	    "perform:with:",
+	    "perform:with:with:",
+	    "performSelector:",
+	    "performSelector:onThread:withObject:waitUntilDone:",
+	    "performSelector:onThread:withObject:waitUntilDone:modes:",
+	    "performSelector:withObject:",
+	    "performSelector:withObject:afterDelay:",
+	    "performSelector:withObject:afterDelay:inModes:",
+	    "performSelector:withObject:withObject:",
+	    "performSelectorInBackground:withObject:",
+	    "performSelectorOnMainThread:withObject:waitUntilDone:",
+	    "performSelectorOnMainThread:withObject:waitUntilDone:modes:",
+	    "poseAs:",
+	    "poseAsClass:",
+	    "read:",
+	    registerAtExit,
+	    "registerAtExit:",
+	    release,
+	    "removeObserver:forKeyPath:",
+	    "removeObserver:forKeyPath:context:",
+	    "replacementObjectForArchiver:",
+	    "replacementObjectForCoder:",
+	    "replacementObjectForKeyedArchiver:",
+	    "replacementObjectForPortCoder:",
+	    "resolveClassMethod:",
+	    "resolveInstanceMethod:",
+	    "respondsTo:",
+	    "respondsToSelector:",
+	    retain,
+	    retainCount,
+	    self,
+	    "setKeys:triggerChangeNotificationsForDependentKey:",
+	    "setNilValueForKey:",
+	    "setObservationInfo:",
+	    "setShouldCleanUp:",
+	    "setValue:forKey:",
+	    "setValue:forKeyPath:",
+	    "setValue:forUndefinedKey:",
+	    "setValuesForKeysWithDictionary:",
+	    "setVersion:",
+	    shouldCleanUp,
+	    "shouldCreateTraceableLocks:",
+	    "shouldNotImplement:",
+	    sizeInBytes,
+	    "sizeInBytesExcluding:",
+	    "sizeOfContentExcluding:",
+	    sizeOfInstance,
+	    "smtpClient:mimeFailed:",
+	    "smtpClient:mimeSent:",
+	    "smtpClient:mimeUnsent:",
+	    "storedValueForKey:",
+	    "streamVersion:",
+	    "subclassResponsibility:",
+	    superclass,
+	    "takeStoredValue:forKey:",
+	    "takeStoredValuesFromDictionary:",
+	    "takeValue:forKey:",
+	    "takeValue:forKeyPath:",
+	    "takeValuesFromDictionary:",
+	    toManyRelationshipKeys,
+	    toOneRelationshipKeys,
+	    tracedCondition,
+	    "tracedConditionLockWithCondition:",
+	    tracedLock,
+	    tracedRecursiveLock,
+	    trackOwnership,
+	    "unableToSetNilForKey:",
+	    "unarchiver:cannotDecodeObjectOfClassName:originalClasses:",
+	    "unarchiver:didDecodeObject:",
+	    "unarchiver:willReplaceObject:withObject:",
+	    "unarchiverDidFinish:",
+	    "unarchiverWillFinish:",
+	    useStoredAccessor,
+	    "validateValue:forKey:error:",
+	    "validateValue:forKeyPath:error:",
+	    "valueForKey:",
+	    "valueForKeyPath:",
+	    "valueForUndefinedKey:",
+	    "valuesForKeys:",
+	    version,
+	    "willChange:valuesAtIndexes:forKey:",
+	    "willChangeValueForDependentsOfKey:",
+	    "willChangeValueForKey:",
+	    "willChangeValueForKey:withSetMutation:usingObjects:",
+	    "write:",
+	    zone
+	);
+	instancemethods = (
+	    "URL:resourceDataDidBecomeAvailable:",
+	    "URL:resourceDidFailLoadingWithReason:",
+	    "URLResourceDidCancelLoading:",
+	    "URLResourceDidFinishLoading:",
+	    "addObserver:forKeyPath:options:context:",
+	    "appendToXMLRPC:indent:for:",
+	    "archiver:didEncodeObject:",
+	    "archiver:willEncodeObject:",
+	    "archiver:willReplaceObject:withObject:",
+	    "archiverDidFinish:",
+	    "archiverWillFinish:",
+	    attributeKeys,
+	    autoContentAccessingProxy,
+	    autorelease,
+	    awake,
+	    "awakeAfterUsingCoder:",
+	    class,
+	    classDescription,
+	    classForArchiver,
+	    classForCoder,
+	    classForKeyedArchiver,
+	    classForPortCoder,
+	    className,
+	    "compare:",
+	    "conformsTo:",
+	    "conformsToProtocol:",
+	    "connection:didCancelAuthenticationChallenge:",
+	    "connection:didFailWithError:",
+	    "connection:didReceiveAuthenticationChallenge:",
+	    "connection:didReceiveData:",
+	    "connection:didReceiveResponse:",
+	    "connection:willCacheResponse:",
+	    "connection:willSendRequest:redirectResponse:",
+	    "connectionDidFinishLoading:",
+	    copy,
+	    dealloc,
+	    description,
+	    "descriptionForMethod:",
+	    "descriptionWithLocale:",
+	    "descriptionWithLocale:indent:",
+	    "dictionaryWithValuesForKeys:",
+	    "didChange:valuesAtIndexes:forKey:",
+	    "didChangeValueForDependentsOfKey:",
+	    "didChangeValueForKey:",
+	    "didChangeValueForKey:withSetMutation:usingObjects:",
+	    "doesContain:",
+	    "doesNotRecognize:",
+	    "doesNotRecognizeSelector:",
+	    "download:decideDestinationWithSuggestedFilename:",
+	    "download:didCancelAuthenticationChallenge:",
+	    "download:didCreateDestination:",
+	    "download:didFailWithError:",
+	    "download:didReceiveAuthenticationChallenge:",
+	    "download:didReceiveDataOfLength:",
+	    "download:didReceiveResponse:",
+	    "download:shouldDecodeSourceDataOfMIMEType:",
+	    "download:willResumeWithResponse:fromByte:",
+	    "download:willSendRequest:redirectResponse:",
+	    "downloadDidBegin:",
+	    "downloadDidFinish:",
+	    "error:",
+	    finalize,
+	    "forwardInvocation:",
+	    "forwardingTargetForSelector:",
+	    free,
+	    "handlePortMessage:",
+	    "handleQueryWithUnboundKey:",
+	    "handleTakeValue:forUnboundKey:",
+	    hash,
+	    init,
+	    "inverseForRelationshipKey:",
+	    "isCaseInsensitiveLike:",
+	    isClass,
+	    "isEqual:",
+	    "isEqualTo:",
+	    "isGreaterThan:",
+	    "isGreaterThanOrEqualTo:",
+	    isInstance,
+	    "isKindOf:",
+	    "isKindOfClass:",
+	    "isLessThan:",
+	    "isLessThanOrEqualTo:",
+	    "isLike:",
+	    "isMemberOf:",
+	    "isMemberOfClass:",
+	    "isMemberOfClassNamed:",
+	    isMetaClass,
+	    "isNotEqualTo:",
+	    isProxy,
+	    makeImmutable,
+	    "makeImmutableCopyOnFail:",
+	    "methodFor:",
+	    "methodForSelector:",
+	    "methodSignatureForSelector:",
+	    "mutableArrayValueForKey:",
+	    "mutableArrayValueForKeyPath:",
+	    mutableCopy,
+	    "mutableSetValueForKey:",
+	    "mutableSetValueForKeyPath:",
+	    "notImplemented:",
+	    observationInfo,
+	    "observeValueForKeyPath:ofObject:change:context:",
+	    "parser:didEndElement:namespaceURI:qualifiedName:",
+	    "parser:didEndMappingPrefix:",
+	    "parser:didStartElement:namespaceURI:qualifiedName:attributes:",
+	    "parser:didStartMappingPrefix:toURI:",
+	    "parser:foundAttributeDeclarationWithName:forElement:type:defaultValue:",
+	    "parser:foundCDATA:",
+	    "parser:foundCharacters:",
+	    "parser:foundComment:",
+	    "parser:foundElementDeclarationWithName:model:",
+	    "parser:foundExternalEntityDeclarationWithName:publicID:systemID:",
+	    "parser:foundIgnorableWhitespace:",
+	    "parser:foundInternalEntityDeclarationWithName:value:",
+	    "parser:foundNotationDeclarationWithName:publicID:systemID:",
+	    "parser:foundProcessingInstructionWithTarget:data:",
+	    "parser:foundUnparsedEntityDeclarationWithName:publicID:systemID:notationName:",
+	    "parser:parseErrorOccurred:",
+	    "parser:resolveExternalEntityName:systemID:",
+	    "parser:validationErrorOccurred:",
+	    "parserDidEndDocument:",
+	    "parserDidStartDocument:",
+	    "perform:with:",
+	    "perform:with:with:",
+	    "performSelector:",
+	    "performSelector:onThread:withObject:waitUntilDone:",
+	    "performSelector:onThread:withObject:waitUntilDone:modes:",
+	    "performSelector:withObject:",
+	    "performSelector:withObject:afterDelay:",
+	    "performSelector:withObject:afterDelay:inModes:",
+	    "performSelector:withObject:withObject:",
+	    "performSelectorInBackground:withObject:",
+	    "performSelectorOnMainThread:withObject:waitUntilDone:",
+	    "performSelectorOnMainThread:withObject:waitUntilDone:modes:",
+	    "read:",
+	    release,
+	    "removeObserver:forKeyPath:",
+	    "removeObserver:forKeyPath:context:",
+	    "replacementObjectForArchiver:",
+	    "replacementObjectForCoder:",
+	    "replacementObjectForKeyedArchiver:",
+	    "replacementObjectForPortCoder:",
+	    "respondsTo:",
+	    "respondsToSelector:",
+	    retain,
+	    retainCount,
+	    self,
+	    "setNilValueForKey:",
+	    "setObservationInfo:",
+	    "setValue:forKey:",
+	    "setValue:forKeyPath:",
+	    "setValue:forUndefinedKey:",
+	    "setValuesForKeysWithDictionary:",
+	    "shouldNotImplement:",
+	    sizeInBytes,
+	    "sizeInBytesExcluding:",
+	    "sizeOfContentExcluding:",
+	    sizeOfInstance,
+	    "smtpClient:mimeFailed:",
+	    "smtpClient:mimeSent:",
+	    "smtpClient:mimeUnsent:",
+	    "storedValueForKey:",
+	    "subclassResponsibility:",
+	    superclass,
+	    "takeStoredValue:forKey:",
+	    "takeStoredValuesFromDictionary:",
+	    "takeValue:forKey:",
+	    "takeValue:forKeyPath:",
+	    "takeValuesFromDictionary:",
+	    toManyRelationshipKeys,
+	    toOneRelationshipKeys,
+	    trackOwnership,
+	    "unableToSetNilForKey:",
+	    "unarchiver:cannotDecodeObjectOfClassName:originalClasses:",
+	    "unarchiver:didDecodeObject:",
+	    "unarchiver:willReplaceObject:withObject:",
+	    "unarchiverDidFinish:",
+	    "unarchiverWillFinish:",
+	    "validateValue:forKey:error:",
+	    "validateValue:forKeyPath:error:",
+	    "valueForKey:",
+	    "valueForKeyPath:",
+	    "valueForUndefinedKey:",
+	    "valuesForKeys:",
+	    "willChange:valuesAtIndexes:forKey:",
+	    "willChangeValueForDependentsOfKey:",
+	    "willChangeValueForKey:",
+	    "willChangeValueForKey:withSetMutation:usingObjects:",
+	    "write:",
+	    zone
+	);
+    };
+    NSObjectScripting = {
+	superclass = NSObject;
+    };
+    NSOperation = {
+	classmethods = (
+	    "automaticallyNotifiesObserversForKey:"
+	);
+	instancemethods = (
+	    "addDependency:",
+	    cancel,
+	    completionBlock,
+	    dealloc,
+	    dependencies,
+	    init,
+	    isCancelled,
+	    isConcurrent,
+	    isExecuting,
+	    isFinished,
+	    isReady,
+	    main,
+	    "observeValueForKeyPath:ofObject:change:context:",
+	    queuePriority,
+	    "removeDependency:",
+	    "setCompletionBlock:",
+	    "setQueuePriority:",
+	    "setThreadPriority:",
+	    start,
+	    threadPriority,
+	    waitUntilFinished
+	);
+	superclass = NSObject;
+    };
+    NSOperationQueue = {
+	classmethods = (
+	    currentQueue,
+	    initialize,
+	    mainQueue
+	);
+	instancemethods = (
+	    "addOperation:",
+	    "addOperationWithBlock:",
+	    "addOperations:waitUntilFinished:",
+	    cancelAllOperations,
+	    dealloc,
+	    init,
+	    isSuspended,
+	    maxConcurrentOperationCount,
+	    name,
+	    "observeValueForKeyPath:ofObject:change:context:",
+	    operationCount,
+	    operations,
+	    "setMaxConcurrentOperationCount:",
+	    "setName:",
+	    "setSuspended:",
+	    waitUntilAllOperationsAreFinished
+	);
+	superclass = NSObject;
+    };
+    NSOrderedSet = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize,
+	    orderedSet,
+	    "orderedSetWithArray:",
+	    "orderedSetWithArray:range:copyItems:",
+	    "orderedSetWithObject:",
+	    "orderedSetWithObjects:",
+	    "orderedSetWithObjects:count:",
+	    "orderedSetWithOrderedSet:",
+	    "orderedSetWithSet:",
+	    "orderedSetWithSet:copyItems:"
+	);
+	instancemethods = (
+	    "addObserver:forKeyPath:options:context:",
+	    array,
+	    classForCoder,
+	    "containsObject:",
+	    "copyWithZone:",
+	    count,
+	    "countByEnumeratingWithState:objects:count:",
+	    description,
+	    "descriptionWithLocale:",
+	    "descriptionWithLocale:indent:",
+	    "encodeWithCoder:",
+	    "enumerateObjectsAtIndexes:options:usingBlock:",
+	    "enumerateObjectsUsingBlock:",
+	    "enumerateObjectsWithOptions:usingBlock:",
+	    "filteredOrderedSetUsingPredicate:",
+	    firstObject,
+	    "getObjects:range:",
+	    "indexOfObject:",
+	    "indexOfObject:inSortedRange:options:usingComparator:",
+	    "indexOfObjectAtIndexes:options:passingTest:",
+	    "indexOfObjectPassingTest:",
+	    "indexOfObjectWithOptions:passingTest:",
+	    "indexesOfObjectsAtIndexes:options:passingTest:",
+	    "indexesOfObjectsPassingTest:",
+	    "indexesOfObjectsWithOptions:passingTest:",
+	    init,
+	    "initWithArray:",
+	    "initWithArray:copyItems:",
+	    "initWithArray:range:copyItems:",
+	    "initWithCoder:",
+	    "initWithObject:",
+	    "initWithObjects:",
+	    "initWithObjects:count:",
+	    "initWithOrderedSet:",
+	    "initWithOrderedSet:copyItems:",
+	    "initWithOrderedSet:range:copyItems:",
+	    "initWithSet:",
+	    "initWithSet:copyItems:",
+	    "intersectsOrderedSet:",
+	    "intersectsSet:",
+	    "isEqual:",
+	    "isEqualToOrderedSet:",
+	    "isSubsetOfOrderedSet:",
+	    "isSubsetOfSet:",
+	    lastObject,
+	    "mutableCopyWithZone:",
+	    "objectAtIndex:",
+	    "objectAtIndexedSubscript:",
+	    objectEnumerator,
+	    "objectsAtIndexes:",
+	    "removeObserver:forKeyPath:",
+	    "removeObserver:forKeyPath:context:",
+	    reverseObjectEnumerator,
+	    reversedOrderedSet,
+	    set,
+	    "setValue:forKey:",
+	    "sortedArrayUsingComparator:",
+	    "sortedArrayUsingDescriptors:",
+	    "sortedArrayWithOptions:usingComparator:",
+	    "valueForKey:"
+	);
+	superclass = NSObject;
+    };
+    NSOrthography = {
+	classmethods = (
+	    "defaultOrthographyForLanguage:",
+	    "orthographyWithDominantScript:languageMap:"
+	);
+	instancemethods = (
+	    allLanguages,
+	    allScripts,
+	    "copyWithZone:",
+	    dealloc,
+	    dominantLanguage,
+	    "dominantLanguageForScript:",
+	    dominantScript,
+	    "encodeWithCoder:",
+	    "initWithCoder:",
+	    "initWithDominantScript:languageMap:",
+	    "languagesForScript:",
+	    languationMap
+	);
+	superclass = NSObject;
+    };
+    NSOutputStream = {
+	classmethods = (
+	    "outputStreamToBuffer:capacity:",
+	    "outputStreamToFileAtPath:append:",
+	    outputStreamToMemory
+	);
+	instancemethods = (
+	    hasSpaceAvailable,
+	    "initToBuffer:capacity:",
+	    "initToFileAtPath:append:",
+	    initToMemory,
+	    "write:maxLength:"
+	);
+	superclass = NSStream;
+    };
+    NSPersonNameComponents = {
+	instancemethods = (
+	    "copyWithZone:",
+	    dealloc,
+	    "encodeWithCoder:",
+	    familyName,
+	    givenName,
+	    init,
+	    "initWithCoder:",
+	    middleName,
+	    namePrefix,
+	    nameSuffix,
+	    nickname,
+	    phoneticRepresentation,
+	    "setFamilyName:",
+	    "setGivenName:",
+	    "setMiddleName:",
+	    "setNamePrefix:",
+	    "setNameSuffix:",
+	    "setNickname:",
+	    "setPhoneticRepresentation:"
+	);
+	superclass = NSObject;
+    };
+    NSPersonNameComponentsFormatter = {
+	classmethods = (
+	    "localizedStringFromPersonNameComponents:style:options:"
+	);
+	instancemethods = (
+	    "annotatedStringFromPersonNameComponents:",
+	    "getObjectValue:forString:errorDescription:",
+	    init,
+	    isPhonetic,
+	    "personNameComponentsFromString:",
+	    "setPhonetic:",
+	    "setStyle:",
+	    "stringForObjectValue:",
+	    "stringFromPersonNameComponents:",
+	    style
+	);
+	superclass = NSFormatter;
+    };
+    NSPipe = {
+	classmethods = (
+	    pipe
+	);
+	instancemethods = (
+	    dealloc,
+	    fileHandleForReading,
+	    fileHandleForWriting,
+	    init
+	);
+	superclass = NSObject;
+    };
+    NSPointerArray = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize,
+	    "pointerArrayWithOptions:",
+	    "pointerArrayWithPointerFunctions:",
+	    pointerArrayWithStrongObjects,
+	    pointerArrayWithWeakObjects,
+	    strongObjectsPointerArray,
+	    weakObjectsPointerArray
+	);
+	instancemethods = (
+	    "addPointer:",
+	    allObjects,
+	    compact,
+	    "copyWithZone:",
+	    count,
+	    "countByEnumeratingWithState:objects:count:",
+	    "encodeWithCoder:",
+	    init,
+	    "initWithCoder:",
+	    "initWithOptions:",
+	    "initWithPointerFunctions:",
+	    "insertPointer:atIndex:",
+	    "isEqual:",
+	    "pointerAtIndex:",
+	    pointerFunctions,
+	    "removePointerAtIndex:",
+	    "replacePointerAtIndex:withPointer:",
+	    "setCount:"
+	);
+	superclass = NSObject;
+    };
+    NSPointerFunctions = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize,
+	    "pointerFunctionsWithOptions:"
+	);
+	instancemethods = (
+	    acquireFunction,
+	    "copyWithZone:",
+	    descriptionFunction,
+	    hashFunction,
+	    "initWithOptions:",
+	    isEqualFunction,
+	    relinquishFunction,
+	    "setAcquireFunction:",
+	    "setDescriptionFunction:",
+	    "setHashFunction:",
+	    "setIsEqualFunction:",
+	    "setRelinquishFunction:",
+	    "setSizeFunction:",
+	    "setUsesStrongWriteBarrier:",
+	    "setUsesWeakReadAndWriteBarriers:",
+	    sizeFunction,
+	    usesStrongWriteBarrier,
+	    usesWeakReadAndWriteBarriers
+	);
+	superclass = NSObject;
+    };
+    NSPort = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize,
+	    port,
+	    "portWithMachPort:"
+	);
+	instancemethods = (
+	    "addConnection:toRunLoop:forMode:",
+	    autorelease,
+	    "copyWithZone:",
+	    delegate,
+	    "encodeWithCoder:",
+	    "getFds:count:",
+	    init,
+	    "initWithCoder:",
+	    "initWithMachPort:",
+	    invalidate,
+	    isValid,
+	    machPort,
+	    release,
+	    "removeConnection:fromRunLoop:forMode:",
+	    reservedSpaceLength,
+	    retain,
+	    "sendBeforeDate:components:from:reserved:",
+	    "sendBeforeDate:msgid:components:from:reserved:",
+	    "setDelegate:"
+	);
+	superclass = NSObject;
+    };
+    NSPortCoder = {
+	classmethods = (
+	    initialize,
+	    "portCoderWithReceivePort:sendPort:components:"
+	);
+	instancemethods = (
+	    connection,
+	    dealloc,
+	    "decodeArrayOfObjCType:count:at:",
+	    decodeDataObject,
+	    decodePortObject,
+	    "decodeValueOfObjCType:at:",
+	    dispatch,
+	    "encodeArrayOfObjCType:count:at:",
+	    "encodeBycopyObject:",
+	    "encodeByrefObject:",
+	    "encodeConditionalObject:",
+	    "encodeDataObject:",
+	    "encodeObject:",
+	    "encodePortObject:",
+	    "encodeRootObject:",
+	    "encodeValueOfObjCType:at:",
+	    "initWithReceivePort:sendPort:components:",
+	    isBycopy,
+	    isByref,
+	    objectZone,
+	    "setObjectZone:",
+	    systemVersion,
+	    "versionForClassName:"
+	);
+	superclass = NSCoder;
+    };
+    NSPortMessage = {
+	instancemethods = (
+	    components,
+	    dealloc,
+	    description,
+	    init,
+	    "initWithMachMessage:",
+	    "initWithSendPort:receivePort:components:",
+	    msgid,
+	    receivePort,
+	    "sendBeforeDate:",
+	    sendPort,
+	    "setMsgid:"
+	);
+	superclass = NSObject;
+    };
+    NSPortNameServer = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize,
+	    systemDefaultPortNameServer
+	);
+	instancemethods = (
+	    dealloc,
+	    "namesForPort:",
+	    "portForName:",
+	    "portForName:onHost:",
+	    "registerPort:forName:",
+	    "removePort:",
+	    "removePort:forName:",
+	    "removePortForName:"
+	);
+	superclass = NSObject;
+    };
+    NSPredicate = {
+	classmethods = (
+	    "predicateWithBlock:",
+	    "predicateWithFormat:",
+	    "predicateWithFormat:argumentArray:",
+	    "predicateWithFormat:arguments:",
+	    "predicateWithValue:"
+	);
+	instancemethods = (
+	    classForCoder,
+	    "copyWithZone:",
+	    description,
+	    "encodeWithCoder:",
+	    "evaluateWithObject:",
+	    "evaluateWithObject:substitutionVariables:",
+	    "initWithCoder:",
+	    predicateFormat,
+	    "predicateWithSubstitutionVariables:"
+	);
+	superclass = NSObject;
+    };
+    NSProcessInfo = {
+	classmethods = (
+	    initialize,
+	    "initializeWithArguments:count:environment:",
+	    load,
+	    processInfo
+	);
+	instancemethods = (
+	    activeProcessorCount,
+	    arguments,
+	    "beginActivityWithOptions:reason:",
+	    debugLoggingEnabled,
+	    debugSet,
+	    disableSuddenTermination,
+	    enableSuddenTermination,
+	    "endActivity:",
+	    environment,
+	    globallyUniqueString,
+	    hostName,
+	    operatingSystem,
+	    operatingSystemName,
+	    operatingSystemVersionString,
+	    "performActivityWithOptions:reason:usingBlock:",
+	    "performExpiringActivityWithReason:usingBlock:",
+	    physicalMemory,
+	    processIdentifier,
+	    processName,
+	    processorCount,
+	    "setDebugLoggingEnabled:",
+	    "setLogFile:",
+	    "setProcessName:",
+	    systemUptime
+	);
+	superclass = NSObject;
+    };
+    NSProgress = {
+	classmethods = (
+	    "addSubscriberForFileURL:withPublishingHandler:",
+	    currentProgress,
+	    "discreteProgressWithTotalUnitCount:",
+	    initialize,
+	    "progressWithTotalUnitCount:",
+	    "progressWithTotalUnitCount:parent:pendingUnitCount:",
+	    "removeSubscriber:"
+	);
+	instancemethods = (
+	    "addChild:withPendingUnitCount:",
+	    "becomeCurrentWithPendingUnitCount:",
+	    cancel,
+	    cancelled,
+	    completedUnitCount,
+	    dealloc,
+	    estimatedTimeRemaining,
+	    fileCompletedCount,
+	    fileOperationKind,
+	    fileTotalCount,
+	    fileUrl,
+	    finished,
+	    fractionCompleted,
+	    indeterminate,
+	    "initWithParent:userInfo:",
+	    isCancellable,
+	    isCancelled,
+	    isFinished,
+	    isIndeterminate,
+	    isOld,
+	    isPausable,
+	    isPaused,
+	    kind,
+	    localizedAdditionalDescription,
+	    localizedDescription,
+	    old,
+	    pause,
+	    "performAsCurrentWithPendingUnitCount:usingBlock:",
+	    publish,
+	    resignCurrent,
+	    resume,
+	    "setCancellationHandler:",
+	    "setCompletedUnitCount:",
+	    "setEstimatedTimeRemaining:",
+	    "setFileCompletedCount:",
+	    "setFileOperationKind:",
+	    "setFileTotalCount:",
+	    "setFileUrl:",
+	    "setIndeterminate:",
+	    "setKind:",
+	    "setLocalizedAdditionalDescription:",
+	    "setLocalizedDescription:",
+	    "setPausingHandler:",
+	    "setResumingHandler:",
+	    "setThroughput:",
+	    "setTotalUnitCount:",
+	    "setUserInfoObject:forKey:",
+	    throughtput,
+	    totalUnitCount,
+	    unpublish,
+	    userInfo
+	);
+	superclass = NSObject;
+    };
+    NSPropertyListSerialization = {
+	classmethods = (
+	    "dataFromPropertyList:",
+	    "dataFromPropertyList:format:errorDescription:",
+	    "dataWithPropertyList:format:options:error:",
+	    initialize,
+	    "propertyList:isValidForFormat:",
+	    "propertyListFromData:",
+	    "propertyListFromData:mutabilityOption:format:errorDescription:",
+	    "propertyListFromString:",
+	    "propertyListWithData:options:format:error:",
+	    "propertyListWithStream:options:format:error:",
+	    "stringFromPropertyList:",
+	    "writePropertyList:toStream:format:options:error:"
+	);
+	superclass = NSObject;
+    };
+    NSProtocolChecker = {
+	classmethods = (
+	    "protocolCheckerWithTarget:protocol:"
+	);
+	instancemethods = (
+	    dealloc,
+	    "forwardInvocation:",
+	    init,
+	    "initWithTarget:protocol:",
+	    "methodSignatureForSelector:",
+	    protocol,
+	    target
+	);
+	superclass = NSProxy;
+    };
+    NSProxy = {
+	classmethods = (
+	    alloc,
+	    "allocWithZone:",
+	    autorelease,
+	    "awakeAfterUsingCoder:",
+	    class,
+	    "conformsToProtocol:",
+	    dealloc,
+	    description,
+	    "forwardInvocation:",
+	    hash,
+	    init,
+	    "instanceMethodForSelector:",
+	    "isEqual:",
+	    "isKindOfClass:",
+	    "isMemberOfClass:",
+	    isProxy,
+	    load,
+	    "methodForSelector:",
+	    "methodSignatureForSelector:",
+	    "notImplemented:",
+	    "performSelector:",
+	    "performSelector:withObject:",
+	    "performSelector:withObject:withObject:",
+	    release,
+	    "replacementObjectForPortCoder:",
+	    "respondsToSelector:",
+	    retain,
+	    retainCount,
+	    self,
+	    "sizeInBytesExcluding:",
+	    "sizeOfContentExcluding:",
+	    sizeOfInstance,
+	    superclass,
+	    zone
+	);
+	instancemethods = (
+	    autorelease,
+	    "awakeAfterUsingCoder:",
+	    class,
+	    "conformsToProtocol:",
+	    dealloc,
+	    description,
+	    "forwardInvocation:",
+	    hash,
+	    init,
+	    "isEqual:",
+	    "isKindOfClass:",
+	    "isMemberOfClass:",
+	    isProxy,
+	    "methodForSelector:",
+	    "methodSignatureForSelector:",
+	    "notImplemented:",
+	    "performSelector:",
+	    "performSelector:withObject:",
+	    "performSelector:withObject:withObject:",
+	    release,
+	    "replacementObjectForPortCoder:",
+	    "respondsToSelector:",
+	    retain,
+	    retainCount,
+	    self,
+	    "sizeInBytesExcluding:",
+	    "sizeOfContentExcluding:",
+	    sizeOfInstance,
+	    superclass,
+	    zone
+	);
+    };
+    NSRecursiveLock = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize
+	);
+	instancemethods = (
+	    dealloc,
+	    description,
+	    finalize,
+	    init,
+	    isLockedByCurrentThread,
+	    lock,
+	    "lockBeforeDate:",
+	    name,
+	    "setName:",
+	    stack,
+	    tryLock,
+	    unlock
+	);
+	superclass = NSObject;
+    };
+    NSRegularExpression = {
+	classmethods = (
+	    "escapedPatternForString:",
+	    initialize,
+	    "regularExpressionWithPattern:options:error:"
+	);
+	instancemethods = (
+	    "copyWithZone:",
+	    dealloc,
+	    "encodeWithCoder:",
+	    "enumerateMatchesInString:options:range:callback:context:",
+	    "enumerateMatchesInString:options:range:usingBlock:",
+	    "firstMatchInString:options:range:",
+	    hash,
+	    "initWithCoder:",
+	    "initWithPattern:options:error:",
+	    "isEqual:",
+	    "matchesInString:options:range:",
+	    numberOfCaptureGroups,
+	    "numberOfMatchesInString:options:range:",
+	    options,
+	    pattern,
+	    "rangeOfFirstMatchInString:options:range:",
+	    "replaceMatchesInString:options:range:withTemplate:",
+	    "replacementStringForResult:inString:offset:template:",
+	    "stringByReplacingMatchesInString:options:range:withTemplate:"
+	);
+	superclass = NSObject;
+    };
+    NSRunLoop = {
+	classmethods = (
+	    currentRunLoop,
+	    initialize,
+	    mainRunLoop
+	);
+	instancemethods = (
+	    "acceptInputForMode:beforeDate:",
+	    "addEvent:type:watcher:forMode:",
+	    "addPort:forMode:",
+	    "addStream:mode:",
+	    "addTimer:forMode:",
+	    "cancelPerformSelector:target:argument:",
+	    "cancelPerformSelectorsWithTarget:",
+	    configureAsServer,
+	    currentMode,
+	    dealloc,
+	    init,
+	    "limitDateForMode:",
+	    "performSelector:target:argument:order:modes:",
+	    "removeEvent:type:forMode:all:",
+	    "removePort:forMode:",
+	    "removeStream:mode:",
+	    run,
+	    "runMode:beforeDate:",
+	    "runUntilDate:"
+	);
+	superclass = NSObject;
+    };
+    NSScanner = {
+	classmethods = (
+	    initialize,
+	    "localizedScannerWithString:",
+	    "scannerWithString:"
+	);
+	instancemethods = (
+	    caseSensitive,
+	    charactersToBeSkipped,
+	    "copyWithZone:",
+	    dealloc,
+	    "initWithString:",
+	    isAtEnd,
+	    locale,
+	    "scanCharactersFromSet:intoString:",
+	    "scanDecimal:",
+	    "scanDouble:",
+	    "scanFloat:",
+	    "scanHexDouble:",
+	    "scanHexFloat:",
+	    "scanHexInt:",
+	    "scanHexLongLong:",
+	    "scanInt:",
+	    "scanInteger:",
+	    scanLocation,
+	    "scanLongLong:",
+	    "scanRadixUnsignedInt:",
+	    "scanRadixUnsignedLongLong:",
+	    "scanString:intoString:",
+	    "scanUnsignedLongLong_:radix:maximum:gotDigits:",
+	    "scanUpToCharactersFromSet:intoString:",
+	    "scanUpToString:intoString:",
+	    "setCaseSensitive:",
+	    "setCharactersToBeSkipped:",
+	    "setLocale:",
+	    "setScanLocation:",
+	    string
+	);
+	superclass = NSObject;
+    };
+    NSScriptClassDescription = {
+	superclass = NSClassDescription;
+    };
+    NSScriptCoercionHandler = {
+	superclass = NSObject;
+    };
+    NSScriptCommand = {
+	superclass = NSObject;
+    };
+    NSScriptCommandDescription = {
+	superclass = NSObject;
+    };
+    NSScriptExecutionContext = {
+	superclass = NSObject;
+    };
+    NSScriptKeyValueCoding = {
+	superclass = NSObject;
+    };
+    NSScriptObjectSpecifiers = {
+	superclass = NSObject;
+    };
+    NSScriptStandardSuiteCommands = {
+	superclass = NSObject;
+    };
+    NSScriptSuiteRegistry = {
+	superclass = NSObject;
+    };
+    NSSerializer = {
+	classmethods = (
+	    initialize,
+	    "serializePropertyList:",
+	    "serializePropertyList:intoData:",
+	    "serializePropertyList:intoData:compact:",
+	    "shouldBeCompact:"
+	);
+	superclass = NSObject;
+    };
+    NSSet = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize,
+	    set,
+	    "setWithArray:",
+	    "setWithObject:",
+	    "setWithObjects:",
+	    "setWithObjects:count:",
+	    "setWithSet:"
+	);
+	instancemethods = (
+	    "addObserver:forKeyPath:options:context:",
+	    allObjects,
+	    anyObject,
+	    classForCoder,
+	    "containsObject:",
+	    "copyWithZone:",
+	    count,
+	    "countByEnumeratingWithState:objects:count:",
+	    description,
+	    "descriptionWithLocale:",
+	    "encodeWithCoder:",
+	    "enumerateObjectsUsingBlock:",
+	    "enumerateObjectsWithOptions:usingBlock:",
+	    "filteredSetUsingPredicate:",
+	    hash,
+	    init,
+	    "initWithArray:",
+	    "initWithCoder:",
+	    "initWithObjects:",
+	    "initWithObjects:count:",
+	    "initWithSet:",
+	    "initWithSet:copyItems:",
+	    "intersectsSet:",
+	    "isEqual:",
+	    "isEqualToSet:",
+	    "isSubsetOfSet:",
+	    "makeObjectsPerform:",
+	    "makeObjectsPerform:withObject:",
+	    "makeObjectsPerformSelector:",
+	    "makeObjectsPerformSelector:withObject:",
+	    "member:",
+	    "mutableCopyWithZone:",
+	    objectEnumerator,
+	    "objectsPassingTest:",
+	    "objectsWithOptions:passingTest:",
+	    "removeObserver:forKeyPath:",
+	    "setByAddingObject:",
+	    "setByAddingObjectsFromArray:",
+	    "setByAddingObjectsFromSet:",
+	    "sortedArrayUsingDescriptors:",
+	    "valueForKey:",
+	    "valueForKeyPath:"
+	);
+	superclass = NSObject;
+    };
+    NSSocketPort = {
+	classmethods = (
+	    "existingPortWithNumber:onHost:",
+	    initialize,
+	    new,
+	    "portWithNumber:onHost:forceAddress:listener:",
+	    "setClientOptionsForTLS:",
+	    "setServerOptionsForTLS:"
+	);
+	instancemethods = (
+	    "addHandle:forSend:",
+	    address,
+	    clientOptionsForTLS,
+	    "conversation:",
+	    "copyWithZone:",
+	    dealloc,
+	    description,
+	    finalize,
+	    "getFds:count:",
+	    "handleForPort:beforeDate:",
+	    "handlePortMessage:",
+	    hash,
+	    host,
+	    init,
+	    invalidate,
+	    "isEqual:",
+	    portNumber,
+	    "receivedEvent:type:extra:forMode:",
+	    release,
+	    "removeHandle:",
+	    reservedSpaceLength,
+	    "sendBeforeDate:msgid:components:from:reserved:",
+	    serverOptionsForTLS,
+	    "setClientOptionsForTLS:",
+	    "setServerOptionsForTLS:"
+	);
+	superclass = NSPort;
+    };
+    NSSocketPortNameServer = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize,
+	    "setPortClass:",
+	    sharedInstance
+	);
+	instancemethods = (
+	    dealloc,
+	    "namesForPort:",
+	    "portForName:onHost:",
+	    "registerPort:forName:",
+	    "removePort:",
+	    "removePort:forName:",
+	    "removePortForName:"
+	);
+	superclass = NSPortNameServer;
+    };
+    NSSortDescriptor = {
+	classmethods = (
+	    "defaultsChanged:",
+	    initialize,
+	    "sortDescriptorWithKey:ascending:",
+	    "sortDescriptorWithKey:ascending:comparator:",
+	    "sortDescriptorWithKey:ascending:selector:"
+	);
+	instancemethods = (
+	    ascending,
+	    "compareObject:toObject:",
+	    "copyWithZone:",
+	    dealloc,
+	    "encodeWithCoder:",
+	    hash,
+	    "initWithCoder:",
+	    "initWithKey:ascending:",
+	    "initWithKey:ascending:comparator:",
+	    "initWithKey:ascending:selector:",
+	    "isEqual:",
+	    key,
+	    reversedSortDescriptor,
+	    selector
+	);
+	superclass = NSObject;
+    };
+    NSSpellServer = {
+	classmethods = (
+	    initialize
+	);
+	instancemethods = (
+	    dealloc,
+	    delegate,
+	    init,
+	    "isWordInUserDictionaries:caseSensitive:",
+	    "registerLanguage:byVendor:",
+	    run,
+	    "setDelegate:",
+	    "spellServer:checkGrammarInString:language:details:",
+	    "spellServer:suggestCompletionsForPartialWordRange:inString:language:"
+	);
+	superclass = NSObject;
+    };
+    NSStream = {
+	classmethods = (
+	    "getLocalStreamsToPath:inputStream:outputStream:",
+	    "getStreamsToHost:port:inputStream:outputStream:",
+	    "pipeWithInputStream:outputStream:"
+	);
+	instancemethods = (
+	    close,
+	    delegate,
+	    open,
+	    "propertyForKey:",
+	    "removeFromRunLoop:forMode:",
+	    "scheduleInRunLoop:forMode:",
+	    "setDelegate:",
+	    "setProperty:forKey:",
+	    streamError,
+	    streamStatus,
+	    "stringFromEvent:",
+	    "stringFromStatus:"
+	);
+	superclass = NSObject;
+    };
+    NSString = {
+	classmethods = (
+	    "allocWithZone:",
+	    atExit,
+	    availableStringEncodings,
+	    constantStringClass,
+	    defaultCStringEncoding,
+	    initialize,
+	    "localizedNameOfStringEncoding:",
+	    "localizedStringWithFormat:",
+	    "pathWithComponents:",
+	    string,
+	    "stringWithCString:",
+	    "stringWithCString:encoding:",
+	    "stringWithCString:length:",
+	    "stringWithCharacters:length:",
+	    "stringWithContentsOfFile:",
+	    "stringWithContentsOfFile:encoding:error:",
+	    "stringWithContentsOfFile:usedEncoding:error:",
+	    "stringWithContentsOfURL:",
+	    "stringWithContentsOfURL:encoding:error:",
+	    "stringWithContentsOfURL:usedEncoding:error:",
+	    "stringWithFormat:",
+	    "stringWithFormat:arguments:",
+	    "stringWithString:",
+	    "stringWithUTF8String:"
+	);
+	instancemethods = (
+	    UTF8String,
+	    "appendToXMLRPC:indent:for:",
+	    boolValue,
+	    cString,
+	    cStringLength,
+	    "cStringUsingEncoding:",
+	    "canBeConvertedToEncoding:",
+	    capitalizedString,
+	    "caseInsensitiveCompare:",
+	    "characterAtIndex:",
+	    classForCoder,
+	    "commonPrefixWithString:options:",
+	    "compare:",
+	    "compare:options:",
+	    "compare:options:range:",
+	    "compare:options:range:locale:",
+	    "completePathIntoString:caseSensitive:matchesIntoArray:filterTypes:",
+	    "componentsSeparatedByCharactersInSet:",
+	    "componentsSeparatedByString:",
+	    "containsString:",
+	    "copyWithZone:",
+	    "dataUsingEncoding:",
+	    "dataUsingEncoding:allowLossyConversion:",
+	    decimalValue,
+	    decomposedStringWithCanonicalMapping,
+	    decomposedStringWithCompatibilityMapping,
+	    description,
+	    doubleValue,
+	    "encodeWithCoder:",
+	    "enumerateLinesUsingBlock:",
+	    "enumerateSubstringsInRange:options:usingBlock:",
+	    fastestEncoding,
+	    fileSystemRepresentation,
+	    floatValue,
+	    "getCString:",
+	    "getCString:maxLength:",
+	    "getCString:maxLength:encoding:",
+	    "getCString:maxLength:range:remainingRange:",
+	    "getCharacters:",
+	    "getCharacters:range:",
+	    "getFileSystemRepresentation:maxLength:",
+	    "getLineStart:end:contentsEnd:forRange:",
+	    "getParagraphStart:end:contentsEnd:forRange:",
+	    gnutlsFileSystemRepresentation,
+	    "hasPrefix:",
+	    "hasSuffix:",
+	    hash,
+	    "indexOfString:",
+	    "indexOfString:fromIndex:",
+	    init,
+	    "initWithBytes:length:encoding:",
+	    "initWithBytesNoCopy:length:encoding:freeWhenDone:",
+	    "initWithCString:",
+	    "initWithCString:encoding:",
+	    "initWithCString:length:",
+	    "initWithCStringNoCopy:length:freeWhenDone:",
+	    "initWithCharacters:length:",
+	    "initWithCharactersNoCopy:length:freeWhenDone:",
+	    "initWithCoder:",
+	    "initWithContentsOfFile:",
+	    "initWithContentsOfFile:encoding:error:",
+	    "initWithContentsOfFile:usedEncoding:error:",
+	    "initWithContentsOfURL:",
+	    "initWithContentsOfURL:encoding:error:",
+	    "initWithContentsOfURL:usedEncoding:error:",
+	    "initWithData:encoding:",
+	    "initWithFormat:",
+	    "initWithFormat:arguments:",
+	    "initWithFormat:locale:",
+	    "initWithFormat:locale:arguments:",
+	    "initWithString:",
+	    "initWithUTF8String:",
+	    intValue,
+	    integerValue,
+	    isAbsolutePath,
+	    "isEqual:",
+	    "isEqualToString:",
+	    lastPathComponent,
+	    length,
+	    "lengthOfBytesUsingEncoding:",
+	    "lineRangeForRange:",
+	    "localizedCaseInsensitiveCompare:",
+	    "localizedCompare:",
+	    longLongValue,
+	    lossyCString,
+	    lowercaseString,
+	    "maximumLengthOfBytesUsingEncoding:",
+	    "mutableCopyWithZone:",
+	    "paragraphRangeForRange:",
+	    pathComponents,
+	    pathExtension,
+	    precomposedStringWithCanonicalMapping,
+	    precomposedStringWithCompatibilityMapping,
+	    propertyList,
+	    propertyListFromStringsFileFormat,
+	    "rangeOfCharacterFromSet:",
+	    "rangeOfCharacterFromSet:options:",
+	    "rangeOfCharacterFromSet:options:range:",
+	    "rangeOfComposedCharacterSequenceAtIndex:",
+	    "rangeOfComposedCharacterSequencesForRange:",
+	    "rangeOfString:",
+	    "rangeOfString:options:",
+	    "rangeOfString:options:range:",
+	    "rangeOfString:options:range:locale:",
+	    "replacementObjectForPortCoder:",
+	    smallestEncoding,
+	    stringByAbbreviatingWithTildeInPath,
+	    "stringByAddingPercentEncodingWithAllowedCharacters:",
+	    "stringByAddingPercentEscapesUsingEncoding:",
+	    "stringByAppendingFormat:",
+	    "stringByAppendingPathComponent:",
+	    "stringByAppendingPathExtension:",
+	    "stringByAppendingString:",
+	    stringByDeletingLastPathComponent,
+	    stringByDeletingPathExtension,
+	    "stringByDeletingPrefix:",
+	    "stringByDeletingSuffix:",
+	    stringByEscapingXML,
+	    stringByExpandingTildeInPath,
+	    "stringByPaddingToLength:withString:startingAtIndex:",
+	    stringByRemovingPercentEncoding,
+	    "stringByRepeatingCurrentString:",
+	    "stringByReplacingCharactersInRange:withString:",
+	    "stringByReplacingOccurrencesOfString:withString:",
+	    "stringByReplacingOccurrencesOfString:withString:options:range:",
+	    "stringByReplacingPercentEscapesUsingEncoding:",
+	    "stringByReplacingString:withString:",
+	    stringByResolvingSymlinksInPath,
+	    stringByStandardizingPath,
+	    "stringByTrimmingCharactersInSet:",
+	    stringByTrimmingLeadSpaces,
+	    stringByTrimmingSpaces,
+	    stringByTrimmingTailSpaces,
+	    stringByUnescapingXML,
+	    "stringsByAppendingPaths:",
+	    "substringFromIndex:",
+	    "substringFromRange:",
+	    "substringToIndex:",
+	    "substringWithRange:",
+	    unicharString,
+	    uppercaseString,
+	    "writeToFile:atomically:",
+	    "writeToFile:atomically:encoding:error:",
+	    "writeToURL:atomically:",
+	    "writeToURL:atomically:encoding:error:"
+	);
+	superclass = NSObject;
+    };
+    NSTask = {
+	classmethods = (
+	    "allocWithZone:",
+	    executableExtensions,
+	    "executablePath:",
+	    initialize,
+	    "launchPathForTool:",
+	    "launchedTaskWithExecutableURL:arguments:error:terminationHandler:",
+	    "launchedTaskWithLaunchPath:arguments:"
+	);
+	instancemethods = (
+	    arguments,
+	    currentDirectoryPath,
+	    currentDirectoryURL,
+	    dealloc,
+	    environment,
+	    executableURL,
+	    finalize,
+	    interrupt,
+	    isRunning,
+	    launch,
+	    "launchAndReturnError:",
+	    launchPath,
+	    processIdentifier,
+	    resume,
+	    "setArguments:",
+	    "setCurrentDirectoryPath:",
+	    "setCurrentDirectoryURL:",
+	    "setEnvironment:",
+	    "setExecutableURL:",
+	    "setLaunchPath:",
+	    "setStandardError:",
+	    "setStandardInput:",
+	    "setStandardOutput:",
+	    standardError,
+	    standardInput,
+	    standardOutput,
+	    suspend,
+	    terminate,
+	    terminationReason,
+	    terminationStatus,
+	    usePseudoTerminal,
+	    validatedLaunchPath,
+	    waitUntilExit
+	);
+	superclass = NSObject;
+    };
+    NSTextCheckingResult = {
+	classmethods = (
+	    "regularExpressionCheckingResultWithRanges:count:regularExpression:"
+	);
+	instancemethods = (
+	    URL,
+	    addressComponents,
+	    components,
+	    date,
+	    duration,
+	    grammarDetails,
+	    numberOfRanges,
+	    orthography,
+	    phoneNumber,
+	    range,
+	    "rangeAtIndex:",
+	    regularExpression,
+	    replacementString,
+	    "resultByAdjustingRangesWithOffset:",
+	    resultType,
+	    timeZone
+	);
+	superclass = NSObject;
+    };
+    NSThread = {
+	classmethods = (
+	    callStackReturnAddresses,
+	    callStackSymbols,
+	    currentThread,
+	    "detachNewThreadSelector:toTarget:withObject:",
+	    "detachNewThreadWithBlock:",
+	    exit,
+	    initialize,
+	    isMainThread,
+	    isMultiThreaded,
+	    mainThread,
+	    "setThreadPriority:",
+	    "sleepForTimeInterval:",
+	    "sleepUntilDate:",
+	    threadPriority
+	);
+	instancemethods = (
+	    cancel,
+	    dealloc,
+	    description,
+	    init,
+	    "initWithBlock:",
+	    "initWithTarget:selector:object:",
+	    isCancelled,
+	    isExecuting,
+	    isFinished,
+	    isMainThread,
+	    main,
+	    "mutexDrop:",
+	    "mutexHold:",
+	    "mutexWait:",
+	    name,
+	    "setName:",
+	    "setStackSize:",
+	    stackSize,
+	    start,
+	    threadDictionary
+	);
+	superclass = NSObject;
+    };
+    NSTimeZone = {
+	classmethods = (
+	    abbreviationDictionary,
+	    abbreviationMap,
+	    "allocWithZone:",
+	    atExit,
+	    defaultTimeZone,
+	    initialize,
+	    knownTimeZoneNames,
+	    localTimeZone,
+	    resetSystemTimeZone,
+	    "setDefaultTimeZone:",
+	    systemTimeZone,
+	    timeZoneArray,
+	    "timeZoneForSecondsFromGMT:",
+	    "timeZoneWithAbbreviation:",
+	    "timeZoneWithName:",
+	    "timeZoneWithName:data:"
+	);
+	instancemethods = (
+	    abbreviation,
+	    "abbreviationForDate:",
+	    classForCoder,
+	    "copyWithZone:",
+	    data,
+	    daylightSavingTimeOffset,
+	    "daylightSavingTimeOffsetForDate:",
+	    description,
+	    "encodeWithCoder:",
+	    hash,
+	    init,
+	    "initWithCoder:",
+	    "initWithName:",
+	    "initWithName:data:",
+	    isDaylightSavingTime,
+	    "isDaylightSavingTimeForDate:",
+	    "isEqual:",
+	    "isEqualToTimeZone:",
+	    "localizedName:locale:",
+	    name,
+	    nextDaylightSavingTimeTransition,
+	    "nextDaylightSavingTimeTransitionAfterDate:",
+	    "replacementObjectForPortCoder:",
+	    secondsFromGMT,
+	    "secondsFromGMTForDate:",
+	    timeZoneDetailArray,
+	    "timeZoneDetailForDate:",
+	    timeZoneName
+	);
+	superclass = NSObject;
+    };
+    NSTimeZoneDetail = {
+	instancemethods = (
+	    description,
+	    isDaylightSavingTimeZone,
+	    timeZoneAbbreviation,
+	    timeZoneSecondsFromGMT
+	);
+	superclass = NSTimeZone;
+    };
+    NSTimer = {
+	classmethods = (
+	    initialize,
+	    "scheduledTimerWithTimeInterval:invocation:repeats:",
+	    "scheduledTimerWithTimeInterval:repeats:block:",
+	    "scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:",
+	    "timerWithTimeInterval:invocation:repeats:",
+	    "timerWithTimeInterval:repeats:block:",
+	    "timerWithTimeInterval:target:selector:userInfo:repeats:"
+	);
+	instancemethods = (
+	    "compare:",
+	    dealloc,
+	    description,
+	    fire,
+	    fireDate,
+	    init,
+	    "initWithFireDate:interval:repeats:block:",
+	    "initWithFireDate:interval:target:selector:userInfo:repeats:",
+	    invalidate,
+	    isValid,
+	    "setFireDate:",
+	    timeInterval,
+	    userInfo
+	);
+	superclass = NSObject;
+    };
+    NSURL = {
+	classmethods = (
+	    "URLByResolvingAliasFileAtURL:options:error:",
+	    "URLWithString:",
+	    "URLWithString:relativeToURL:",
+	    "fileURLWithPath:",
+	    "fileURLWithPath:isDirectory:",
+	    "fileURLWithPath:isDirectory:relativeToURL:",
+	    "fileURLWithPath:relativeToURL:",
+	    "fileURLWithPathComponents:",
+	    initialize
+	);
+	instancemethods = (
+	    "URLByAppendingPathComponent:",
+	    "URLByAppendingPathComponent:isDirectory:",
+	    "URLByAppendingPathExtension:",
+	    URLByDeletingLastPathComponent,
+	    URLByDeletingPathExtension,
+	    URLByResolvingSymlinksInPath,
+	    URLByStandardizingPath,
+	    "URLHandle:resourceDataDidBecomeAvailable:",
+	    "URLHandle:resourceDidFailLoadingWithReason:",
+	    "URLHandleResourceDidBeginLoading:",
+	    "URLHandleResourceDidCancelLoading:",
+	    "URLHandleResourceDidFinishLoading:",
+	    "URLHandleUsingCache:",
+	    absoluteString,
+	    absoluteURL,
+	    baseURL,
+	    cacheKey,
+	    "checkResourceIsReachableAndReturnError:",
+	    "copyWithZone:",
+	    dealloc,
+	    description,
+	    "encodeWithCoder:",
+	    filePathURL,
+	    fileReferenceURL,
+	    fragment,
+	    fullPath,
+	    "getResourceValue:forKey:error:",
+	    hash,
+	    host,
+	    "initFileURLWithPath:",
+	    "initFileURLWithPath:isDirectory:",
+	    "initFileURLWithPath:isDirectory:relativeToURL:",
+	    "initFileURLWithPath:relativeToURL:",
+	    "initWithCoder:",
+	    "initWithScheme:host:path:",
+	    "initWithScheme:user:password:host:port:fullPath:parameterString:query:fragment:",
+	    "initWithString:",
+	    "initWithString:relativeToURL:",
+	    "isEqual:",
+	    isFileReferenceURL,
+	    isFileURL,
+	    lastPathComponent,
+	    "loadResourceDataNotifyingClient:usingCache:",
+	    parameterString,
+	    password,
+	    path,
+	    pathComponents,
+	    pathExtension,
+	    pathWithEscapes,
+	    port,
+	    "propertyForKey:",
+	    query,
+	    relativePath,
+	    relativeString,
+	    "replacementObjectForPortCoder:",
+	    "resourceDataUsingCache:",
+	    resourceSpecifier,
+	    scheme,
+	    "setProperty:forKey:",
+	    "setResourceData:",
+	    standardizedURL,
+	    user
+	);
+	superclass = NSObject;
+    };
+    NSURLAuthenticationChallenge = {
+	classmethods = (
+	    "allocWithZone:"
+	);
+	instancemethods = (
+	    dealloc,
+	    error,
+	    failureResponse,
+	    "initWithAuthenticationChallenge:sender:",
+	    "initWithProtectionSpace:proposedCredential:previousFailureCount:failureResponse:error:sender:",
+	    previousFailureCount,
+	    proposedCredential,
+	    protectionSpace,
+	    sender
+	);
+	superclass = NSObject;
+    };
+    NSURLCache = {
+	classmethods = (
+	    "allocWithZone:",
+	    "setSharedURLCache:",
+	    sharedURLCache
+	);
+	instancemethods = (
+	    "cachedResponseForRequest:",
+	    currentDiskUsage,
+	    currentMemoryUsage,
+	    dealloc,
+	    diskCapacity,
+	    "initWithMemoryCapacity:diskCapacity:diskPath:",
+	    memoryCapacity,
+	    removeAllCachedResponses,
+	    "removeCachedResponseForRequest:",
+	    "setDiskCapacity:",
+	    "setMemoryCapacity:",
+	    "storeCachedResponse:forRequest:"
+	);
+	superclass = NSObject;
+    };
+    NSURLComponents = {
+	classmethods = (
+	    "componentsWithString:",
+	    "componentsWithURL:resolvingAgainstBaseURL:",
+	    initialize
+	);
+	instancemethods = (
+	    URL,
+	    "URLRelativeToURL:",
+	    "copyWithZone:",
+	    dealloc,
+	    fragment,
+	    host,
+	    init,
+	    "initWithString:",
+	    "initWithURL:resolvingAgainstBaseURL:",
+	    password,
+	    path,
+	    percentEncodedFragment,
+	    percentEncodedHost,
+	    percentEncodedPassword,
+	    percentEncodedPath,
+	    percentEncodedQuery,
+	    percentEncodedQueryItems,
+	    percentEncodedUser,
+	    port,
+	    query,
+	    queryItems,
+	    rangeOfFragment,
+	    rangeOfHost,
+	    rangeOfPassword,
+	    rangeOfPath,
+	    rangeOfPort,
+	    rangeOfQuery,
+	    rangeOfScheme,
+	    rangeOfUser,
+	    scheme,
+	    "setFragment:",
+	    "setHost:",
+	    "setPassword:",
+	    "setPath:",
+	    "setPercentEncodedFragment:",
+	    "setPercentEncodedHost:",
+	    "setPercentEncodedPassword:",
+	    "setPercentEncodedPath:",
+	    "setPercentEncodedQuery:",
+	    "setPercentEncodedQueryItems:",
+	    "setPercentEncodedUser:",
+	    "setPort:",
+	    "setQuery:",
+	    "setQueryItems:",
+	    "setScheme:",
+	    "setString:",
+	    "setURL:",
+	    "setUser:",
+	    string,
+	    user
+	);
+	superclass = NSObject;
+    };
+    NSURLConnection = {
+	classmethods = (
+	    "allocWithZone:",
+	    "canHandleRequest:",
+	    "connectionWithRequest:delegate:",
+	    "sendSynchronousRequest:returningResponse:error:"
+	);
+	instancemethods = (
+	    "URLProtocol:cachedResponseIsValid:",
+	    "URLProtocol:didCancelAuthenticationChallenge:",
+	    "URLProtocol:didFailWithError:",
+	    "URLProtocol:didLoadData:",
+	    "URLProtocol:didReceiveAuthenticationChallenge:",
+	    "URLProtocol:didReceiveResponse:cacheStoragePolicy:",
+	    "URLProtocol:wasRedirectedToRequest:redirectResponse:",
+	    "URLProtocolDidFinishLoading:",
+	    cancel,
+	    dealloc,
+	    delegate,
+	    finalize,
+	    "initWithRequest:delegate:",
+	    "initWithRequest:delegate:startImmediately:",
+	    "scheduleInRunLoop:forMode:",
+	    start,
+	    "unscheduleFromRunLoop:forMode:"
+	);
+	superclass = NSObject;
+    };
+    NSURLCredential = {
+	classmethods = (
+	    "allocWithZone:",
+	    "credentialWithUser:password:persistence:"
+	);
+	instancemethods = (
+	    "copyWithZone:",
+	    dealloc,
+	    hasPassword,
+	    hash,
+	    "initWithUser:password:persistence:",
+	    "isEqual:",
+	    password,
+	    persistence,
+	    user
+	);
+	superclass = NSObject;
+    };
+    NSURLCredentialStorage = {
+	classmethods = (
+	    "allocWithZone:",
+	    sharedCredentialStorage
+	);
+	instancemethods = (
+	    allCredentials,
+	    "credentialsForProtectionSpace:",
+	    dealloc,
+	    "defaultCredentialForProtectionSpace:",
+	    init,
+	    "removeCredential:forProtectionSpace:",
+	    "setCredential:forProtectionSpace:",
+	    "setDefaultCredential:forProtectionSpace:"
+	);
+	superclass = NSObject;
+    };
+    NSURLDownload = {
+	classmethods = (
+	    "allocWithZone:",
+	    "canResumeDownloadDecodedWithEncodingMIMEType:"
+	);
+	instancemethods = (
+	    cancel,
+	    dealloc,
+	    deletesFileUponFailure,
+	    "initWithRequest:delegate:",
+	    "initWithResumeData:delegate:path:",
+	    request,
+	    resumeData,
+	    "setDeletesFileUponFailure:",
+	    "setDestination:allowOverwrite:"
+	);
+	superclass = NSObject;
+    };
+    NSURLHandle = {
+	classmethods = (
+	    "URLHandleClassForURL:",
+	    "cachedHandleForURL:",
+	    "canInitWithURL:",
+	    initialize,
+	    "registerURLHandleClass:"
+	);
+	instancemethods = (
+	    "addClient:",
+	    availableResourceData,
+	    "backgroundLoadDidFailWithReason:",
+	    beginLoadInBackground,
+	    cancelLoadInBackground,
+	    dealloc,
+	    "didLoadBytes:loadComplete:",
+	    endLoadInBackground,
+	    failureReason,
+	    flushCachedData,
+	    init,
+	    "initWithURL:cached:",
+	    loadInBackground,
+	    loadInForeground,
+	    "propertyForKey:",
+	    "propertyForKeyIfAvailable:",
+	    "removeClient:",
+	    resourceData,
+	    "setDebug:",
+	    "setReturnAll:",
+	    "setURL:",
+	    status,
+	    "writeData:",
+	    "writeProperty:forKey:"
+	);
+	superclass = NSObject;
+    };
+    NSURLProtectionSpace = {
+	classmethods = (
+	    "allocWithZone:"
+	);
+	instancemethods = (
+	    authenticationMethod,
+	    "copyWithZone:",
+	    dealloc,
+	    distinguishedNames,
+	    hash,
+	    host,
+	    "initWithHost:port:protocol:realm:authenticationMethod:",
+	    "initWithProxyHost:port:type:realm:authenticationMethod:",
+	    "isEqual:",
+	    isProxy,
+	    port,
+	    protocol,
+	    proxyType,
+	    realm,
+	    receivesCredentialSecurely
+	);
+	superclass = NSObject;
+    };
+    NSURLProtocol = {
+	classmethods = (
+	    "allocWithZone:",
+	    atExit,
+	    "canInitWithRequest:",
+	    "canInitWithTask:",
+	    "canonicalRequestForRequest:",
+	    initialize,
+	    "propertyForKey:inRequest:",
+	    "registerClass:",
+	    "requestIsCacheEquivalent:toRequest:",
+	    "setProperty:forKey:inRequest:",
+	    "unregisterClass:"
+	);
+	instancemethods = (
+	    cachedResponse,
+	    client,
+	    dealloc,
+	    description,
+	    in,
+	    init,
+	    "initWithRequest:cachedResponse:client:",
+	    "initWithTask:cachedResponse:client:",
+	    out,
+	    request,
+	    startLoading,
+	    stopLoading,
+	    task
+	);
+	superclass = NSObject;
+    };
+    NSURLQueryItem = {
+	classmethods = (
+	    "queryItemWithName:value:"
+	);
+	instancemethods = (
+	    "copyWithZone:",
+	    dealloc,
+	    "encodeWithCoder:",
+	    init,
+	    "initWithCoder:",
+	    "initWithName:value:",
+	    name,
+	    value
+	);
+	superclass = NSObject;
+    };
+    NSURLRequest = {
+	classmethods = (
+	    "allocWithZone:",
+	    "requestWithURL:",
+	    "requestWithURL:cachePolicy:timeoutInterval:"
+	);
+	instancemethods = (
+	    HTTPBody,
+	    HTTPBodyStream,
+	    HTTPMethod,
+	    HTTPShouldHandleCookies,
+	    URL,
+	    allHTTPHeaderFields,
+	    assumesHTTP3Capable,
+	    cachePolicy,
+	    "copyWithZone:",
+	    dealloc,
+	    description,
+	    "encodeWithCoder:",
+	    hash,
+	    init,
+	    "initWithCoder:",
+	    "initWithURL:",
+	    "initWithURL:cachePolicy:timeoutInterval:",
+	    "isEqual:",
+	    mainDocumentURL,
+	    "mutableCopyWithZone:",
+	    "setDebug:",
+	    "setDebugLogDelegate:",
+	    timeoutInterval,
+	    "valueForHTTPHeaderField:"
+	);
+	superclass = NSObject;
+    };
+    NSURLResponse = {
+	classmethods = (
+	    "allocWithZone:"
+	);
+	instancemethods = (
+	    MIMEType,
+	    URL,
+	    "copyWithZone:",
+	    dealloc,
+	    description,
+	    "encodeWithCoder:",
+	    expectedContentLength,
+	    "initWithCoder:",
+	    "initWithURL:MIMEType:expectedContentLength:textEncodingName:",
+	    "initWithURL:statusCode:HTTPVersion:headerFields:",
+	    suggestedFilename,
+	    textEncodingName
+	);
+	superclass = NSObject;
+    };
+    NSUUID = {
+	classmethods = (
+	    UUID
+	);
+	instancemethods = (
+	    UUIDString,
+	    "copyWithZone:",
+	    "encodeWithCoder:",
+	    "getUUIDBytes:",
+	    hash,
+	    init,
+	    "initWithCoder:",
+	    "initWithUUIDBytes:",
+	    "initWithUUIDString:",
+	    "isEqual:"
+	);
+	superclass = NSObject;
+    };
+    NSUbiquitousKeyValueStore = {
+	classmethods = (
+	    defaultStore
+	);
+	instancemethods = (
+	    "arrayForKey:",
+	    "boolForKey:",
+	    "dataForKey:",
+	    "dictionaryForKey:",
+	    dictionaryRepresentation,
+	    "doubleForKey:",
+	    init,
+	    "longLongForKey:",
+	    "objectForKey:",
+	    "removeObjectForKey:",
+	    "setArray:forKey:",
+	    "setBool:forKey:",
+	    "setData:forKey:",
+	    "setDictionary:forKey:",
+	    "setDouble:forKey:",
+	    "setLongLong:forKey:",
+	    "setObject:forKey:",
+	    "setString:forKey:",
+	    "stringForKey:",
+	    synchronize
+	);
+	superclass = NSObject;
+    };
+    NSUnarchiver = {
+	classmethods = (
+	    "classNameDecodedForArchiveClassName:",
+	    "decodeClassName:asClassName:",
+	    initialize,
+	    "unarchiveObjectWithData:",
+	    "unarchiveObjectWithFile:"
+	);
+	instancemethods = (
+	    "classNameDecodedForArchiveClassName:",
+	    cursor,
+	    dealloc,
+	    "decodeArrayOfObjCType:count:at:",
+	    "decodeClassName:asClassName:",
+	    decodeDataObject,
+	    "decodeValueOfObjCType:at:",
+	    "deserializeHeaderAt:version:classes:objects:pointers:",
+	    directDataAccess,
+	    "initForReadingWithData:",
+	    isAtEnd,
+	    objectZone,
+	    "replaceObject:withObject:",
+	    "resetUnarchiverWithData:atIndex:",
+	    "setObjectZone:",
+	    systemVersion,
+	    "versionForClassName:"
+	);
+	superclass = NSCoder;
+    };
+    NSUndoManager = {
+	instancemethods = (
+	    beginUndoGrouping,
+	    canRedo,
+	    canUndo,
+	    dealloc,
+	    disableUndoRegistration,
+	    enableUndoRegistration,
+	    endUndoGrouping,
+	    "forwardInvocation:",
+	    groupingLevel,
+	    groupsByEvent,
+	    init,
+	    isRedoing,
+	    isUndoRegistrationEnabled,
+	    isUndoing,
+	    levelsOfUndo,
+	    "methodSignatureForSelector:",
+	    "prepareWithInvocationTarget:",
+	    redo,
+	    redoActionName,
+	    redoMenuItemTitle,
+	    "redoMenuTitleForUndoActionName:",
+	    "registerUndoWithTarget:selector:object:",
+	    removeAllActions,
+	    "removeAllActionsWithTarget:",
+	    runLoopModes,
+	    "setActionName:",
+	    "setGroupsByEvent:",
+	    "setLevelsOfUndo:",
+	    "setRunLoopModes:",
+	    undo,
+	    undoActionName,
+	    undoMenuItemTitle,
+	    "undoMenuTitleForUndoActionName:",
+	    undoNestedGroup
+	);
+	superclass = NSObject;
+    };
+    NSUnit = {
+	instancemethods = (
+	    "copyWithZone:",
+	    "encodeWithCoder:",
+	    init,
+	    "initWithCoder:",
+	    "initWithSymbol:",
+	    symbol
+	);
+	superclass = NSObject;
+    };
+    NSUnitAcceleration = {
+	classmethods = (
+	    baseUnit,
+	    gravity,
+	    metersPerSecondSquared
+	);
+	superclass = NSDimension;
+    };
+    NSUnitAngle = {
+	classmethods = (
+	    arcMinutes,
+	    arcSeconds,
+	    baseUnit,
+	    degrees,
+	    gradians,
+	    radians,
+	    revolutions
+	);
+	superclass = NSDimension;
+    };
+    NSUnitArea = {
+	classmethods = (
+	    acres,
+	    ares,
+	    baseUnit,
+	    hectares,
+	    squareCentimeters,
+	    squareFeet,
+	    squareInches,
+	    squareKilometers,
+	    squareMegameters,
+	    squareMeters,
+	    squareMicrometers,
+	    squareMiles,
+	    squareMillimeters,
+	    squareNanometers,
+	    squareYards
+	);
+	superclass = NSDimension;
+    };
+    NSUnitConcentrationMass = {
+	classmethods = (
+	    baseUnit,
+	    gramsPerLiter,
+	    milligramsPerDeciliter,
+	    "millimolesPerLiterWithGramsPerMole:"
+	);
+	superclass = NSDimension;
+    };
+    NSUnitConverter = {
+	instancemethods = (
+	    "baseUnitValueFromValue:",
+	    "valueFromBaseUnitValue:"
+	);
+	superclass = NSObject;
+    };
+    NSUnitConverterLinear = {
+	instancemethods = (
+	    "baseUnitValueFromValue:",
+	    coefficient,
+	    constant,
+	    "encodeWithCoder:",
+	    "initWithCoder:",
+	    "initWithCoefficient:",
+	    "initWithCoefficient:constant:",
+	    "valueFromBaseUnitValue:"
+	);
+	superclass = NSUnitConverter;
+    };
+    NSUnitDispersion = {
+	classmethods = (
+	    baseUnit,
+	    partsPerMillion
+	);
+	superclass = NSDimension;
+    };
+    NSUnitDuration = {
+	classmethods = (
+	    baseUnit,
+	    hours,
+	    minutes,
+	    seconds
+	);
+	superclass = NSDimension;
+    };
+    NSUnitElectricCharge = {
+	classmethods = (
+	    ampereHours,
+	    baseUnit,
+	    coulombs,
+	    kiloampereHours,
+	    megaampereHours,
+	    microampereHours,
+	    milliampereHours
+	);
+	superclass = NSDimension;
+    };
+    NSUnitElectricCurrent = {
+	classmethods = (
+	    amperes,
+	    baseUnit,
+	    kiloamperes,
+	    megaamperes,
+	    microamperes,
+	    milliamperes
+	);
+	superclass = NSDimension;
+    };
+    NSUnitElectricPotentialDifference = {
+	classmethods = (
+	    baseUnit,
+	    kilovolts,
+	    megavolts,
+	    microvolts,
+	    millivolts,
+	    volts
+	);
+	superclass = NSDimension;
+    };
+    NSUnitElectricResistance = {
+	classmethods = (
+	    baseUnit,
+	    kiloohms,
+	    megaohms,
+	    microohms,
+	    milliohms,
+	    ohms
+	);
+	superclass = NSDimension;
+    };
+    NSUnitEnergy = {
+	classmethods = (
+	    baseUnit,
+	    calories,
+	    joules,
+	    kilocalories,
+	    kilojoules,
+	    kilowattHours
+	);
+	superclass = NSDimension;
+    };
+    NSUnitFrequency = {
+	classmethods = (
+	    baseUnit,
+	    gigahertz,
+	    hertz,
+	    kilohertz,
+	    megahertz,
+	    microhertz,
+	    millihertz,
+	    nanohertz,
+	    terahertz
+	);
+	superclass = NSDimension;
+    };
+    NSUnitFuelEfficiency = {
+	classmethods = (
+	    baseUnit,
+	    litersPer100Kilometers,
+	    milesPerGallon,
+	    milesPerImperialGallon
+	);
+	superclass = NSDimension;
+    };
+    NSUnitIlluminance = {
+	classmethods = (
+	    baseUnit,
+	    lux
+	);
+	superclass = NSDimension;
+    };
+    NSUnitLength = {
+	classmethods = (
+	    astronomicalUnits,
+	    baseUnit,
+	    centimeters,
+	    decameters,
+	    decimeters,
+	    fathoms,
+	    feet,
+	    furlongs,
+	    hectometers,
+	    inches,
+	    kilometers,
+	    lightyears,
+	    megameters,
+	    meters,
+	    micrometers,
+	    miles,
+	    millimeters,
+	    nanometers,
+	    nauticalMiles,
+	    parsecs,
+	    picometers,
+	    scandinavianMiles,
+	    yards
+	);
+	superclass = NSDimension;
+    };
+    NSUnitMass = {
+	classmethods = (
+	    baseUnit,
+	    carats,
+	    centigrams,
+	    decigrams,
+	    grams,
+	    kilograms,
+	    metricTons,
+	    micrograms,
+	    milligrams,
+	    nanograms,
+	    ounces,
+	    ouncesTroy,
+	    picograms,
+	    pounds,
+	    shortTons,
+	    slugs,
+	    stones
+	);
+	superclass = NSDimension;
+    };
+    NSUnitPower = {
+	classmethods = (
+	    baseUnit,
+	    femtowatts,
+	    gigawatts,
+	    horsepower,
+	    kilowatts,
+	    megawatts,
+	    microwatts,
+	    milliwatts,
+	    nanowatts,
+	    picowatts,
+	    terawatts,
+	    watts
+	);
+	superclass = NSDimension;
+    };
+    NSUnitPressure = {
+	classmethods = (
+	    bars,
+	    baseUnit,
+	    gigapascals,
+	    hectopascals,
+	    inchesOfMercury,
+	    kilopascals,
+	    megapascals,
+	    millibars,
+	    millimetersOfMercury,
+	    newtonsPerMetersSquared,
+	    poundsForcePerSquareInch
+	);
+	superclass = NSDimension;
+    };
+    NSUnitSpeed = {
+	classmethods = (
+	    baseUnit,
+	    kilometersPerHour,
+	    knots,
+	    metersPerSecond,
+	    milesPerHour
+	);
+	superclass = NSDimension;
+    };
+    NSUnitTemperature = {
+	classmethods = (
+	    baseUnit,
+	    celsius,
+	    fahrenheit,
+	    kelvin
+	);
+	superclass = NSDimension;
+    };
+    NSUnitVolume = {
+	classmethods = (
+	    acreFeet,
+	    baseUnit,
+	    bushels,
+	    centiliters,
+	    cubicCentimeters,
+	    cubicDecimeters,
+	    cubicFeet,
+	    cubicInches,
+	    cubicKilometers,
+	    cubicMeters,
+	    cubicMiles,
+	    cubicMillimeters,
+	    cubicYards,
+	    cups,
+	    deciliters,
+	    fluidOunces,
+	    gallons,
+	    imperialFluidOunces,
+	    imperialGallons,
+	    imperialPints,
+	    imperialQuarts,
+	    imperialTablespoons,
+	    imperialTeaspoons,
+	    kiloliters,
+	    liters,
+	    megaliters,
+	    metricCups,
+	    milliliters,
+	    pints,
+	    quarts,
+	    tablespoons,
+	    teaspoons
+	);
+	superclass = NSDimension;
+    };
+    NSUserActivity = {
+	superclass = NSObject;
+    };
+    NSUserDefaults = {
+	classmethods = (
+	    atExit,
+	    "automaticallyNotifiesObserversForKey:",
+	    initialize,
+	    resetStandardUserDefaults,
+	    "setUserLanguages:",
+	    standardUserDefaults,
+	    userLanguages
+	);
+	instancemethods = (
+	    "addSuiteNamed:",
+	    "arrayForKey:",
+	    "boolForKey:",
+	    "dataForKey:",
+	    dealloc,
+	    description,
+	    "dictionaryForKey:",
+	    dictionaryRepresentation,
+	    "doubleForKey:",
+	    "floatForKey:",
+	    init,
+	    "initWithContentsOfFile:",
+	    "initWithUser:",
+	    "integerForKey:",
+	    "objectForKey:",
+	    "persistentDomainForName:",
+	    persistentDomainNames,
+	    "registerDefaults:",
+	    "removeObjectForKey:",
+	    "removePersistentDomainForName:",
+	    "removeSuiteNamed:",
+	    "removeVolatileDomainForName:",
+	    searchList,
+	    "setBool:forKey:",
+	    "setDouble:forKey:",
+	    "setFloat:forKey:",
+	    "setInteger:forKey:",
+	    "setObject:forKey:",
+	    "setPersistentDomain:forName:",
+	    "setSearchList:",
+	    "setValue:forKey:",
+	    "setVolatileDomain:forName:",
+	    "stringArrayForKey:",
+	    "stringForKey:",
+	    synchronize,
+	    "valueForKey:",
+	    "volatileDomainForName:",
+	    volatileDomainNames,
+	    "wantToReadDefaultsSince:"
+	);
+	superclass = NSObject;
+    };
+    NSUserNotification = {
+	instancemethods = (
+	    actionButtonTitle,
+	    activationType,
+	    actualDeliveryDate,
+	    contentImage,
+	    "copyWithZone:",
+	    dealloc,
+	    deliveryDate,
+	    deliveryRepeatInterval,
+	    deliveryTimeZone,
+	    description,
+	    hasActionButton,
+	    hasReplyButton,
+	    identifier,
+	    informativeText,
+	    init,
+	    isPresented,
+	    isRemote,
+	    otherButtonTitle,
+	    response,
+	    responsePlaceholder,
+	    "setActionButtonTitle:",
+	    "setActivationType:",
+	    "setActualDeliveryDate:",
+	    "setContentImage:",
+	    "setDeliveryDate:",
+	    "setDeliveryRepeatInterval:",
+	    "setDeliveryTimeZone:",
+	    "setHasActionButton:",
+	    "setHasReplyButton:",
+	    "setIdentifier:",
+	    "setInformativeText:",
+	    "setOtherButtonTitle:",
+	    "setPresented:",
+	    "setRemote:",
+	    "setResponse:",
+	    "setResponsePlaceholder:",
+	    "setSoundName:",
+	    "setSubtitle:",
+	    "setTitle:",
+	    "setUserInfo:",
+	    soundName,
+	    subtitle,
+	    title,
+	    userInfo
+	);
+	superclass = NSObject;
+    };
+    NSUserNotificationCenter = {
+	classmethods = (
+	    atExit,
+	    defaultUserNotificationCenter,
+	    defaultUserNotificationCenterClass,
+	    initialize,
+	    "setDefaultUserNotificationCenter:"
+	);
+	instancemethods = (
+	    dealloc,
+	    delegate,
+	    "deliverNotification:",
+	    "deliveredNotificationWithUniqueId:",
+	    deliveredNotifications,
+	    init,
+	    "nextDeliveryDateForNotification:",
+	    removeAllDeliveredNotifications,
+	    "removeDeliveredNotification:",
+	    "removeScheduledNotification:",
+	    "scheduleNotification:",
+	    scheduledNotifications,
+	    "setDelegate:",
+	    "setDeliveredNotifications:",
+	    "setScheduledNotifications:"
+	);
+	superclass = NSObject;
+    };
+    NSUserScriptTask = {
+	superclass = NSObject;
+    };
+    NSValue = {
+	classmethods = (
+	    "allocWithZone:",
+	    atExit,
+	    initialize,
+	    "value:withObjCType:",
+	    "valueClassWithObjCType:",
+	    "valueFromString:",
+	    "valueWithBytes:objCType:",
+	    "valueWithEdgeInsets:",
+	    "valueWithNonretainedObject:",
+	    "valueWithPoint:",
+	    "valueWithPointer:",
+	    "valueWithRange:",
+	    "valueWithRect:",
+	    "valueWithSize:"
+	);
+	instancemethods = (
+	    classForCoder,
+	    copy,
+	    "copyWithZone:",
+	    edgeInsetsValue,
+	    "encodeWithCoder:",
+	    "getValue:",
+	    "initWithBytes:objCType:",
+	    "initWithCoder:",
+	    "isEqual:",
+	    "isEqualToValue:",
+	    nonretainedObjectValue,
+	    objCType,
+	    pointValue,
+	    pointerValue,
+	    rangeValue,
+	    rectValue,
+	    sizeValue
+	);
+	superclass = NSObject;
+    };
+    NSValueTransformer = {
+	classmethods = (
+	    allowsReverseTransformation,
+	    initialize,
+	    "setValueTransformer:forName:",
+	    transformedValueClass,
+	    "valueTransformerForName:",
+	    valueTransformerNames
+	);
+	instancemethods = (
+	    "reverseTransformedValue:",
+	    "transformedValue:"
+	);
+	superclass = NSObject;
+    };
+    NSXMLDTD = {
+	classmethods = (
+	    "predefinedEntityDeclarationForName:"
+	);
+	instancemethods = (
+	    "addChild:",
+	    "attributeDeclarationForName:elementName:",
+	    dealloc,
+	    "elementDeclarationForName:",
+	    "entityDeclarationForName:",
+	    init,
+	    "initWithContentsOfURL:options:error:",
+	    "initWithData:options:error:",
+	    "initWithKind:options:",
+	    "insertChild:atIndex:",
+	    "insertChildren:atIndex:",
+	    "notationDeclarationForName:",
+	    publicID,
+	    "removeChildAtIndex:",
+	    "replaceChildAtIndex:withNode:",
+	    "setChildren:",
+	    "setPublicID:",
+	    "setSystemID:",
+	    systemID
+	);
+	superclass = NSXMLNode;
+    };
+    NSXMLDTDNode = {
+	instancemethods = (
+	    DTDKind,
+	    dealloc,
+	    "initWithKind:options:",
+	    "initWithXMLString:",
+	    isExternal,
+	    notationName,
+	    publicID,
+	    "setDTDKind:",
+	    "setNotationName:",
+	    "setPublicID:",
+	    "setSystemID:",
+	    systemID
+	);
+	superclass = NSXMLNode;
+    };
+    NSXMLDocument = {
+	classmethods = (
+	    "replacementClassForClass:"
+	);
+	instancemethods = (
+	    DTD,
+	    MIMEType,
+	    URI,
+	    XMLData,
+	    "XMLDataWithOptions:",
+	    "addChild:",
+	    characterEncoding,
+	    "copyWithZone:",
+	    dealloc,
+	    documentContentKind,
+	    init,
+	    "initWithContentsOfURL:options:error:",
+	    "initWithData:options:error:",
+	    "initWithKind:options:",
+	    "initWithRootElement:",
+	    "initWithXMLString:options:error:",
+	    "insertChild:atIndex:",
+	    "insertChildren:atIndex:",
+	    "isEqual:",
+	    isStandalone,
+	    "objectByApplyingXSLT:arguments:error:",
+	    "objectByApplyingXSLTAtURL:arguments:error:",
+	    "objectByApplyingXSLTString:arguments:error:",
+	    "removeChildAtIndex:",
+	    "replaceChildAtIndex:withNode:",
+	    rootElement,
+	    "setCharacterEncoding:",
+	    "setChildren:",
+	    "setDTD:",
+	    "setDocumentContentKind:",
+	    "setMIMEType:",
+	    "setRootElement:",
+	    "setStandalone:",
+	    "setURI:",
+	    "setVersion:",
+	    "validateAndReturnError:",
+	    version
+	);
+	superclass = NSXMLNode;
+    };
+    NSXMLElement = {
+	instancemethods = (
+	    "addAttribute:",
+	    "addChild:",
+	    "addNamespace:",
+	    "attributeForLocalName:URI:",
+	    "attributeForName:",
+	    attributes,
+	    dealloc,
+	    "elementsForLocalName:URI:",
+	    "elementsForName:",
+	    init,
+	    "initWithKind:options:",
+	    "initWithName:",
+	    "initWithName:URI:",
+	    "initWithName:stringValue:",
+	    "initWithXMLString:error:",
+	    "insertChild:atIndex:",
+	    "insertChildren:atIndex:",
+	    "namespaceForPrefix:",
+	    namespaces,
+	    "normalizeAdjacentTextNodesPreservingCDATA:",
+	    objectValue,
+	    "removeAttributeForName:",
+	    "removeChildAtIndex:",
+	    "removeNamespaceForPrefix:",
+	    "replaceChildAtIndex:withNode:",
+	    "resolveNamespaceForName:",
+	    "resolvePrefixForNamespaceURI:",
+	    "setAttributes:",
+	    "setAttributesAsDictionary:",
+	    "setAttributesWithDictionary:",
+	    "setChildren:",
+	    "setNamespaces:"
+	);
+	superclass = NSXMLNode;
+    };
+    NSXMLNode = {
+	classmethods = (
+	    "DTDNodeWithXMLString:",
+	    "attributeWithName:URI:stringValue:",
+	    "attributeWithName:stringValue:",
+	    "commentWithStringValue:",
+	    document,
+	    "documentWithRootElement:",
+	    "elementWithName:",
+	    "elementWithName:URI:",
+	    "elementWithName:children:attributes:",
+	    "elementWithName:stringValue:",
+	    initialize,
+	    "localNameForName:",
+	    "namespaceWithName:stringValue:",
+	    "predefinedNamespaceForPrefix:",
+	    "prefixForName:",
+	    "processingInstructionWithName:stringValue:",
+	    "textWithStringValue:"
+	);
+	instancemethods = (
+	    URI,
+	    XMLString,
+	    "XMLStringWithOptions:",
+	    XPath,
+	    "canonicalXMLStringPreservingComments:",
+	    "childAtIndex:",
+	    childCount,
+	    children,
+	    "copyWithZone:",
+	    dealloc,
+	    description,
+	    detach,
+	    hash,
+	    index,
+	    init,
+	    "initWithKind:",
+	    "initWithKind:options:",
+	    "isEqual:",
+	    kind,
+	    level,
+	    localName,
+	    name,
+	    nextNode,
+	    nextSibling,
+	    "nodesForXPath:error:",
+	    objectValue,
+	    "objectsForXQuery:constants:error:",
+	    "objectsForXQuery:error:",
+	    parent,
+	    prefix,
+	    previousNode,
+	    previousSibling,
+	    rootDocument,
+	    "setName:",
+	    "setObjectValue:",
+	    "setStringValue:",
+	    "setStringValue:resolvingEntities:",
+	    "setURI:",
+	    stringValue
+	);
+	superclass = NSObject;
+    };
+    NSXMLParser = {
+	classmethods = (
+	    "allocWithZone:",
+	    initialize
+	);
+	instancemethods = (
+	    abortParsing,
+	    acceptsHTML,
+	    columnNumber,
+	    dealloc,
+	    delegate,
+	    "initWithContentsOfURL:",
+	    "initWithData:",
+	    "initWithStream:",
+	    lineNumber,
+	    parse,
+	    parserError,
+	    publicID,
+	    "setDelegate:",
+	    "setShouldProcessNamespaces:",
+	    "setShouldReportNamespacePrefixes:",
+	    "setShouldResolveExternalEntities:",
+	    shouldProcessNamespaces,
+	    shouldReportNamespacePrefixes,
+	    shouldResolveExternalEntities,
+	    systemID
+	);
+	superclass = NSObject;
+    };
+    NSXPCConnection = {
+	instancemethods = (
+	    auditSessionIdentifier,
+	    effectiveGroupIdentifier,
+	    effectiveUserIdentifier,
+	    endpoint,
+	    exportedInterface,
+	    "initWithListenerEndpoint:",
+	    "initWithMachServiceName:options:",
+	    "initWithServiceName:",
+	    interruptionHandler,
+	    invalidate,
+	    invalidationHandler,
+	    processIdentifier,
+	    remoteObjectInterface,
+	    remoteObjectProxy,
+	    "remoteObjectProxyWithErrorHandler:",
+	    resume,
+	    serviceName,
+	    "setEndpoint:",
+	    "setExportInterface:",
+	    "setInterruptionHandler:",
+	    "setInvalidationHandler:",
+	    "setRemoteObjectInterface:",
+	    "setRemoteObjectProxy:",
+	    "setServiceName:",
+	    suspend,
+	    "synchronousRemoteObjectProxyWithErrorHandler:"
+	);
+	superclass = NSObject;
+    };
+    NSXPCInterface = {
+	classmethods = (
+	    "interfaceWithProtocol:"
+	);
+	instancemethods = (
+	    "classesForSelector:argumentIndex:ofReply:",
+	    "interfaceForSelector:argumentIndex:ofReply:",
+	    protocol,
+	    "setClasses:forSelector:argumentIndex:ofReply:",
+	    "setInterface:forSelector:argumentIndex:ofReply:",
+	    "setProtocol:"
+	);
+	superclass = NSObject;
+    };
+    NSXPCListener = {
+	classmethods = (
+	    anonymousListener,
+	    serviceListener
+	);
+	instancemethods = (
+	    delegate,
+	    endpoint,
+	    "initWithMachServiceName:",
+	    invalidate,
+	    resume,
+	    "setDelegate:",
+	    "setEndpoint:",
+	    suspend
+	);
+	superclass = NSObject;
+    };
+    NSXPCListenerEndpoint = {
+	instancemethods = (
+	    "encodeWithCoder:",
+	    "initWithCoder:"
+	);
+	superclass = NSObject;
+    };
+}
