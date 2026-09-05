@@ -1,3 +1,11 @@
+2026-04-18  Mohammed Faisal
+
+	* src/scheduler.c, src/scheduler.h: Replaced time-slice mechanism with AVR timer-based preemptive scheduling. Implemented fairer scheduling logic prioritizing speed of selection. Added handling for sleeping and waiting states.
+	* src/syscall.c, src/syscall.h: Implemented process sleep syscall. Added non-blocking EEPROM write syscall. Moved task creation from bytecode to a system call.
+	* src/vm_core.c: Implemented atomic instruction execution and state tracking using interrupt disabling for safe preemptive switching.
+	* src/*: Refactored process structure, improved scheduler and timer initialization logic.
+	* Release 0.6.0: Beta release featuring real preemptive scheduling and non-blocking I/O.
+
 2026-04-05  Mohammed Faisal
 
 	* Makefile, README, AUTHORS, INSTALL: Added GNU project boilerplate metadata.
